@@ -28,7 +28,7 @@ const Index = () => {
     },
     {
       icon: <Globe className="w-10 h-10 text-accent" />,
-      title: "Global Export Experience",
+      title: "Export-Ready Supply Chain",
       description: "Proven track record serving international markets",
     },
   ];
