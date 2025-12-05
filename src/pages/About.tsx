@@ -102,11 +102,11 @@ const About = () => {
                     <Eye className="w-7 h-7 text-accent" />
                   </div>
                   <h2 className="font-playfair font-bold text-3xl text-primary">
-                    Visi Perusahaan
+                    Our Vision
                   </h2>
                 </div>
                 <p className="font-work text-lg text-foreground/80 leading-relaxed">
-                  Menjadi perusahaan perdagangan internasional asal Indonesia yang terpercaya dan berdaya saing global dalam penyediaan coconut and palm derivatives, serta mampu memberikan nilai tambah bagi mitra bisnis di seluruh dunia.
+                  To become a trusted and globally competitive Indonesian international trading company in providing coconut and palm derivatives, while delivering added value to business partners worldwide.
                 </p>
               </div>
 
@@ -117,29 +117,29 @@ const About = () => {
                     <Rocket className="w-7 h-7 text-accent" />
                   </div>
                   <h2 className="font-playfair font-bold text-3xl text-primary">
-                    Misi Perusahaan
+                    Our Mission
                   </h2>
                 </div>
                 <ul className="font-work text-foreground/80 space-y-4">
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="w-5 h-5 text-accent mt-1 flex-shrink-0" />
-                    <span>Membangun hubungan jangka panjang dengan buyer internasional melalui layanan profesional dan kualitas produk yang konsisten.</span>
+                    <span>Build long-term relationships with international buyers through professional service and consistent product quality.</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="w-5 h-5 text-accent mt-1 flex-shrink-0" />
-                    <span>Memperkuat kerja sama dengan produsen lokal untuk menciptakan rantai pasok yang stabil dan transparan.</span>
+                    <span>Strengthen partnerships with local producers to create a stable and transparent supply chain.</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="w-5 h-5 text-accent mt-1 flex-shrink-0" />
-                    <span>Menyediakan produk dengan standar mutu internasional dan pengiriman tepat waktu.</span>
+                    <span>Provide products that meet international quality standards with on-time delivery.</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="w-5 h-5 text-accent mt-1 flex-shrink-0" />
-                    <span>Menjadi jembatan antara produsen Indonesia dan pasar global, dengan komitmen menjaga integritas dalam setiap transaksi.</span>
+                    <span>Serve as a bridge between Indonesian producers and global markets, with a commitment to maintaining integrity in every transaction.</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="w-5 h-5 text-accent mt-1 flex-shrink-0" />
-                    <span>Terus memperluas portofolio produk sesuai permintaan pasar global.</span>
+                    <span>Continuously expand our product portfolio in response to global market demands.</span>
                   </li>
                 </ul>
               </div>
@@ -149,10 +149,10 @@ const About = () => {
             <div className="mt-16">
               <div className="text-center mb-12">
                 <h2 className="font-playfair font-bold text-4xl text-primary mb-4">
-                  Nilai Perusahaan
+                  Our Core Values
                 </h2>
                 <p className="font-work text-lg text-muted-foreground">
-                  Prinsip yang menjadi fondasi dalam setiap aktivitas bisnis kami
+                  The principles that form the foundation of all our business activities
                 </p>
               </div>
               
@@ -163,10 +163,10 @@ const About = () => {
                       <Shield className="w-8 h-8 text-accent" />
                     </div>
                     <h3 className="font-playfair font-semibold text-xl text-primary mb-3">
-                      Integritas
+                      Integrity
                     </h3>
                     <p className="font-work text-sm text-muted-foreground leading-relaxed">
-                      Menjaga kejujuran dan kejelasan informasi dalam setiap kontak bisnis.
+                      Maintaining honesty and transparency in every business interaction.
                     </p>
                   </CardContent>
                 </Card>
@@ -177,10 +177,10 @@ const About = () => {
                       <Award className="w-8 h-8 text-accent" />
                     </div>
                     <h3 className="font-playfair font-semibold text-xl text-primary mb-3">
-                      Kualitas
+                      Quality
                     </h3>
                     <p className="font-work text-sm text-muted-foreground leading-relaxed">
-                      Mengutamakan kesesuaian spesifikasi, kualitas barang, dan kelancaran pengiriman.
+                      Prioritizing specification compliance, product quality, and smooth delivery.
                     </p>
                   </CardContent>
                 </Card>
@@ -191,10 +191,10 @@ const About = () => {
                       <Heart className="w-8 h-8 text-accent" />
                     </div>
                     <h3 className="font-playfair font-semibold text-xl text-primary mb-3">
-                      Komitmen
+                      Commitment
                     </h3>
                     <p className="font-work text-sm text-muted-foreground leading-relaxed">
-                      Menghormati waktu, kesepakatan, dan kebutuhan buyer.
+                      Respecting time, agreements, and buyer needs.
                     </p>
                   </CardContent>
                 </Card>
@@ -205,9 +205,10 @@ const About = () => {
                       <Handshake className="w-8 h-8 text-accent" />
                     </div>
                     <h3 className="font-playfair font-semibold text-xl text-primary mb-3">
-                      Kemitraan
+                      Partnership
                     </h3>
                     <p className="font-work text-sm text-muted-foreground leading-relaxed">
+                      Building mutually supportive relationships with local producers and global partners.
                       Membangun hubungan saling mendukung dengan produsen lokal dan mitra global.
                     </p>
                   </CardContent>
