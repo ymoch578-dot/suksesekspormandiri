@@ -24,7 +24,7 @@ const Index = () => {
   }, {
     icon: <Globe className="w-10 h-10 text-accent" />,
     title: "Export-Ready Supply Chain",
-    description: "Proven track record serving international markets"
+    description: "Trusted quality for global industries"
   }];
   const featuredProducts = [{
     name: "Mature Coconuts",
