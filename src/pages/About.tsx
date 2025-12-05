@@ -2,7 +2,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { CheckCircle2, Target, TrendingUp, Users } from "lucide-react";
+import { CheckCircle2, Target, TrendingUp, Users, Eye, Rocket, Heart, Shield, Award, Handshake } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const About = () => {
@@ -84,6 +84,134 @@ const About = () => {
                   specifications, packaging preferences, or delivery schedules. We're committed to providing transparent 
                   communication and professional service at every step of the process.
                 </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Vision & Mission Section */}
+      <section className="py-20 bg-muted">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+              {/* Vision */}
+              <div className="bg-card rounded-2xl p-8 shadow-card border border-border/50">
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="w-14 h-14 rounded-full bg-accent/10 flex items-center justify-center">
+                    <Eye className="w-7 h-7 text-accent" />
+                  </div>
+                  <h2 className="font-playfair font-bold text-3xl text-primary">
+                    Visi Perusahaan
+                  </h2>
+                </div>
+                <p className="font-work text-lg text-foreground/80 leading-relaxed">
+                  Menjadi perusahaan perdagangan internasional asal Indonesia yang terpercaya dan berdaya saing global dalam penyediaan coconut and palm derivatives, serta mampu memberikan nilai tambah bagi mitra bisnis di seluruh dunia.
+                </p>
+              </div>
+
+              {/* Mission */}
+              <div className="bg-card rounded-2xl p-8 shadow-card border border-border/50">
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="w-14 h-14 rounded-full bg-accent/10 flex items-center justify-center">
+                    <Rocket className="w-7 h-7 text-accent" />
+                  </div>
+                  <h2 className="font-playfair font-bold text-3xl text-primary">
+                    Misi Perusahaan
+                  </h2>
+                </div>
+                <ul className="font-work text-foreground/80 space-y-4">
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-accent mt-1 flex-shrink-0" />
+                    <span>Membangun hubungan jangka panjang dengan buyer internasional melalui layanan profesional dan kualitas produk yang konsisten.</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-accent mt-1 flex-shrink-0" />
+                    <span>Memperkuat kerja sama dengan produsen lokal untuk menciptakan rantai pasok yang stabil dan transparan.</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-accent mt-1 flex-shrink-0" />
+                    <span>Menyediakan produk dengan standar mutu internasional dan pengiriman tepat waktu.</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-accent mt-1 flex-shrink-0" />
+                    <span>Menjadi jembatan antara produsen Indonesia dan pasar global, dengan komitmen menjaga integritas dalam setiap transaksi.</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-accent mt-1 flex-shrink-0" />
+                    <span>Terus memperluas portofolio produk sesuai permintaan pasar global.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Company Values */}
+            <div className="mt-16">
+              <div className="text-center mb-12">
+                <h2 className="font-playfair font-bold text-4xl text-primary mb-4">
+                  Nilai Perusahaan
+                </h2>
+                <p className="font-work text-lg text-muted-foreground">
+                  Prinsip yang menjadi fondasi dalam setiap aktivitas bisnis kami
+                </p>
+              </div>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <Card className="text-center shadow-card hover:shadow-natural transition-shadow duration-300 border-t-4 border-t-accent">
+                  <CardContent className="p-6">
+                    <div className="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center mx-auto mb-4">
+                      <Shield className="w-8 h-8 text-accent" />
+                    </div>
+                    <h3 className="font-playfair font-semibold text-xl text-primary mb-3">
+                      Integritas
+                    </h3>
+                    <p className="font-work text-sm text-muted-foreground leading-relaxed">
+                      Menjaga kejujuran dan kejelasan informasi dalam setiap kontak bisnis.
+                    </p>
+                  </CardContent>
+                </Card>
+
+                <Card className="text-center shadow-card hover:shadow-natural transition-shadow duration-300 border-t-4 border-t-accent">
+                  <CardContent className="p-6">
+                    <div className="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center mx-auto mb-4">
+                      <Award className="w-8 h-8 text-accent" />
+                    </div>
+                    <h3 className="font-playfair font-semibold text-xl text-primary mb-3">
+                      Kualitas
+                    </h3>
+                    <p className="font-work text-sm text-muted-foreground leading-relaxed">
+                      Mengutamakan kesesuaian spesifikasi, kualitas barang, dan kelancaran pengiriman.
+                    </p>
+                  </CardContent>
+                </Card>
+
+                <Card className="text-center shadow-card hover:shadow-natural transition-shadow duration-300 border-t-4 border-t-accent">
+                  <CardContent className="p-6">
+                    <div className="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center mx-auto mb-4">
+                      <Heart className="w-8 h-8 text-accent" />
+                    </div>
+                    <h3 className="font-playfair font-semibold text-xl text-primary mb-3">
+                      Komitmen
+                    </h3>
+                    <p className="font-work text-sm text-muted-foreground leading-relaxed">
+                      Menghormati waktu, kesepakatan, dan kebutuhan buyer.
+                    </p>
+                  </CardContent>
+                </Card>
+
+                <Card className="text-center shadow-card hover:shadow-natural transition-shadow duration-300 border-t-4 border-t-accent">
+                  <CardContent className="p-6">
+                    <div className="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center mx-auto mb-4">
+                      <Handshake className="w-8 h-8 text-accent" />
+                    </div>
+                    <h3 className="font-playfair font-semibold text-xl text-primary mb-3">
+                      Kemitraan
+                    </h3>
+                    <p className="font-work text-sm text-muted-foreground leading-relaxed">
+                      Membangun hubungan saling mendukung dengan produsen lokal dan mitra global.
+                    </p>
+                  </CardContent>
+                </Card>
               </div>
             </div>
           </div>
