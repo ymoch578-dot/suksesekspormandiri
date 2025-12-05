@@ -1,9 +1,7 @@
 import { Mail, MapPin, Phone } from "lucide-react";
 import { NavLink } from "@/components/NavLink";
-
 const Footer = () => {
-  return (
-    <footer className="bg-primary text-primary-foreground">
+  return <footer className="bg-primary text-primary-foreground">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* Company Info */}
@@ -70,30 +68,13 @@ const Footer = () => {
           <div>
             <h4 className="font-work font-semibold text-lg mb-4">Follow Us</h4>
             <div className="space-y-2 font-work">
-              <a 
-                href="https://www.linkedin.com/company/pt-sukses-ekspor-mandiri" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="block text-primary-foreground/80 hover:text-accent transition-colors"
-              >
+              <a href="https://www.linkedin.com/company/pt-sukses-ekspor-mandiri" target="_blank" rel="noopener noreferrer" className="block text-primary-foreground/80 hover:text-accent transition-colors">
                 LinkedIn: PT. Sukses Ekspor Mandiri
               </a>
-              <a 
-                href="https://www.facebook.com/suksesekspormandiri" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="block text-primary-foreground/80 hover:text-accent transition-colors"
-              >
+              <a href="https://www.facebook.com/suksesekspormandiri" target="_blank" rel="noopener noreferrer" className="block text-primary-foreground/80 hover:text-accent transition-colors">
                 Facebook: PT. Sukses Ekspor Mandiri
               </a>
-              <a 
-                href="https://www.instagram.com/suksesekspormandiri" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="block text-primary-foreground/80 hover:text-accent transition-colors"
-              >
-                Instagram: @SuksesEksporMandiri
-              </a>
+              <a href="https://www.instagram.com/suksesekspormandiri" target="_blank" rel="noopener noreferrer" className="block text-primary-foreground/80 hover:text-accent transition-colors">Instagram: suksesekspormandiri</a>
             </div>
           </div>
         </div>
@@ -103,8 +84,6 @@ const Footer = () => {
           <p>&copy; {new Date().getFullYear()} PT. Sukses Ekspor Mandiri. All rights reserved.</p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
