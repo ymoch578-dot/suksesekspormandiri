@@ -20,7 +20,12 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <NavLink to="/" className="flex items-center space-x-2">
+          <NavLink to="/" className="flex items-center space-x-3">
+            <img 
+              src="/assets/logo.jpg" 
+              alt="PT. Sukses Ekspor Mandiri Logo" 
+              className="h-12 w-12 object-contain"
+            />
             <div className="font-playfair font-bold text-2xl text-primary">
               PT. Sukses Ekspor Mandiri
             </div>
