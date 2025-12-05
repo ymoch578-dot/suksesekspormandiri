@@ -22,9 +22,9 @@ const Navbar = () => {
           {/* Logo */}
           <NavLink to="/" className="flex items-center space-x-3">
             <img 
-              src="/assets/logo.jpg" 
+              src="/assets/logo.png" 
               alt="PT. Sukses Ekspor Mandiri Logo" 
-              className="h-12 w-12 object-contain"
+              className="h-12 w-12 object-contain rounded-full"
             />
             <div className="font-playfair font-bold text-2xl text-primary">
               PT. Sukses Ekspor Mandiri
