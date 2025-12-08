@@ -4,9 +4,10 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Award, Clock, DollarSign, Globe } from "lucide-react";
 import { Link } from "react-router-dom";
-import productSemiHusked from "@/assets/product-semi-husked-coconut.png";
+import productSemiHusked from "@/assets/product-semi-husked-coconut-3.png";
 import productDesiccated from "@/assets/product-desiccated-coconut.jpg";
-import productCharcoal from "@/assets/product-coconut-charcoal.png";
+import productCharcoal from "@/assets/product-charcoal-3.png";
+import heroCover from "@/assets/hero-coconut-palm.png";
 
 const Index = () => {
   const highlights = [{
@@ -46,7 +47,7 @@ const Index = () => {
       
       {/* Hero Section */}
       <section className="relative h-[90vh] flex items-center justify-center bg-cover bg-center" style={{
-      backgroundImage: `linear-gradient(rgba(28, 20, 13, 0.6), rgba(28, 20, 13, 0.6)), url(${productSemiHusked})`
+      backgroundImage: `linear-gradient(rgba(28, 20, 13, 0.6), rgba(28, 20, 13, 0.6)), url(${heroCover})`
     }}>
         <div className="container mx-auto px-4 text-center">
           <h1 className="font-playfair font-bold text-5xl md:text-7xl text-primary-foreground mb-6 animate-fade-in">

@@ -2,10 +2,10 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import productSemiHusked from "@/assets/product-semi-husked-coconut.png";
+import productSemiHusked from "@/assets/product-semi-husked-coconut-3.png";
 import productDesiccated from "@/assets/product-desiccated-coconut.jpg";
-import productCharcoal from "@/assets/product-coconut-charcoal.png";
-import productCopraPowder from "@/assets/product-copra-powder.jpg";
+import productCharcoal from "@/assets/product-charcoal-3.png";
+import productCopraPowder from "@/assets/product-copra-powder-2.jpg";
 import productCopraPellet from "@/assets/product-copra-pellet.jpg";
 import productOil from "@/assets/product-oil.jpg";
 import productGlycerine from "@/assets/product-crude-glycerine.jpg";
@@ -31,13 +31,13 @@ const Gallery = () => {
       category: "Products",
     },
     {
-      image: productCopraPowder,
-      title: "Copra Meal",
+      image: productCopraPellet,
+      title: "Copra Meal Pellet",
       category: "Products",
     },
     {
-      image: productCopraPellet,
-      title: "Copra Meal",
+      image: productCopraPowder,
+      title: "Copra Meal Powder",
       category: "Products",
     },
     {

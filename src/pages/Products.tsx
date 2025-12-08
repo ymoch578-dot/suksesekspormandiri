@@ -3,9 +3,9 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
-import productSemiHusked from "@/assets/product-semi-husked-coconut.png";
+import productSemiHusked from "@/assets/product-semi-husked-coconut-3.png";
 import productDesiccated from "@/assets/product-desiccated-coconut.jpg";
-import productCharcoal from "@/assets/product-coconut-charcoal.png";
+import productCharcoal from "@/assets/product-charcoal-3.png";
 import productCopraPowder from "@/assets/product-copra-powder.jpg";
 import productCopraPellet from "@/assets/product-copra-pellet.jpg";
 import productOil from "@/assets/product-oil.jpg";
@@ -38,7 +38,7 @@ const Products = () => {
       features: ["High carbon content", "Low ash percentage", "Long burning time", "Consistent quality"],
     },
     {
-      name: "Copra Meal",
+      name: "Copra Meal (Pellet and Powder)",
       images: [productCopraPowder, productCopraPellet],
       description: "Nutritious copra meal produced as a by-product of coconut oil extraction. Rich in protein and fiber, ideal for animal feed industries. Available in powder and pellet form.",
       applications: "Livestock feed, poultry feed, aquaculture, animal nutrition",
