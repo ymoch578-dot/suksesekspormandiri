@@ -3,27 +3,30 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
-import productCoconut from "@/assets/product-coconut.jpg";
-import productShredded from "@/assets/product-shredded.jpg";
-import productCharcoal from "@/assets/product-charcoal.jpg";
-import productCopra from "@/assets/product-copra.jpg";
+import productSemiHusked from "@/assets/product-semi-husked-coconut.png";
+import productDesiccated from "@/assets/product-desiccated-coconut.jpg";
+import productCharcoal from "@/assets/product-coconut-charcoal.png";
+import productCopraPowder from "@/assets/product-copra-powder.jpg";
+import productCopraPellet from "@/assets/product-copra-pellet.jpg";
 import productOil from "@/assets/product-oil.jpg";
-import productGlycerine from "@/assets/product-glycerine.jpg";
-import productPfad from "@/assets/product-pfad.jpg";
+import productGlycerine from "@/assets/product-crude-glycerine.jpg";
+import productPfad from "@/assets/product-pfad-new.jpg";
+import productPalmKernelShell from "@/assets/product-palm-kernel-shell.jpg";
+import productPalmKernelShellCharcoal from "@/assets/product-palm-kernel-shell-charcoal.jpg";
 
 const Products = () => {
   const products = [
     {
-      name: "Mature Coconuts (Kelapa Tua)",
-      image: productCoconut,
-      description: "Premium quality mature coconuts sourced from trusted farms across Indonesia. Ideal for coconut water, copra production, and various industrial applications.",
+      name: "Semi Husked Coconut",
+      image: productSemiHusked,
+      description: "Premium quality semi husked coconuts sourced from trusted farms across Indonesia. Ideal for coconut water, copra production, and various industrial applications.",
       applications: "Food processing, beverage industry, copra production, coconut oil manufacturing",
       features: ["Export-grade quality", "Properly selected and inspected", "Consistent size and weight", "Available year-round"],
     },
     {
-      name: "Shredded Coconut (Kelapa Parut)",
-      image: productShredded,
-      description: "Fresh coconut meat finely shredded and processed under strict hygiene standards. Perfect for food manufacturing and bakery industries.",
+      name: "Desiccated Coconut (High Fat)",
+      image: productDesiccated,
+      description: "Fresh coconut meat finely processed under strict hygiene standards. Perfect for food manufacturing and bakery industries.",
       applications: "Bakery products, confectionery, food manufacturing, dessert ingredients",
       features: ["Food-grade quality", "Proper moisture content", "Natural white color", "Customizable particle size"],
     },
@@ -36,8 +39,8 @@ const Products = () => {
     },
     {
       name: "Copra Meal",
-      image: productCopra,
-      description: "Nutritious copra meal produced as a by-product of coconut oil extraction. Rich in protein and fiber, ideal for animal feed industries.",
+      images: [productCopraPowder, productCopraPellet],
+      description: "Nutritious copra meal produced as a by-product of coconut oil extraction. Rich in protein and fiber, ideal for animal feed industries. Available in powder and pellet form.",
       applications: "Livestock feed, poultry feed, aquaculture, animal nutrition",
       features: ["High protein content", "Natural and chemical-free", "Consistent quality", "Properly dried and processed"],
     },
@@ -61,6 +64,20 @@ const Products = () => {
       description: "By-product of palm oil refining process. Used in various industrial applications including soap, animal feed, and biodiesel production.",
       applications: "Soap manufacturing, animal feed, oleochemicals, biodiesel production",
       features: ["Industrial specification", "Consistent fatty acid composition", "Proper storage conditions", "Bulk supply available"],
+    },
+    {
+      name: "Palm Kernel Shell",
+      image: productPalmKernelShell,
+      description: "Biomass fuel derived from palm oil production. Excellent renewable energy source with high calorific value for power generation and industrial heating.",
+      applications: "Biomass power plants, industrial boilers, cement kilns, renewable energy production",
+      features: ["High calorific value", "Low moisture content", "Sustainable biomass", "Bulk supply available"],
+    },
+    {
+      name: "Palm Kernel Shell Charcoal",
+      image: productPalmKernelShellCharcoal,
+      description: "High-quality charcoal produced from palm kernel shells. Excellent burning properties with high carbon content for industrial and commercial applications.",
+      applications: "Activated carbon production, industrial fuel, metallurgical applications, BBQ charcoal",
+      features: ["High carbon content", "Consistent quality", "Low ash content", "Bulk supply available"],
     },
   ];
 
@@ -90,11 +107,24 @@ const Products = () => {
               <Card key={index} className="overflow-hidden shadow-card hover:shadow-natural transition-shadow duration-300">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
                   <div className="aspect-square md:aspect-auto overflow-hidden">
-                    <img 
-                      src={product.image} 
-                      alt={product.name}
-                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                    />
+                    {'images' in product ? (
+                      <div className="grid grid-cols-2 h-full">
+                        {product.images.map((img, idx) => (
+                          <img 
+                            key={idx}
+                            src={img} 
+                            alt={`${product.name} ${idx + 1}`}
+                            className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                          />
+                        ))}
+                      </div>
+                    ) : (
+                      <img 
+                        src={product.image} 
+                        alt={product.name}
+                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                      />
+                    )}
                   </div>
                   <CardContent className="p-8 flex flex-col justify-center">
                     <h2 className="font-playfair font-bold text-3xl text-primary mb-4">
@@ -140,7 +170,7 @@ const Products = () => {
           <div className="max-w-4xl mx-auto text-center">
             <p className="font-work text-lg text-foreground/80 mb-6">
               <strong>Note:</strong> All products are available for export in bulk quantities. 
-              Pricing, minimum order quantities, and detailed specifications are provided upon inquiry. 
+              Pricing and detailed specifications are provided upon inquiry. 
               We can accommodate custom packaging and specific requirements based on your needs.
             </p>
             <Button 
@@ -158,11 +188,10 @@ const Products = () => {
       <section className="py-20 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
           <h2 className="font-playfair font-bold text-4xl md:text-5xl mb-6">
-            Interested in Our Products?
+            Need a Custom Product Specification?
           </h2>
           <p className="font-work text-xl mb-8 max-w-2xl mx-auto opacity-90">
-            Contact us for detailed specifications, pricing, and minimum order quantities. 
-            Our team is ready to assist with your sourcing needs.
+            We can accommodate specific requirements for volume, packaging, and quality specifications. Contact our team to discuss your needs.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
