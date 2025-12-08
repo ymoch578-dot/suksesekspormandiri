@@ -50,11 +50,16 @@ const Footer = () => {
                 <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0" />
                 <span>Malang, Jawa Timur, Indonesia</span>
               </li>
-              <li className="flex items-center gap-2">
-                <Mail className="w-5 h-5 flex-shrink-0" />
-                <a href="mailto:suksesekspormandiri@gmail.com" className="hover:text-accent transition-colors">
-                  suksesekspormandiri@gmail.com
-                </a>
+              <li className="flex items-start gap-2">
+                <Mail className="w-5 h-5 flex-shrink-0 mt-0.5" />
+                <div className="flex flex-col">
+                  <a href="mailto:suksesekspormandiri@gmail.com" className="hover:text-accent transition-colors">
+                    suksesekspormandiri@gmail.com
+                  </a>
+                  <a href="mailto:sales@suksesekspormandiri.com" className="hover:text-accent transition-colors">
+                    sales@suksesekspormandiri.com
+                  </a>
+                </div>
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="w-5 h-5 flex-shrink-0" />
@@ -79,11 +84,11 @@ const Footer = () => {
                 <Linkedin className="w-5 h-5" />
               </a>
               <a 
-                href="https://www.facebook.com/suksesekspormandiri" 
+                href="https://www.facebook.com/share/15Hpf3SYzd/" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="w-10 h-10 rounded-full bg-primary-foreground/10 hover:bg-accent flex items-center justify-center transition-colors"
-                aria-label="Facebook"
+                aria-label="Facebook - PT Sukses Ekspor Mandiri"
               >
                 <Facebook className="w-5 h-5" />
               </a>
