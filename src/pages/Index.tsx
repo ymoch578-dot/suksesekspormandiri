@@ -4,10 +4,10 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Award, Clock, DollarSign, Globe } from "lucide-react";
 import { Link } from "react-router-dom";
-import heroImage from "@/assets/hero-coconut.jpg";
-import productCoconut from "@/assets/product-coconut.jpg";
-import productShredded from "@/assets/product-shredded.jpg";
-import productCharcoal from "@/assets/product-charcoal.jpg";
+import productSemiHusked from "@/assets/product-semi-husked-coconut.png";
+import productDesiccated from "@/assets/product-desiccated-coconut.jpg";
+import productCharcoal from "@/assets/product-coconut-charcoal.png";
+
 const Index = () => {
   const highlights = [{
     icon: <Award className="w-10 h-10 text-accent" />,
@@ -26,25 +26,27 @@ const Index = () => {
     title: "Export-Ready Supply Chain",
     description: "Trusted quality for global industries"
   }];
+
   const featuredProducts = [{
-    name: "Mature Coconuts",
-    image: productCoconut,
-    description: "Premium quality mature coconuts for various industrial applications"
+    name: "Semi Husked Coconut",
+    image: productSemiHusked,
+    description: "Premium quality semi husked coconuts for various industrial applications"
   }, {
-    name: "Shredded Coconut",
-    image: productShredded,
-    description: "Fresh coconut meat, finely shredded for food industry"
+    name: "Desiccated Coconut (High Fat)",
+    image: productDesiccated,
+    description: "Fresh coconut meat, finely processed for food industry"
   }, {
     name: "Coconut Shell Charcoal",
     image: productCharcoal,
     description: "High-quality charcoal for industrial and commercial use"
   }];
+
   return <div className="min-h-screen bg-background">
       <Navbar />
       
       {/* Hero Section */}
       <section className="relative h-[90vh] flex items-center justify-center bg-cover bg-center" style={{
-      backgroundImage: `linear-gradient(rgba(28, 20, 13, 0.6), rgba(28, 20, 13, 0.6)), url(${heroImage})`
+      backgroundImage: `linear-gradient(rgba(28, 20, 13, 0.6), rgba(28, 20, 13, 0.6)), url(${productSemiHusked})`
     }}>
         <div className="container mx-auto px-4 text-center">
           <h1 className="font-playfair font-bold text-5xl md:text-7xl text-primary-foreground mb-6 animate-fade-in">

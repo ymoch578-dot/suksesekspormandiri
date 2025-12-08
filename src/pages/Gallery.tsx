@@ -2,30 +2,27 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import heroImage from "@/assets/hero-coconut.jpg";
-import productCoconut from "@/assets/product-coconut.jpg";
-import productShredded from "@/assets/product-shredded.jpg";
-import productCharcoal from "@/assets/product-charcoal.jpg";
-import productCopra from "@/assets/product-copra.jpg";
+import productSemiHusked from "@/assets/product-semi-husked-coconut.png";
+import productDesiccated from "@/assets/product-desiccated-coconut.jpg";
+import productCharcoal from "@/assets/product-coconut-charcoal.png";
+import productCopraPowder from "@/assets/product-copra-powder.jpg";
+import productCopraPellet from "@/assets/product-copra-pellet.jpg";
 import productOil from "@/assets/product-oil.jpg";
-import productGlycerine from "@/assets/product-glycerine.jpg";
-import productPfad from "@/assets/product-pfad.jpg";
+import productGlycerine from "@/assets/product-crude-glycerine.jpg";
+import productPfad from "@/assets/product-pfad-new.jpg";
+import productPalmKernelShell from "@/assets/product-palm-kernel-shell.jpg";
+import productPalmKernelShellCharcoal from "@/assets/product-palm-kernel-shell-charcoal.jpg";
 
 const Gallery = () => {
   const galleryImages = [
     {
-      image: heroImage,
-      title: "Fresh Coconut Harvest",
-      category: "Production",
-    },
-    {
-      image: productCoconut,
-      title: "Premium Mature Coconuts",
+      image: productSemiHusked,
+      title: "Semi Husked Coconut",
       category: "Products",
     },
     {
-      image: productShredded,
-      title: "Shredded Coconut Processing",
+      image: productDesiccated,
+      title: "Desiccated Coconut (High Fat)",
       category: "Products",
     },
     {
@@ -34,8 +31,13 @@ const Gallery = () => {
       category: "Products",
     },
     {
-      image: productCopra,
-      title: "Copra Meal Production",
+      image: productCopraPowder,
+      title: "Copra Meal",
+      category: "Products",
+    },
+    {
+      image: productCopraPellet,
+      title: "Copra Meal",
       category: "Products",
     },
     {
@@ -45,12 +47,22 @@ const Gallery = () => {
     },
     {
       image: productGlycerine,
-      title: "Crude Glycerine Storage",
+      title: "Crude Glycerine",
       category: "Products",
     },
     {
       image: productPfad,
       title: "Palm Fatty Acid Distillate",
+      category: "Products",
+    },
+    {
+      image: productPalmKernelShell,
+      title: "Palm Kernel Shell",
+      category: "Products",
+    },
+    {
+      image: productPalmKernelShellCharcoal,
+      title: "Palm Kernel Shell Charcoal",
       category: "Products",
     },
   ];
@@ -108,17 +120,13 @@ const Gallery = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-playfair font-bold text-4xl text-primary mb-6">
-              Quality You Can See
+              Export Ready Supply Chain
             </h2>
             <p className="font-work text-lg text-foreground/80 mb-8 leading-relaxed">
-              Our gallery showcases the quality of our products and the care we take in every step of 
-              the process—from sourcing raw materials to final packaging. We believe in transparency 
-              and invite you to see the standards we maintain for all our export products.
+              We have developed an integrated supply chain system designed to support international buyers with clarity, efficiency, and professionalism. From quality control and export documentation preparation to logistics coordination and buyer communication, every process is structured to ensure smooth and secure transactions.
             </p>
             <p className="font-work text-lg text-foreground/80 leading-relaxed">
-              Whether it's coconut products or palm derivatives, every item undergoes strict quality 
-              control to ensure it meets your specifications and international standards. These images 
-              represent our commitment to excellence and professional service.
+              Whether you are an established importer or new to sourcing products from Indonesia, our team is ready to assist you at every stage to ensure that each order meets the agreed specifications and quality standards.
             </p>
           </div>
         </div>
@@ -128,7 +136,7 @@ const Gallery = () => {
       <section className="py-20 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
           <h2 className="font-playfair font-bold text-4xl md:text-5xl mb-6">
-            Want to Learn More About Our Products?
+            Interested in Detailed Product Information?
           </h2>
           <p className="font-work text-xl mb-8 max-w-2xl mx-auto opacity-90">
             Contact us for detailed product information, specifications, or to request samples. 

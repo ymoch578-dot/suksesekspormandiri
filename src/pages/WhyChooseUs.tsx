@@ -24,8 +24,8 @@ const WhyChooseUs = () => {
     },
     {
       icon: <Users className="w-12 h-12 text-accent" />,
-      title: "Global Export Experience",
-      description: "We have successfully served international buyers across multiple countries. Our team understands export documentation, logistics, and the specific requirements of different markets.",
+      title: "Export Ready Supply Chain",
+      description: "Ready to support international buyers with professional handling of documentation, logistics, and technical requirements.",
     },
     {
       icon: <ShieldCheck className="w-12 h-12 text-accent" />,
@@ -145,41 +145,6 @@ const WhyChooseUs = () => {
                 </CardContent>
               </Card>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Export Experience */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="font-playfair font-bold text-4xl text-primary mb-6">
-              Serving Global Markets
-            </h2>
-            <p className="font-work text-lg text-foreground/80 mb-8 leading-relaxed">
-              We have successfully exported our products to buyers across Asia, Middle East, and other regions. 
-              Our experience with international trade includes handling various documentation requirements, 
-              customs procedures, and logistics coordination. Whether you're an established importer or new to 
-              sourcing from Indonesia, we're equipped to support your needs professionally.
-            </p>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
-              <div className="text-center">
-                <div className="font-playfair font-bold text-4xl text-accent mb-2">100+</div>
-                <div className="font-work text-muted-foreground">Shipments Delivered</div>
-              </div>
-              <div className="text-center">
-                <div className="font-playfair font-bold text-4xl text-accent mb-2">15+</div>
-                <div className="font-work text-muted-foreground">Countries Served</div>
-              </div>
-              <div className="text-center">
-                <div className="font-playfair font-bold text-4xl text-accent mb-2">7+</div>
-                <div className="font-work text-muted-foreground">Product Categories</div>
-              </div>
-              <div className="text-center">
-                <div className="font-playfair font-bold text-4xl text-accent mb-2">99%</div>
-                <div className="font-work text-muted-foreground">Customer Satisfaction</div>
-              </div>
-            </div>
           </div>
         </div>
       </section>

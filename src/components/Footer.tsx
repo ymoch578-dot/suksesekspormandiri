@@ -1,5 +1,6 @@
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin, Phone, Linkedin, Facebook, Instagram } from "lucide-react";
 import { NavLink } from "@/components/NavLink";
+
 const Footer = () => {
   return <footer className="bg-primary text-primary-foreground">
       <div className="container mx-auto px-4 py-12">
@@ -67,14 +68,34 @@ const Footer = () => {
           {/* Social Media */}
           <div>
             <h4 className="font-work font-semibold text-lg mb-4">Follow Us</h4>
-            <div className="space-y-2 font-work">
-              <a href="https://www.linkedin.com/company/pt-sukses-ekspor-mandiri" target="_blank" rel="noopener noreferrer" className="block text-primary-foreground/80 hover:text-accent transition-colors">
-                LinkedIn: PT. Sukses Ekspor Mandiri
+            <div className="flex gap-4">
+              <a 
+                href="https://www.linkedin.com/company/pt-sukses-ekspor-mandiri" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="w-10 h-10 rounded-full bg-primary-foreground/10 hover:bg-accent flex items-center justify-center transition-colors"
+                aria-label="LinkedIn"
+              >
+                <Linkedin className="w-5 h-5" />
               </a>
-              <a href="https://www.facebook.com/suksesekspormandiri" target="_blank" rel="noopener noreferrer" className="block text-primary-foreground/80 hover:text-accent transition-colors">
-                Facebook: PT. Sukses Ekspor Mandiri
+              <a 
+                href="https://www.facebook.com/suksesekspormandiri" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="w-10 h-10 rounded-full bg-primary-foreground/10 hover:bg-accent flex items-center justify-center transition-colors"
+                aria-label="Facebook"
+              >
+                <Facebook className="w-5 h-5" />
               </a>
-              <a href="https://www.instagram.com/suksesekspormandiri" target="_blank" rel="noopener noreferrer" className="block text-primary-foreground/80 hover:text-accent transition-colors">Instagram: suksesekspormandiri</a>
+              <a 
+                href="https://www.instagram.com/suksesekspormandiri" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="w-10 h-10 rounded-full bg-primary-foreground/10 hover:bg-accent flex items-center justify-center transition-colors"
+                aria-label="Instagram"
+              >
+                <Instagram className="w-5 h-5" />
+              </a>
             </div>
           </div>
         </div>
