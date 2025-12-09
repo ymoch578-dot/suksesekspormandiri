@@ -47,7 +47,7 @@ const Products = () => {
     {
       name: "Crude Coconut Oil",
       image: productOil,
-      description: "Unrefined coconut oil extracted from fresh coconut meat. Retains natural coconut aroma and beneficial properties for various industrial applications.",
+      description: "Crude coconut oil is unrefined coconut oil extracted from dried mature coconut meat (copra). It maintains its natural properties and is widely used for industrial applications.",
       applications: "Soap manufacturing, cosmetics industry, biodiesel production, industrial lubricants",
       features: ["Natural extraction process", "Consistent quality", "Proper storage and packaging", "Traceable sourcing"],
     },
