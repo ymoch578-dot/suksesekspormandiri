@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
+import { ScrollAnimationWrapper } from "@/hooks/useScrollAnimation";
 import productSemiHusked from "@/assets/product-semi-husked-coconut-3.png";
 import productDesiccated from "@/assets/product-desiccated-coconut.jpg";
 import productCharcoal from "@/assets/product-charcoal-3.png";
@@ -88,14 +89,16 @@ const Products = () => {
       {/* Hero Section */}
       <section className="py-20 bg-gradient-light">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="font-playfair font-bold text-5xl md:text-6xl text-primary mb-6">
-              Our Products
-            </h1>
-            <p className="font-work text-xl text-muted-foreground">
-              Premium coconut and palm derivatives for global B2B markets
-            </p>
-          </div>
+          <ScrollAnimationWrapper animation="fade-up">
+            <div className="max-w-4xl mx-auto text-center">
+              <h1 className="font-playfair font-bold text-5xl md:text-6xl text-primary mb-6">
+                Our Products
+              </h1>
+              <p className="font-work text-xl text-muted-foreground">
+                Premium coconut and palm derivatives for global B2B markets
+              </p>
+            </div>
+          </ScrollAnimationWrapper>
         </div>
       </section>
 
@@ -104,61 +107,63 @@ const Products = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 gap-12 max-w-6xl mx-auto">
             {products.map((product, index) => (
-              <Card key={index} className="overflow-hidden shadow-card hover:shadow-natural transition-shadow duration-300">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
-                  <div className="aspect-square md:aspect-auto overflow-hidden">
-                    {'images' in product ? (
-                      <div className="grid grid-cols-2 h-full">
-                        {product.images.map((img, idx) => (
-                          <img 
-                            key={idx}
-                            src={img} 
-                            alt={`${product.name} ${idx + 1}`}
-                            className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                          />
-                        ))}
-                      </div>
-                    ) : (
-                      <img 
-                        src={product.image} 
-                        alt={product.name}
-                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                      />
-                    )}
-                  </div>
-                  <CardContent className="p-8 flex flex-col justify-center">
-                    <h2 className="font-playfair font-bold text-3xl text-primary mb-4">
-                      {product.name}
-                    </h2>
-                    <p className="font-work text-foreground/80 mb-4 leading-relaxed">
-                      {product.description}
-                    </p>
-                    
-                    <div className="mb-4">
-                      <h3 className="font-work font-semibold text-lg text-primary mb-2">
-                        Applications:
-                      </h3>
-                      <p className="font-work text-muted-foreground">
-                        {product.applications}
+              <ScrollAnimationWrapper key={index} animation="fade-up" delay={index * 50}>
+                <Card className="overflow-hidden shadow-card hover:shadow-natural transition-shadow duration-300">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
+                    <div className="aspect-square md:aspect-auto overflow-hidden">
+                      {'images' in product ? (
+                        <div className="grid grid-cols-2 h-full">
+                          {product.images.map((img, idx) => (
+                            <img 
+                              key={idx}
+                              src={img} 
+                              alt={`${product.name} ${idx + 1}`}
+                              className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                            />
+                          ))}
+                        </div>
+                      ) : (
+                        <img 
+                          src={product.image} 
+                          alt={product.name}
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      )}
+                    </div>
+                    <CardContent className="p-8 flex flex-col justify-center">
+                      <h2 className="font-playfair font-bold text-3xl text-primary mb-4">
+                        {product.name}
+                      </h2>
+                      <p className="font-work text-foreground/80 mb-4 leading-relaxed">
+                        {product.description}
                       </p>
-                    </div>
+                      
+                      <div className="mb-4">
+                        <h3 className="font-work font-semibold text-lg text-primary mb-2">
+                          Applications:
+                        </h3>
+                        <p className="font-work text-muted-foreground">
+                          {product.applications}
+                        </p>
+                      </div>
 
-                    <div>
-                      <h3 className="font-work font-semibold text-lg text-primary mb-2">
-                        Key Features:
-                      </h3>
-                      <ul className="font-work text-muted-foreground space-y-1">
-                        {product.features.map((feature, idx) => (
-                          <li key={idx} className="flex items-start gap-2">
-                            <span className="text-accent mt-1">•</span>
-                            <span>{feature}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  </CardContent>
-                </div>
-              </Card>
+                      <div>
+                        <h3 className="font-work font-semibold text-lg text-primary mb-2">
+                          Key Features:
+                        </h3>
+                        <ul className="font-work text-muted-foreground space-y-1">
+                          {product.features.map((feature, idx) => (
+                            <li key={idx} className="flex items-start gap-2">
+                              <span className="text-accent mt-1">•</span>
+                              <span>{feature}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </CardContent>
+                  </div>
+                </Card>
+              </ScrollAnimationWrapper>
             ))}
           </div>
         </div>
@@ -167,49 +172,53 @@ const Products = () => {
       {/* Inquiry Note */}
       <section className="py-12 bg-muted">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <p className="font-work text-lg text-foreground/80 mb-6">
-              <strong>Note:</strong> All products are available for export in bulk quantities. 
-              Pricing and detailed specifications are provided upon inquiry. 
-              We can accommodate custom packaging and specific requirements based on your needs.
-            </p>
-            <Button 
-              size="lg"
-              className="bg-accent hover:bg-accent/90 text-accent-foreground font-work font-semibold"
-              asChild
-            >
-              <Link to="/contact">Request Product Information</Link>
-            </Button>
-          </div>
+          <ScrollAnimationWrapper animation="fade-up">
+            <div className="max-w-4xl mx-auto text-center">
+              <p className="font-work text-lg text-foreground/80 mb-6">
+                <strong>Note:</strong> All products are available for export in bulk quantities. 
+                Pricing and detailed specifications are provided upon inquiry. 
+                We can accommodate custom packaging and specific requirements based on your needs.
+              </p>
+              <Button 
+                size="lg"
+                className="bg-accent hover:bg-accent/90 text-accent-foreground font-work font-semibold"
+                asChild
+              >
+                <Link to="/contact">Request Product Information</Link>
+              </Button>
+            </div>
+          </ScrollAnimationWrapper>
         </div>
       </section>
 
       {/* CTA Section */}
       <section className="py-20 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="font-playfair font-bold text-4xl md:text-5xl mb-6">
-            Need a Custom Product Specification?
-          </h2>
-          <p className="font-work text-xl mb-8 max-w-2xl mx-auto opacity-90">
-            We can accommodate specific requirements for volume, packaging, and quality specifications. Contact our team to discuss your needs.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button 
-              size="lg"
-              variant="secondary"
-              className="font-work font-semibold text-lg px-8"
-              onClick={() => window.open('https://wa.me/6285124480871', '_blank')}
-            >
-              WhatsApp Now
-            </Button>
-            <Button 
-              size="lg"
-              className="bg-accent hover:bg-accent/90 text-accent-foreground font-work font-semibold text-lg px-8"
-              asChild
-            >
-              <Link to="/contact">Send Inquiry</Link>
-            </Button>
-          </div>
+          <ScrollAnimationWrapper animation="fade-up">
+            <h2 className="font-playfair font-bold text-4xl md:text-5xl mb-6">
+              Need a Custom Product Specification?
+            </h2>
+            <p className="font-work text-xl mb-8 max-w-2xl mx-auto opacity-90">
+              We can accommodate specific requirements for volume, packaging, and quality specifications. Contact our team to discuss your needs.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button 
+                size="lg"
+                variant="secondary"
+                className="font-work font-semibold text-lg px-8"
+                onClick={() => window.open('https://wa.me/6285124480871', '_blank')}
+              >
+                WhatsApp Now
+              </Button>
+              <Button 
+                size="lg"
+                className="bg-accent hover:bg-accent/90 text-accent-foreground font-work font-semibold text-lg px-8"
+                asChild
+              >
+                <Link to="/contact">Send Inquiry</Link>
+              </Button>
+            </div>
+          </ScrollAnimationWrapper>
         </div>
       </section>
 
