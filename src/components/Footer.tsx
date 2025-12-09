@@ -84,7 +84,7 @@ const Footer = () => {
                 <Linkedin className="w-5 h-5" />
               </a>
               <a 
-                href="https://www.facebook.com/share/15Hpf3SYzd/" 
+                href="https://www.facebook.com/share/17onWDUhM4/" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="w-10 h-10 rounded-full bg-primary-foreground/10 hover:bg-accent flex items-center justify-center transition-colors"
@@ -93,7 +93,7 @@ const Footer = () => {
                 <Facebook className="w-5 h-5" />
               </a>
               <a 
-                href="https://www.instagram.com/suksesekspormandiri" 
+                href="https://www.instagram.com/suksesekspormandiri?igsh=MWV5Zjl1eDY2MmRjcQ==" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="w-10 h-10 rounded-full bg-primary-foreground/10 hover:bg-accent flex items-center justify-center transition-colors"
