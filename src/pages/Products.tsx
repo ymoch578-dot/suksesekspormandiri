@@ -109,8 +109,8 @@ const Products = () => {
             {products.map((product, index) => (
               <ScrollAnimationWrapper key={index} animation="fade-up" delay={index * 50}>
                 <Card className="overflow-hidden shadow-card hover:shadow-natural transition-shadow duration-300">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
-                    <div className="aspect-square md:aspect-auto overflow-hidden">
+                  <div className={`grid grid-cols-1 md:grid-cols-2 gap-0 ${product.name === "Crude Glycerine" || product.name === "Palm Fatty Acid Distillate (PFAD)" ? "md:grid-cols-[300px_1fr]" : ""}`}>
+                    <div className={`overflow-hidden ${product.name === "Crude Glycerine" || product.name === "Palm Fatty Acid Distillate (PFAD)" ? "aspect-square max-h-[300px]" : "aspect-square md:aspect-auto"}`}>
                       {'images' in product ? (
                         <div className="grid grid-cols-2 h-full">
                           {product.images.map((img, idx) => (

@@ -8,7 +8,7 @@ import { ScrollAnimationWrapper } from "@/hooks/useScrollAnimation";
 import productSemiHusked from "@/assets/product-semi-husked-coconut-3.png";
 import productDesiccated from "@/assets/product-desiccated-coconut.jpg";
 import productCharcoal from "@/assets/product-charcoal-3.png";
-import heroCover from "@/assets/hero-coconut-palm.png";
+import heroCover from "@/assets/hero-cover-website.png";
 
 const Index = () => {
   const highlights = [{

@@ -105,15 +105,15 @@ const About = () => {
               {/* Vision */}
               <ScrollAnimationWrapper animation="fade-up">
                 <div className="bg-card rounded-2xl p-8 shadow-card border border-border/50 h-full">
-                  <div className="flex items-center gap-4 mb-6">
-                    <div className="w-14 h-14 rounded-full bg-accent/10 flex items-center justify-center">
+                  <div className="flex flex-col items-center text-center mb-6">
+                    <div className="w-14 h-14 rounded-full bg-accent/10 flex items-center justify-center mb-4">
                       <Eye className="w-7 h-7 text-accent" />
                     </div>
                     <h2 className="font-playfair font-bold text-3xl text-primary">
                       Our Vision
                     </h2>
                   </div>
-                  <p className="font-work text-lg text-foreground/80 leading-relaxed">
+                  <p className="font-work text-lg text-foreground/80 leading-relaxed text-center">
                     To become a trusted and globally competitive Indonesian international trading company in providing coconut and palm derivatives, while delivering added value to business partners worldwide.
                   </p>
                 </div>

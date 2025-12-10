@@ -96,12 +96,20 @@ const Contact = () => {
                     <Mail className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
                     <div>
                       <h3 className="font-work font-semibold text-lg text-primary mb-1">Email</h3>
-                      <a 
-                        href="mailto:suksesekspormandiri@gmail.com"
-                        className="font-work text-foreground/80 hover:text-accent transition-colors"
-                      >
-                        suksesekspormandiri@gmail.com
-                      </a>
+                      <div className="flex flex-col gap-1">
+                        <a 
+                          href="mailto:suksesekspormandiri@gmail.com"
+                          className="font-work text-foreground/80 hover:text-accent transition-colors"
+                        >
+                          suksesekspormandiri@gmail.com
+                        </a>
+                        <a 
+                          href="mailto:sales@suksesekspormandiri.com"
+                          className="font-work text-foreground/80 hover:text-accent transition-colors"
+                        >
+                          sales@suksesekspormandiri.com
+                        </a>
+                      </div>
                     </div>
                   </div>
 
