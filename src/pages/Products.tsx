@@ -10,8 +10,8 @@ import productCharcoal from "@/assets/product-charcoal-3.png";
 import productCopraPowder from "@/assets/product-copra-powder.jpg";
 import productCopraPellet from "@/assets/product-copra-pellet.jpg";
 import productOil from "@/assets/product-oil.jpg";
-import productGlycerine from "@/assets/product-crude-glycerine.jpg";
-import productPfad from "@/assets/product-pfad-new.jpg";
+import productGlycerine from "@/assets/product-crude-glycerine-new.png";
+import productPfad from "@/assets/product-pfad-new.png";
 import productPalmKernelShell from "@/assets/product-palm-kernel-shell.jpg";
 import productPalmKernelShellCharcoal from "@/assets/product-palm-kernel-shell-charcoal.jpg";
 
@@ -109,8 +109,8 @@ const Products = () => {
             {products.map((product, index) => (
               <ScrollAnimationWrapper key={index} animation="fade-up" delay={index * 50}>
                 <Card className="overflow-hidden shadow-card hover:shadow-natural transition-shadow duration-300">
-                  <div className={`grid grid-cols-1 md:grid-cols-2 gap-0 ${product.name === "Crude Glycerine" || product.name === "Palm Fatty Acid Distillate (PFAD)" ? "md:grid-cols-[300px_1fr]" : ""}`}>
-                    <div className={`overflow-hidden ${product.name === "Crude Glycerine" || product.name === "Palm Fatty Acid Distillate (PFAD)" ? "aspect-square max-h-[300px]" : "aspect-square md:aspect-auto"}`}>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
+                    <div className="aspect-square md:aspect-auto overflow-hidden">
                       {'images' in product ? (
                         <div className="grid grid-cols-2 h-full">
                           {product.images.map((img, idx) => (
