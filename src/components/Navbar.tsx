@@ -20,7 +20,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <NavLink to="/" className="flex items-center space-x-3">
+          <NavLink to="/" className="flex items-center space-x-3" onClick={() => window.scrollTo(0, 0)}>
             <img 
               src="/assets/logo.png" 
               alt="PT. Sukses Ekspor Mandiri Logo" 
@@ -39,6 +39,7 @@ const Navbar = () => {
                 to={link.to}
                 className="font-work text-foreground hover:text-accent transition-colors duration-300 font-medium"
                 activeClassName="text-accent"
+                onClick={() => window.scrollTo(0, 0)}
               >
                 {link.label}
               </NavLink>
@@ -70,7 +71,10 @@ const Navbar = () => {
                 to={link.to}
                 className="block py-2 font-work text-foreground hover:text-accent transition-colors"
                 activeClassName="text-accent font-semibold"
-                onClick={() => setIsOpen(false)}
+                onClick={() => {
+                  setIsOpen(false);
+                  window.scrollTo(0, 0);
+                }}
               >
                 {link.label}
               </NavLink>
