@@ -20,22 +20,22 @@ const Footer = () => {
             <h4 className="font-work font-semibold text-lg mb-4">Quick Links</h4>
             <ul className="space-y-2 font-work">
               <li>
-                <NavLink to="/about" className="text-primary-foreground/80 hover:text-accent transition-colors" onClick={() => window.scrollTo(0, 0)}>
+                <NavLink to="/about" className="text-primary-foreground/80 hover:text-accent transition-colors" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                   About Us
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/products" className="text-primary-foreground/80 hover:text-accent transition-colors" onClick={() => window.scrollTo(0, 0)}>
+                <NavLink to="/products" className="text-primary-foreground/80 hover:text-accent transition-colors" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                   Products
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/why-choose-us" className="text-primary-foreground/80 hover:text-accent transition-colors" onClick={() => window.scrollTo(0, 0)}>
+                <NavLink to="/why-choose-us" className="text-primary-foreground/80 hover:text-accent transition-colors" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                   Why Choose Us
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/contact" className="text-primary-foreground/80 hover:text-accent transition-colors" onClick={() => window.scrollTo(0, 0)}>
+                <NavLink to="/contact" className="text-primary-foreground/80 hover:text-accent transition-colors" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                   Contact
                 </NavLink>
               </li>
