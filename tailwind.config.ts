@@ -47,13 +47,25 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        "coconut-green": {
-          DEFAULT: "hsl(var(--coconut-green))",
-          light: "hsl(var(--coconut-green-light))",
+        warm: {
+          DEFAULT: "hsl(var(--warm))",
+          foreground: "hsl(var(--warm-foreground))",
         },
-        brown: {
-          DEFAULT: "hsl(var(--brown))",
-          light: "hsl(var(--brown-light))",
+        "forest-green": {
+          DEFAULT: "hsl(var(--forest-green))",
+          light: "hsl(var(--forest-green-light))",
+        },
+        "olive-green": {
+          DEFAULT: "hsl(var(--olive-green))",
+          light: "hsl(var(--olive-green-light))",
+        },
+        "lime-accent": {
+          DEFAULT: "hsl(var(--lime-accent))",
+          light: "hsl(var(--lime-accent-light))",
+        },
+        terracotta: {
+          DEFAULT: "hsl(var(--terracotta))",
+          light: "hsl(var(--terracotta-light))",
         },
       },
       fontFamily: {
@@ -62,11 +74,15 @@ export default {
       },
       backgroundImage: {
         'gradient-primary': 'var(--gradient-primary)',
+        'gradient-secondary': 'var(--gradient-secondary)',
+        'gradient-accent': 'var(--gradient-accent)',
+        'gradient-warm': 'var(--gradient-warm)',
         'gradient-light': 'var(--gradient-light)',
       },
       boxShadow: {
         'natural': 'var(--shadow-natural)',
         'card': 'var(--shadow-card)',
+        'accent': 'var(--shadow-accent)',
       },
       borderRadius: {
         lg: "var(--radius)",
