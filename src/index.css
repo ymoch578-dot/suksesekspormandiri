@@ -8,89 +8,107 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Natural Earthy Palette for Export Business */
-    --background: 32 40% 97%;
-    --foreground: 28 30% 15%;
-
-    --card: 30 45% 98%;
-    --card-foreground: 28 30% 15%;
-
-    --popover: 30 45% 98%;
-    --popover-foreground: 28 30% 15%;
-
-    /* Deep coconut brown - professional and natural */
-    --primary: 28 45% 25%;
-    --primary-foreground: 32 40% 98%;
-
-    /* Warm beige/cream - secondary actions */
-    --secondary: 32 35% 88%;
-    --secondary-foreground: 28 45% 25%;
-
-    /* Muted earth tones */
-    --muted: 32 30% 92%;
-    --muted-foreground: 28 20% 45%;
-
-    /* Natural green accent - coconut/palm theme */
-    --accent: 142 35% 45%;
-    --accent-foreground: 32 40% 98%;
-
-    /* Coconut green for highlights */
-    --coconut-green: 142 40% 50%;
-    --coconut-green-light: 142 35% 92%;
+    /* Professional Export Business Color Palette */
+    /* Extracted from brand colors: Dark Green, Olive Green, Lime Green, Brown */
     
-    /* Warm brown for text and borders */
-    --brown: 28 45% 25%;
-    --brown-light: 28 25% 70%;
+    /* Core Brand Colors */
+    --forest-green: 85 60% 18%;      /* Dark green - trust & stability */
+    --olive-green: 80 45% 35%;       /* Medium olive - harmony & growth */
+    --lime-accent: 72 70% 45%;       /* Vibrant lime - energy & CTAs */
+    --terracotta: 15 35% 38%;        /* Warm brown - reliability */
+    
+    /* Light variants */
+    --forest-green-light: 85 40% 92%;
+    --olive-green-light: 80 35% 90%;
+    --lime-accent-light: 72 50% 92%;
+    --terracotta-light: 15 25% 92%;
+    
+    /* Backgrounds - professional & clean */
+    --background: 80 20% 97%;
+    --foreground: 85 50% 12%;
+
+    --card: 80 25% 98%;
+    --card-foreground: 85 50% 12%;
+
+    --popover: 80 25% 98%;
+    --popover-foreground: 85 50% 12%;
+
+    /* Primary - Forest Green (trust, professionalism) */
+    --primary: 85 60% 18%;
+    --primary-foreground: 80 20% 98%;
+
+    /* Secondary - Olive Green (harmony, growth) */
+    --secondary: 80 35% 90%;
+    --secondary-foreground: 80 45% 25%;
+
+    /* Muted - subtle olive tones */
+    --muted: 80 20% 92%;
+    --muted-foreground: 80 25% 45%;
+
+    /* Accent - Lime Green (energy, CTAs) */
+    --accent: 72 70% 45%;
+    --accent-foreground: 85 60% 10%;
+
+    /* Terracotta for warm accents */
+    --warm: 15 35% 38%;
+    --warm-foreground: 15 20% 95%;
 
     --destructive: 0 72% 51%;
-    --destructive-foreground: 32 40% 98%;
+    --destructive-foreground: 80 20% 98%;
 
-    --border: 32 25% 88%;
-    --input: 32 25% 90%;
-    --ring: 28 45% 25%;
+    --border: 80 20% 85%;
+    --input: 80 20% 90%;
+    --ring: 85 60% 18%;
 
     --radius: 0.5rem;
 
-    /* Gradient for hero sections */
-    --gradient-primary: linear-gradient(135deg, hsl(28 45% 25%) 0%, hsl(28 40% 35%) 100%);
-    --gradient-light: linear-gradient(180deg, hsl(32 45% 98%) 0%, hsl(32 35% 95%) 100%);
+    /* Gradients for hero sections */
+    --gradient-primary: linear-gradient(135deg, hsl(85 60% 18%) 0%, hsl(80 45% 28%) 100%);
+    --gradient-secondary: linear-gradient(135deg, hsl(80 45% 35%) 0%, hsl(85 50% 25%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(72 70% 45%) 0%, hsl(80 50% 40%) 100%);
+    --gradient-warm: linear-gradient(135deg, hsl(15 35% 38%) 0%, hsl(20 40% 30%) 100%);
+    --gradient-light: linear-gradient(180deg, hsl(80 25% 98%) 0%, hsl(80 20% 95%) 100%);
     
-    /* Subtle texture shadow */
-    --shadow-natural: 0 4px 20px -4px hsl(28 45% 25% / 0.15);
-    --shadow-card: 0 2px 12px -2px hsl(28 30% 15% / 0.08);
+    /* Shadows */
+    --shadow-natural: 0 4px 20px -4px hsl(85 60% 18% / 0.15);
+    --shadow-card: 0 2px 12px -2px hsl(85 50% 12% / 0.08);
+    --shadow-accent: 0 4px 16px -4px hsl(72 70% 45% / 0.25);
     
     /* Smooth professional transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .dark {
-    --background: 28 30% 8%;
-    --foreground: 32 40% 95%;
+    --background: 85 30% 8%;
+    --foreground: 80 20% 95%;
 
-    --card: 28 25% 12%;
-    --card-foreground: 32 40% 95%;
+    --card: 85 25% 12%;
+    --card-foreground: 80 20% 95%;
 
-    --popover: 28 25% 12%;
-    --popover-foreground: 32 40% 95%;
+    --popover: 85 25% 12%;
+    --popover-foreground: 80 20% 95%;
 
-    --primary: 32 40% 88%;
-    --primary-foreground: 28 45% 15%;
+    --primary: 72 60% 55%;
+    --primary-foreground: 85 50% 10%;
 
-    --secondary: 28 20% 20%;
-    --secondary-foreground: 32 40% 95%;
+    --secondary: 80 20% 20%;
+    --secondary-foreground: 80 20% 95%;
 
-    --muted: 28 20% 18%;
-    --muted-foreground: 32 20% 60%;
+    --muted: 80 20% 18%;
+    --muted-foreground: 80 15% 60%;
 
-    --accent: 142 35% 55%;
-    --accent-foreground: 28 30% 8%;
+    --accent: 72 70% 50%;
+    --accent-foreground: 85 50% 8%;
+
+    --warm: 15 30% 45%;
+    --warm-foreground: 15 15% 95%;
 
     --destructive: 0 62% 45%;
-    --destructive-foreground: 32 40% 95%;
+    --destructive-foreground: 80 20% 95%;
 
-    --border: 28 20% 22%;
-    --input: 28 20% 20%;
-    --ring: 32 40% 88%;
+    --border: 80 20% 22%;
+    --input: 80 20% 20%;
+    --ring: 72 60% 55%;
   }
 }
 

@@ -264,7 +264,7 @@ const Contact = () => {
       </section>
 
       {/* Quick Contact CTA */}
-      <section className="py-20 bg-primary text-primary-foreground">
+      <section className="py-20 bg-olive-green text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
           <ScrollAnimationWrapper animation="fade-up">
             <h2 className="font-playfair font-bold text-4xl md:text-5xl mb-6">
