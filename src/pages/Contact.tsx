@@ -93,19 +93,19 @@ const Contact = () => {
                   </div>
 
                   <div className="flex items-start gap-4">
-                    <Mail className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
+                    <Mail className="w-6 h-6 text-sky-cyan flex-shrink-0 mt-1" />
                     <div>
                       <h3 className="font-work font-semibold text-lg text-primary mb-1">Email</h3>
                       <div className="flex flex-col gap-1">
                         <a 
                           href="mailto:suksesekspormandiri@gmail.com"
-                          className="font-work text-foreground/80 hover:text-accent transition-colors"
+                          className="font-work text-foreground/80 hover:text-primary transition-colors"
                         >
                           suksesekspormandiri@gmail.com
                         </a>
                         <a 
                           href="mailto:sales@suksesekspormandiri.com"
-                          className="font-work text-foreground/80 hover:text-accent transition-colors"
+                          className="font-work text-foreground/80 hover:text-primary transition-colors"
                         >
                           sales@suksesekspormandiri.com
                         </a>
@@ -121,7 +121,7 @@ const Contact = () => {
                         href="https://wa.me/6285124480871"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="font-work text-foreground/80 hover:text-accent transition-colors"
+                        className="font-work text-foreground/80 hover:text-primary transition-colors"
                       >
                         +62 851-2448-0871
                       </a>
@@ -264,7 +264,7 @@ const Contact = () => {
       </section>
 
       {/* Quick Contact CTA */}
-      <section className="py-20 bg-olive-green text-primary-foreground">
+      <section className="py-20 bg-royal-blue text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
           <ScrollAnimationWrapper animation="fade-up">
             <h2 className="font-playfair font-bold text-4xl md:text-5xl mb-6">

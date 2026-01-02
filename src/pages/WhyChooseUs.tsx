@@ -136,8 +136,8 @@ const WhyChooseUs = () => {
                 <Card className="shadow-card h-full">
                   <CardContent className="p-6">
                     <div className="flex items-start gap-4">
-                      <div className="flex-shrink-0 w-12 h-12 rounded-full bg-accent flex items-center justify-center">
-                        <span className="font-playfair font-bold text-xl text-accent-foreground">
+                      <div className={`flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center ${index % 2 === 0 ? 'bg-accent' : 'bg-sky-cyan'}`}>
+                        <span className={`font-playfair font-bold text-xl ${index % 2 === 0 ? 'text-accent-foreground' : 'text-primary'}`}>
                           {step.number}
                         </span>
                       </div>
@@ -159,7 +159,7 @@ const WhyChooseUs = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-secondary text-primary-foreground">
+      <section className="py-20 bg-royal-blue text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
           <ScrollAnimationWrapper animation="fade-up">
             <h2 className="font-playfair font-bold text-4xl md:text-5xl mb-6">
