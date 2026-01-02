@@ -138,7 +138,7 @@ const Products = () => {
       </section>
 
       {/* Inquiry Note */}
-      <section className="py-12 bg-sky-cyan-light">
+      <section className="py-12 bg-muted">
         <div className="container mx-auto px-4">
           <ScrollAnimationWrapper animation="fade-up">
             <div className="max-w-4xl mx-auto text-center">
@@ -160,7 +160,7 @@ const Products = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-blue-green text-primary-foreground">
+      <section className="py-20 bg-olive-green text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
           <ScrollAnimationWrapper animation="fade-up">
             <h2 className="font-playfair font-bold text-4xl md:text-5xl mb-6">

@@ -48,7 +48,7 @@ const Index = () => {
       
       {/* Hero Section */}
       <section className="relative h-[90vh] flex items-center justify-center bg-cover bg-center" style={{
-      backgroundImage: `linear-gradient(rgba(0, 51, 102, 0.75), rgba(26, 71, 35, 0.65)), url(${heroCover})`
+      backgroundImage: `linear-gradient(rgba(26, 51, 15, 0.75), rgba(26, 51, 15, 0.65)), url(${heroCover})`
     }}>
         <div className="container mx-auto px-4 text-center">
           <ScrollAnimationWrapper animation="fade-up">
@@ -162,7 +162,7 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-blue-green text-primary-foreground">
+      <section className="py-20 bg-gradient-secondary text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
           <ScrollAnimationWrapper animation="fade-up">
             <h2 className="font-playfair font-bold text-4xl md:text-5xl mb-6">

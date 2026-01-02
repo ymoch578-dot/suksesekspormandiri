@@ -90,7 +90,7 @@ const About = () => {
       </section>
 
       {/* Vision & Mission Section */}
-      <section className="py-20 bg-sky-cyan-light">
+      <section className="py-20 bg-muted">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -179,10 +179,10 @@ const About = () => {
                 </ScrollAnimationWrapper>
 
                 <ScrollAnimationWrapper animation="fade-up" delay={100}>
-                  <Card className="text-center shadow-card hover:shadow-natural transition-shadow duration-300 border-t-4 border-t-sky-cyan h-full">
+                  <Card className="text-center shadow-card hover:shadow-natural transition-shadow duration-300 border-t-4 border-t-accent h-full">
                     <CardContent className="p-6">
-                      <div className="w-16 h-16 rounded-full bg-sky-cyan/10 flex items-center justify-center mx-auto mb-4">
-                        <Award className="w-8 h-8 text-sky-cyan" />
+                      <div className="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center mx-auto mb-4">
+                        <Award className="w-8 h-8 text-accent" />
                       </div>
                       <h3 className="font-playfair font-semibold text-xl text-primary mb-3">
                         Quality
@@ -211,10 +211,10 @@ const About = () => {
                 </ScrollAnimationWrapper>
 
                 <ScrollAnimationWrapper animation="fade-up" delay={300}>
-                  <Card className="text-center shadow-card hover:shadow-natural transition-shadow duration-300 border-t-4 border-t-sky-cyan h-full">
+                  <Card className="text-center shadow-card hover:shadow-natural transition-shadow duration-300 border-t-4 border-t-accent h-full">
                     <CardContent className="p-6">
-                      <div className="w-16 h-16 rounded-full bg-sky-cyan/10 flex items-center justify-center mx-auto mb-4">
-                        <Handshake className="w-8 h-8 text-sky-cyan" />
+                      <div className="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center mx-auto mb-4">
+                        <Handshake className="w-8 h-8 text-accent" />
                       </div>
                       <h3 className="font-playfair font-semibold text-xl text-primary mb-3">
                         Partnership
@@ -293,7 +293,7 @@ const About = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-royal-blue text-primary-foreground">
+      <section className="py-20 bg-gradient-secondary text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
           <ScrollAnimationWrapper animation="fade-up">
             <h2 className="font-playfair font-bold text-4xl md:text-5xl mb-6">
