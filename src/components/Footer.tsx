@@ -1,6 +1,5 @@
 import { Mail, MapPin, Phone, Linkedin, Facebook, Instagram } from "lucide-react";
 import { NavLink } from "@/components/NavLink";
-
 const Footer = () => {
   return <footer className="bg-forest-green text-primary-foreground">
       <div className="container mx-auto px-4 py-12">
@@ -10,9 +9,7 @@ const Footer = () => {
             <h3 className="font-playfair font-bold text-2xl mb-4">
               PT. Sukses Ekspor Mandiri
             </h3>
-            <p className="font-work text-primary-foreground/80 mb-4">
-              Trusted Supplier Partner in Coconut and Palm Derivatives
-            </p>
+            <p className="font-work text-primary-foreground/80 mb-4">Trusted Supplier Partner in Coconut Derivatives</p>
           </div>
 
           {/* Quick Links */}
@@ -20,22 +17,34 @@ const Footer = () => {
             <h4 className="font-work font-semibold text-lg mb-4">Quick Links</h4>
             <ul className="space-y-2 font-work">
               <li>
-                <NavLink to="/about" className="text-primary-foreground/80 hover:text-accent transition-colors" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+                <NavLink to="/about" className="text-primary-foreground/80 hover:text-accent transition-colors" onClick={() => window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+              })}>
                   About Us
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/products" className="text-primary-foreground/80 hover:text-accent transition-colors" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+                <NavLink to="/products" className="text-primary-foreground/80 hover:text-accent transition-colors" onClick={() => window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+              })}>
                   Products
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/why-choose-us" className="text-primary-foreground/80 hover:text-accent transition-colors" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+                <NavLink to="/why-choose-us" className="text-primary-foreground/80 hover:text-accent transition-colors" onClick={() => window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+              })}>
                   Why Choose Us
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/contact" className="text-primary-foreground/80 hover:text-accent transition-colors" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+                <NavLink to="/contact" className="text-primary-foreground/80 hover:text-accent transition-colors" onClick={() => window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+              })}>
                   Contact
                 </NavLink>
               </li>
@@ -74,31 +83,13 @@ const Footer = () => {
           <div>
             <h4 className="font-work font-semibold text-lg mb-4">Follow Us</h4>
             <div className="flex gap-4">
-              <a 
-                href="https://www.linkedin.com/company/pt-sukses-ekspor-mandiri" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="w-10 h-10 rounded-full bg-primary-foreground/10 hover:bg-accent flex items-center justify-center transition-colors"
-                aria-label="LinkedIn"
-              >
+              <a href="https://www.linkedin.com/company/pt-sukses-ekspor-mandiri" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-primary-foreground/10 hover:bg-accent flex items-center justify-center transition-colors" aria-label="LinkedIn">
                 <Linkedin className="w-5 h-5" />
               </a>
-              <a 
-                href="https://www.facebook.com/share/17onWDUhM4/" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="w-10 h-10 rounded-full bg-primary-foreground/10 hover:bg-accent flex items-center justify-center transition-colors"
-                aria-label="Facebook - PT Sukses Ekspor Mandiri"
-              >
+              <a href="https://www.facebook.com/share/17onWDUhM4/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-primary-foreground/10 hover:bg-accent flex items-center justify-center transition-colors" aria-label="Facebook - PT Sukses Ekspor Mandiri">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a 
-                href="https://www.instagram.com/suksesekspormandiri?igsh=MWV5Zjl1eDY2MmRjcQ==" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="w-10 h-10 rounded-full bg-primary-foreground/10 hover:bg-accent flex items-center justify-center transition-colors"
-                aria-label="Instagram"
-              >
+              <a href="https://www.instagram.com/suksesekspormandiri?igsh=MWV5Zjl1eDY2MmRjcQ==" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-primary-foreground/10 hover:bg-accent flex items-center justify-center transition-colors" aria-label="Instagram">
                 <Instagram className="w-5 h-5" />
               </a>
             </div>
