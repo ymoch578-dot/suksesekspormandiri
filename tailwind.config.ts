@@ -63,6 +63,14 @@ export default {
           DEFAULT: "hsl(var(--lime-accent))",
           light: "hsl(var(--lime-accent-light))",
         },
+        "royal-blue": {
+          DEFAULT: "hsl(var(--royal-blue))",
+          light: "hsl(var(--royal-blue-light))",
+        },
+        "sky-cyan": {
+          DEFAULT: "hsl(var(--sky-cyan))",
+          light: "hsl(var(--sky-cyan-light))",
+        },
         terracotta: {
           DEFAULT: "hsl(var(--terracotta))",
           light: "hsl(var(--terracotta-light))",
@@ -75,8 +83,8 @@ export default {
       backgroundImage: {
         'gradient-primary': 'var(--gradient-primary)',
         'gradient-secondary': 'var(--gradient-secondary)',
+        'gradient-blue-green': 'var(--gradient-blue-green)',
         'gradient-accent': 'var(--gradient-accent)',
-        'gradient-warm': 'var(--gradient-warm)',
         'gradient-light': 'var(--gradient-light)',
       },
       boxShadow: {

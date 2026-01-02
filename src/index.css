@@ -9,106 +9,114 @@ All colors MUST be HSL.
 @layer base {
   :root {
     /* Professional Export Business Color Palette */
-    /* Extracted from brand colors: Dark Green, Olive Green, Lime Green, Brown */
+    /* Balanced Green-Blue palette from brand reference */
     
-    /* Core Brand Colors */
-    --forest-green: 85 60% 18%;      /* Dark green - trust & stability */
-    --olive-green: 80 45% 35%;       /* Medium olive - harmony & growth */
-    --lime-accent: 72 70% 45%;       /* Vibrant lime - energy & CTAs */
-    --terracotta: 15 35% 38%;        /* Warm brown - reliability */
+    /* Core Brand Colors - GREEN */
+    --forest-green: 95 70% 35%;      /* Dark green - natural & growth */
+    --olive-green: 95 50% 40%;       /* Medium green - harmony */
+    --lime-accent: 80 85% 55%;       /* Vibrant lime - energy & CTAs */
+    
+    /* Core Brand Colors - BLUE */
+    --royal-blue: 220 100% 30%;      /* Dark blue - trust & professionalism */
+    --sky-cyan: 195 100% 70%;        /* Sky blue - freshness & global */
     
     /* Light variants */
-    --forest-green-light: 85 40% 92%;
-    --olive-green-light: 80 35% 90%;
-    --lime-accent-light: 72 50% 92%;
+    --forest-green-light: 95 40% 92%;
+    --olive-green-light: 95 35% 90%;
+    --lime-accent-light: 80 50% 92%;
+    --royal-blue-light: 220 40% 92%;
+    --sky-cyan-light: 195 60% 92%;
+    
+    /* Terracotta for warm accents */
+    --terracotta: 15 35% 38%;
     --terracotta-light: 15 25% 92%;
     
     /* Backgrounds - professional & clean */
-    --background: 80 20% 97%;
-    --foreground: 85 50% 12%;
+    --background: 200 20% 98%;
+    --foreground: 220 50% 15%;
 
-    --card: 80 25% 98%;
-    --card-foreground: 85 50% 12%;
+    --card: 200 25% 99%;
+    --card-foreground: 220 50% 15%;
 
-    --popover: 80 25% 98%;
-    --popover-foreground: 85 50% 12%;
+    --popover: 200 25% 99%;
+    --popover-foreground: 220 50% 15%;
 
-    /* Primary - Forest Green (trust, professionalism) */
-    --primary: 85 60% 18%;
-    --primary-foreground: 80 20% 98%;
+    /* Primary - Royal Blue (trust, global professionalism) */
+    --primary: 220 100% 30%;
+    --primary-foreground: 200 20% 98%;
 
-    /* Secondary - Olive Green (harmony, growth) */
-    --secondary: 80 35% 90%;
-    --secondary-foreground: 80 45% 25%;
+    /* Secondary - Forest Green (natural, growth) */
+    --secondary: 95 30% 92%;
+    --secondary-foreground: 95 70% 25%;
 
-    /* Muted - subtle olive tones */
-    --muted: 80 20% 92%;
-    --muted-foreground: 80 25% 45%;
+    /* Muted - subtle blue-gray tones */
+    --muted: 200 15% 92%;
+    --muted-foreground: 200 20% 45%;
 
     /* Accent - Lime Green (energy, CTAs) */
-    --accent: 72 70% 45%;
-    --accent-foreground: 85 60% 10%;
+    --accent: 80 85% 55%;
+    --accent-foreground: 95 70% 10%;
 
-    /* Terracotta for warm accents */
+    /* Warm for special accents */
     --warm: 15 35% 38%;
     --warm-foreground: 15 20% 95%;
 
     --destructive: 0 72% 51%;
-    --destructive-foreground: 80 20% 98%;
+    --destructive-foreground: 200 20% 98%;
 
-    --border: 80 20% 85%;
-    --input: 80 20% 90%;
-    --ring: 85 60% 18%;
+    --border: 200 15% 85%;
+    --input: 200 15% 90%;
+    --ring: 220 100% 30%;
 
     --radius: 0.5rem;
 
     /* Gradients for hero sections */
-    --gradient-primary: linear-gradient(135deg, hsl(85 60% 18%) 0%, hsl(80 45% 28%) 100%);
-    --gradient-secondary: linear-gradient(135deg, hsl(80 45% 35%) 0%, hsl(85 50% 25%) 100%);
-    --gradient-accent: linear-gradient(135deg, hsl(72 70% 45%) 0%, hsl(80 50% 40%) 100%);
-    --gradient-warm: linear-gradient(135deg, hsl(15 35% 38%) 0%, hsl(20 40% 30%) 100%);
-    --gradient-light: linear-gradient(180deg, hsl(80 25% 98%) 0%, hsl(80 20% 95%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(220 100% 30%) 0%, hsl(220 80% 35%) 100%);
+    --gradient-secondary: linear-gradient(135deg, hsl(95 70% 35%) 0%, hsl(95 60% 30%) 100%);
+    --gradient-blue-green: linear-gradient(135deg, hsl(220 100% 30%) 0%, hsl(95 70% 35%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(80 85% 55%) 0%, hsl(95 70% 45%) 100%);
+    --gradient-light: linear-gradient(180deg, hsl(200 25% 99%) 0%, hsl(200 20% 96%) 100%);
     
     /* Shadows */
-    --shadow-natural: 0 4px 20px -4px hsl(85 60% 18% / 0.15);
-    --shadow-card: 0 2px 12px -2px hsl(85 50% 12% / 0.08);
-    --shadow-accent: 0 4px 16px -4px hsl(72 70% 45% / 0.25);
+    --shadow-natural: 0 4px 20px -4px hsl(220 100% 30% / 0.15);
+    --shadow-card: 0 2px 12px -2px hsl(220 50% 15% / 0.08);
+    --shadow-accent: 0 4px 16px -4px hsl(80 85% 55% / 0.25);
     
     /* Smooth professional transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .dark {
-    --background: 85 30% 8%;
-    --foreground: 80 20% 95%;
+    --background: 220 30% 8%;
+    --foreground: 200 20% 95%;
 
-    --card: 85 25% 12%;
-    --card-foreground: 80 20% 95%;
+    --card: 220 25% 12%;
+    --card-foreground: 200 20% 95%;
 
-    --popover: 85 25% 12%;
-    --popover-foreground: 80 20% 95%;
+    --popover: 220 25% 12%;
+    --popover-foreground: 200 20% 95%;
 
-    --primary: 72 60% 55%;
-    --primary-foreground: 85 50% 10%;
+    --primary: 195 100% 70%;
+    --primary-foreground: 220 50% 10%;
 
-    --secondary: 80 20% 20%;
-    --secondary-foreground: 80 20% 95%;
+    --secondary: 95 30% 20%;
+    --secondary-foreground: 95 20% 95%;
 
-    --muted: 80 20% 18%;
-    --muted-foreground: 80 15% 60%;
+    --muted: 220 20% 18%;
+    --muted-foreground: 200 15% 60%;
 
-    --accent: 72 70% 50%;
-    --accent-foreground: 85 50% 8%;
+    --accent: 80 85% 55%;
+    --accent-foreground: 95 50% 8%;
 
     --warm: 15 30% 45%;
     --warm-foreground: 15 15% 95%;
 
     --destructive: 0 62% 45%;
-    --destructive-foreground: 80 20% 95%;
+    --destructive-foreground: 200 20% 95%;
 
-    --border: 80 20% 22%;
-    --input: 80 20% 20%;
-    --ring: 72 60% 55%;
+    --border: 220 20% 22%;
+    --input: 220 20% 20%;
+    --ring: 195 100% 70%;
   }
 }
 
