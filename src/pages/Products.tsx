@@ -10,10 +10,6 @@ import productCharcoal from "@/assets/product-charcoal-3.png";
 import productCopraPowder from "@/assets/product-copra-powder.jpg";
 import productCopraPellet from "@/assets/product-copra-pellet.jpg";
 import productOil from "@/assets/product-oil.jpg";
-import productGlycerine from "@/assets/product-crude-glycerine-new.png";
-import productPfad from "@/assets/product-pfad-new.png";
-import productPalmKernelShell from "@/assets/product-palm-kernel-shell.jpg";
-import productPalmKernelShellCharcoal from "@/assets/product-palm-kernel-shell-charcoal.jpg";
 
 const Products = () => {
   const products = [
@@ -52,34 +48,6 @@ const Products = () => {
       applications: "Soap manufacturing, cosmetics industry, biodiesel production, industrial lubricants",
       features: ["Natural extraction process", "Consistent quality", "Proper storage and packaging", "Traceable sourcing"],
     },
-    {
-      name: "Crude Glycerine",
-      image: productGlycerine,
-      description: "Industrial-grade crude glycerine derived from biodiesel production. Suitable for various industrial applications requiring glycerol content.",
-      applications: "Chemical manufacturing, antifreeze production, industrial processes, further refining",
-      features: ["Industrial grade", "Consistent glycerol content", "Proper handling and storage", "Available in bulk quantities"],
-    },
-    {
-      name: "Palm Fatty Acid Distillate (PFAD)",
-      image: productPfad,
-      description: "By-product of palm oil refining process. Used in various industrial applications including soap, animal feed, and biodiesel production.",
-      applications: "Soap manufacturing, animal feed, oleochemicals, biodiesel production",
-      features: ["Industrial specification", "Consistent fatty acid composition", "Proper storage conditions", "Bulk supply available"],
-    },
-    {
-      name: "Palm Kernel Shell",
-      image: productPalmKernelShell,
-      description: "Biomass fuel derived from palm oil production. Excellent renewable energy source with high calorific value for power generation and industrial heating.",
-      applications: "Biomass power plants, industrial boilers, cement kilns, renewable energy production",
-      features: ["High calorific value", "Low moisture content", "Sustainable biomass", "Bulk supply available"],
-    },
-    {
-      name: "Palm Kernel Shell Charcoal",
-      image: productPalmKernelShellCharcoal,
-      description: "High-quality charcoal produced from palm kernel shells. Excellent burning properties with high carbon content for industrial and commercial applications.",
-      applications: "Activated carbon production, industrial fuel, metallurgical applications, BBQ charcoal",
-      features: ["High carbon content", "Consistent quality", "Low ash content", "Bulk supply available"],
-    },
   ];
 
   return (
@@ -95,7 +63,7 @@ const Products = () => {
                 Our Products
               </h1>
               <p className="font-work text-xl text-muted-foreground">
-                Premium coconut and palm derivatives for global B2B markets
+                Premium coconut derivatives for global B2B markets
               </p>
             </div>
           </ScrollAnimationWrapper>
@@ -184,7 +152,7 @@ const Products = () => {
                 className="bg-accent hover:bg-accent/90 text-accent-foreground font-work font-semibold"
                 asChild
               >
-                <Link to="/contact">Request Product Information</Link>
+                <Link to="/contact#get-in-touch">Request Product Information</Link>
               </Button>
             </div>
           </ScrollAnimationWrapper>
@@ -215,7 +183,7 @@ const Products = () => {
                 className="bg-accent hover:bg-accent/90 text-accent-foreground font-work font-semibold text-lg px-8"
                 asChild
               >
-                <Link to="/contact">Send Inquiry</Link>
+                <Link to="/contact#get-in-touch">Send Inquiry</Link>
               </Button>
             </div>
           </ScrollAnimationWrapper>

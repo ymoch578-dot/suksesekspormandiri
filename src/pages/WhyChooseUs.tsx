@@ -86,7 +86,7 @@ const WhyChooseUs = () => {
                 Why Choose Us
               </h1>
               <p className="font-work text-xl text-muted-foreground">
-                Your trusted partner for quality coconut and palm derivatives
+                Your trusted partner for quality coconut derivatives
               </p>
             </div>
           </ScrollAnimationWrapper>
@@ -167,7 +167,7 @@ const WhyChooseUs = () => {
             </h2>
             <p className="font-work text-xl mb-8 max-w-2xl mx-auto opacity-90">
               Join our growing list of satisfied international buyers. Contact us today to discuss 
-              your coconut and palm derivatives requirements.
+              your coconut derivatives requirements.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
@@ -183,7 +183,7 @@ const WhyChooseUs = () => {
                 className="bg-accent hover:bg-accent/90 text-accent-foreground font-work font-semibold text-lg px-8"
                 asChild
               >
-                <Link to="/contact">Send Inquiry Now</Link>
+                <Link to="/contact#get-in-touch">Send Inquiry Now</Link>
               </Button>
             </div>
           </ScrollAnimationWrapper>

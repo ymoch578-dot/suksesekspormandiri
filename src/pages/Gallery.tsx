@@ -9,10 +9,6 @@ import productCharcoal from "@/assets/product-charcoal-3.png";
 import productCopraPowder from "@/assets/product-copra-powder-2.jpg";
 import productCopraPellet from "@/assets/product-copra-pellet.jpg";
 import productOil from "@/assets/product-oil.jpg";
-import productGlycerine from "@/assets/product-crude-glycerine-new.png";
-import productPfad from "@/assets/product-pfad-new.png";
-import productPalmKernelShell from "@/assets/product-palm-kernel-shell.jpg";
-import productPalmKernelShellCharcoal from "@/assets/product-palm-kernel-shell-charcoal.jpg";
 
 const Gallery = () => {
   const galleryImages = [
@@ -44,26 +40,6 @@ const Gallery = () => {
     {
       image: productOil,
       title: "Crude Coconut Oil",
-      category: "Products",
-    },
-    {
-      image: productGlycerine,
-      title: "Crude Glycerine",
-      category: "Products",
-    },
-    {
-      image: productPfad,
-      title: "Palm Fatty Acid Distillate",
-      category: "Products",
-    },
-    {
-      image: productPalmKernelShell,
-      title: "Palm Kernel Shell",
-      category: "Products",
-    },
-    {
-      image: productPalmKernelShellCharcoal,
-      title: "Palm Kernel Shell Charcoal",
       category: "Products",
     },
   ];
@@ -163,7 +139,7 @@ const Gallery = () => {
                 className="bg-accent hover:bg-accent/90 text-accent-foreground font-work font-semibold text-lg px-8"
                 asChild
               >
-                <Link to="/contact">Send Inquiry</Link>
+                <Link to="/contact#get-in-touch">Send Inquiry</Link>
               </Button>
             </div>
           </ScrollAnimationWrapper>

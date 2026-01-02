@@ -54,12 +54,12 @@ const Index = () => {
           <ScrollAnimationWrapper animation="fade-up">
             <h1 className="font-playfair font-bold text-5xl md:text-7xl text-primary-foreground mb-6">
               Trusted Global Supplier of<br />
-              Coconut & Palm Derivatives
+              Coconut Derivatives
             </h1>
           </ScrollAnimationWrapper>
           <ScrollAnimationWrapper animation="fade-up" delay={200}>
             <p className="font-work text-xl md:text-2xl text-primary-foreground/90 mb-8 max-w-3xl mx-auto">
-              PT. Sukses Ekspor Mandiri - Your reliable partner for premium quality coconut and palm products from Indonesia
+              PT. Sukses Ekspor Mandiri - Your reliable partner for premium quality coconut products from Indonesia
             </p>
           </ScrollAnimationWrapper>
           <ScrollAnimationWrapper animation="fade-up" delay={400}>
@@ -104,7 +104,7 @@ const Index = () => {
                 About PT. Sukses Ekspor Mandiri
               </h2>
               <p className="font-work text-lg text-foreground/80 mb-8 leading-relaxed">
-                We are a leading Indonesian exporter specializing in premium coconut and palm derivatives. 
+                We are a leading Indonesian exporter specializing in premium coconut derivatives. 
                 Operating from Malang, East Java, we serve global B2B buyers with commitment to quality, 
                 reliability, and professional service. Our extensive network of trusted suppliers and farmers 
                 ensures consistent supply of export-grade products.
@@ -126,7 +126,7 @@ const Index = () => {
                 Our Featured Products
               </h2>
               <p className="font-work text-lg text-muted-foreground">
-                Premium quality coconut and palm derivatives for global markets
+                Premium quality coconut derivatives for global markets
               </p>
             </div>
           </ScrollAnimationWrapper>
@@ -169,7 +169,7 @@ const Index = () => {
               Ready to Partner With Us?
             </h2>
             <p className="font-work text-xl mb-8 max-w-2xl mx-auto opacity-90">
-              Contact us today to discuss your coconut and palm derivatives requirements. 
+              Contact us today to discuss your coconut derivatives requirements. 
               We're here to provide quality products and reliable service.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -177,7 +177,7 @@ const Index = () => {
                 Contact via WhatsApp
               </Button>
               <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground font-work font-semibold text-lg px-8" asChild>
-                <Link to="/contact">Send Email Inquiry</Link>
+                <Link to="/contact#get-in-touch">Send Inquiry</Link>
               </Button>
             </div>
           </ScrollAnimationWrapper>

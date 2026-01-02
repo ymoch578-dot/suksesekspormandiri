@@ -58,7 +58,7 @@ const Contact = () => {
                 Contact Us
               </h1>
               <p className="font-work text-xl text-muted-foreground">
-                Let's discuss how we can serve your coconut and palm derivatives needs
+                Let's discuss how we can serve your coconut derivatives needs
               </p>
             </div>
           </ScrollAnimationWrapper>
@@ -72,7 +72,7 @@ const Contact = () => {
             {/* Contact Information */}
             <ScrollAnimationWrapper animation="fade-up">
               <div>
-                <h2 className="font-playfair font-bold text-4xl text-primary mb-6">
+                <h2 id="get-in-touch" className="font-playfair font-bold text-4xl text-primary mb-6">
                   Get in Touch
                 </h2>
                 <p className="font-work text-lg text-foreground/80 mb-8 leading-relaxed">
