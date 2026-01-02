@@ -43,7 +43,7 @@ const About = () => {
                 About PT. Sukses Ekspor Mandiri
               </h1>
               <p className="font-work text-xl text-muted-foreground">
-                Your Trusted Partner in Coconut and Palm Derivatives Export
+                Your Trusted Partner in Coconut Derivatives Export
               </p>
             </div>
           </ScrollAnimationWrapper>
@@ -62,11 +62,11 @@ const About = () => {
                 <div className="font-work text-lg text-foreground/80 space-y-4 leading-relaxed">
                   <p>
                     PT. Sukses Ekspor Mandiri is a professional export company based in Malang, East Java, Indonesia, 
-                    specializing in premium coconut and palm derivatives. We serve B2B buyers worldwide including importers, 
+                    specializing in premium coconut derivatives. We serve B2B buyers worldwide including importers, 
                     distributors, and industrial manufacturers who require consistent supply of high-quality raw materials.
                   </p>
                   <p>
-                    Our strategic location in Indonesia—one of the world's largest producers of coconut and palm products—gives 
+                    Our strategic location in Indonesia—one of the world's largest producers of coconut products—gives 
                     us direct access to the best sources. We work closely with a network of trusted farmers, processors, and 
                     suppliers to ensure that every shipment meets international quality standards.
                   </p>
@@ -114,7 +114,7 @@ const About = () => {
                     </h2>
                   </div>
                   <p className="font-work text-lg text-foreground/80 leading-relaxed text-center">
-                    To become a trusted and globally competitive Indonesian international trading company in providing coconut and palm derivatives, while delivering added value to business partners worldwide.
+                    To become a trusted and globally competitive Indonesian international trading company in providing coconut derivatives, while delivering added value to business partners worldwide.
                   </p>
                 </div>
               </ScrollAnimationWrapper>
@@ -288,7 +288,7 @@ const About = () => {
               <div className="font-work text-lg text-foreground/80 space-y-4 leading-relaxed text-center">
                 <p>
                   Our headquarters and operations are based in <strong>Malang, East Java, Indonesia</strong>. 
-                  This strategic location provides us with excellent access to major coconut and palm oil production 
+                  This strategic location provides us with excellent access to major coconut production 
                   regions, as well as efficient logistics connections to international shipping ports.
                 </p>
                 <p>
@@ -327,7 +327,7 @@ const About = () => {
                 className="bg-accent hover:bg-accent/90 text-accent-foreground font-work font-semibold text-lg px-8"
                 asChild
               >
-                <Link to="/contact">Send Inquiry</Link>
+                <Link to="/contact#get-in-touch">Send Inquiry</Link>
               </Button>
             </div>
           </ScrollAnimationWrapper>
