@@ -73,8 +73,8 @@ const About = () => {
                 </h2>
                 <div className="font-work text-lg text-foreground/80 space-y-4 leading-relaxed">
                   <p>
-                    We believe that successful business relationships are built on three pillars: <strong>integrity</strong>, 
-                    <strong> quality</strong>, and <strong>long-term partnership</strong>. Our goal is not just to sell 
+                    We believe that successful business relationships are built on four pillars: <strong>integrity</strong>, 
+                    <strong> quality</strong>, <strong>sustainability</strong>, and <strong>long-term partnership</strong>. Our goal is not just to sell
                     products, but to become your reliable supplier partner who understands your needs and consistently delivers value.
                   </p>
                   <p>

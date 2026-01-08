@@ -37,8 +37,8 @@ const Navbar = () => {
               <NavLink
                 key={link.to}
                 to={link.to}
-                className="font-work text-foreground hover:text-accent transition-colors duration-300 font-medium"
-                activeClassName="text-accent"
+                className="font-work text-foreground hover:text-primary transition-colors duration-300 font-medium"
+                activeClassName="text-primary font-semibold"
                 onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
               >
                 {link.label}
@@ -47,9 +47,9 @@ const Navbar = () => {
             <Button 
               variant="default" 
               className="bg-accent hover:bg-accent/90 text-accent-foreground font-work font-semibold"
-              onClick={() => window.open('https://wa.me/6285124480871', '_blank')}
+              asChild
             >
-              WhatsApp Now
+              <a href="/contact#get-in-touch">Inquiry Now</a>
             </Button>
           </div>
 
@@ -69,8 +69,8 @@ const Navbar = () => {
               <NavLink
                 key={link.to}
                 to={link.to}
-                className="block py-2 font-work text-foreground hover:text-accent transition-colors"
-                activeClassName="text-accent font-semibold"
+                className="block py-2 font-work text-foreground hover:text-primary transition-colors"
+                activeClassName="text-primary font-semibold"
                 onClick={() => {
                   setIsOpen(false);
                   window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -82,12 +82,10 @@ const Navbar = () => {
             <Button 
               variant="default" 
               className="w-full bg-accent hover:bg-accent/90 text-accent-foreground font-work font-semibold"
-              onClick={() => {
-                window.open('https://wa.me/6285124480871', '_blank');
-                setIsOpen(false);
-              }}
+              asChild
+              onClick={() => setIsOpen(false)}
             >
-              WhatsApp Now
+              <a href="/contact#get-in-touch">Inquiry Now</a>
             </Button>
           </div>
         )}
