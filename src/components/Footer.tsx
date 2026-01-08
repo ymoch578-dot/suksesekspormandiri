@@ -1,7 +1,7 @@
 import { Mail, MapPin, Phone, Linkedin, Facebook, Instagram } from "lucide-react";
 import { NavLink } from "@/components/NavLink";
 const Footer = () => {
-  return <footer className="bg-forest-green text-primary-foreground">
+  return <footer className="bg-primary text-primary-foreground">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* Company Info */}
