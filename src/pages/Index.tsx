@@ -34,7 +34,7 @@ const Index = () => {
     image: productSemiHusked,
     description: "Premium quality semi husked coconuts for various industrial applications"
   }, {
-    name: "Desiccated Coconut (High Fat)",
+    name: "Desiccated Coconut",
     image: productDesiccated,
     description: "Fresh coconut meat, finely processed for food industry"
   }, {

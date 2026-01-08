@@ -21,7 +21,7 @@ const Products = () => {
       features: ["Export-grade quality", "Properly selected and inspected", "Consistent size and weight", "Available year-round"],
     },
     {
-      name: "Desiccated Coconut (High Fat)",
+      name: "Desiccated Coconut",
       image: productDesiccated,
       description: "Fresh coconut meat finely processed under strict hygiene standards. Perfect for food manufacturing and bakery industries.",
       applications: "Bakery products, confectionery, food manufacturing, dessert ingredients",
