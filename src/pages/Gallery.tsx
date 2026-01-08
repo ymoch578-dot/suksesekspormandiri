@@ -19,7 +19,7 @@ const Gallery = () => {
     },
     {
       image: productDesiccated,
-      title: "Desiccated Coconut (High Fat)",
+      title: "Desiccated Coconut",
       category: "Products",
     },
     {

@@ -51,6 +51,10 @@ export default {
           DEFAULT: "hsl(var(--warm))",
           foreground: "hsl(var(--warm-foreground))",
         },
+        "dark-brown": {
+          DEFAULT: "hsl(var(--dark-brown))",
+          light: "hsl(var(--dark-brown-light))",
+        },
         "forest-green": {
           DEFAULT: "hsl(var(--forest-green))",
           light: "hsl(var(--forest-green-light))",
