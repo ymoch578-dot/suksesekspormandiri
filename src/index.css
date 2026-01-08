@@ -9,110 +9,110 @@ All colors MUST be HSL.
 @layer base {
   :root {
     /* Professional Export Business Color Palette */
-    /* Balanced: Forest Green, Olive Green, Terracotta/Brown, Lime Accent */
+    /* Extracted from brand image: Dark Brown, Forest Green, Terracotta, Lime Green */
     
-    /* Core Brand Colors - BALANCED */
-    --forest-green: 85 60% 22%;      /* Deep forest green - primary brand identity */
-    --olive-green: 78 45% 35%;       /* Medium olive green - secondary green */
-    --terracotta: 25 45% 38%;        /* Warm brown/terracotta - stability */
-    --lime-accent: 72 70% 48%;       /* Vibrant lime - CTAs & highlights */
+    /* Core Brand Colors */
+    --dark-brown: 25 100% 25%;       /* Dark brown - trust & stability */
+    --forest-green: 120 60% 35%;     /* Forest green - growth & reliability */
+    --terracotta: 20 40% 45%;        /* Warm terracotta - elegance & warmth */
+    --lime-accent: 85 100% 50%;      /* Vibrant lime - energy & CTAs */
     
     /* Light variants */
-    --forest-green-light: 85 25% 94%;
-    --olive-green-light: 78 20% 92%;
-    --terracotta-light: 25 20% 94%;
-    --lime-accent-light: 72 40% 92%;
+    --dark-brown-light: 25 30% 92%;
+    --forest-green-light: 120 30% 92%;
+    --terracotta-light: 20 25% 92%;
+    --lime-accent-light: 85 50% 92%;
     
-    /* Backgrounds - clean, neutral with slight green undertone */
-    --background: 80 8% 97%;
-    --foreground: 85 50% 12%;
+    /* Backgrounds - professional & clean */
+    --background: 30 15% 97%;
+    --foreground: 25 80% 12%;
 
-    --card: 75 10% 98%;
-    --card-foreground: 85 50% 12%;
+    --card: 30 20% 98%;
+    --card-foreground: 25 80% 12%;
 
-    --popover: 75 10% 98%;
-    --popover-foreground: 85 50% 12%;
+    --popover: 30 20% 98%;
+    --popover-foreground: 25 80% 12%;
 
-    /* Primary - Forest Green (growth, natural) */
-    --primary: 85 60% 22%;
-    --primary-foreground: 80 10% 98%;
+    /* Primary - Dark Brown (trust, professionalism) */
+    --primary: 25 100% 25%;
+    --primary-foreground: 30 15% 98%;
 
-    /* Secondary - Terracotta/Brown (stability, earth) */
-    --secondary: 25 20% 92%;
-    --secondary-foreground: 25 45% 30%;
+    /* Secondary - Forest Green (growth, reliability) */
+    --secondary: 120 30% 92%;
+    --secondary-foreground: 120 60% 25%;
 
-    /* Muted - subtle neutral tones */
-    --muted: 75 10% 92%;
-    --muted-foreground: 75 20% 40%;
+    /* Muted - subtle warm tones */
+    --muted: 30 15% 92%;
+    --muted-foreground: 25 30% 45%;
 
     /* Accent - Lime Green (energy, CTAs) */
-    --accent: 72 70% 48%;
-    --accent-foreground: 85 60% 10%;
+    --accent: 85 100% 50%;
+    --accent-foreground: 25 100% 12%;
 
-    /* Warm - Terracotta for warm sections */
-    --warm: 25 45% 38%;
-    --warm-foreground: 25 10% 96%;
+    /* Terracotta for warm accents */
+    --warm: 20 40% 45%;
+    --warm-foreground: 20 15% 95%;
 
-    /* Brown alias */
-    --dark-brown: 25 45% 38%;
-    --dark-brown-light: 25 20% 94%;
+    /* Olive Green (alias for forest) */
+    --olive-green: 120 60% 35%;
+    --olive-green-light: 120 30% 92%;
 
     --destructive: 0 72% 51%;
-    --destructive-foreground: 80 10% 98%;
+    --destructive-foreground: 30 15% 98%;
 
-    --border: 75 12% 85%;
-    --input: 75 12% 90%;
-    --ring: 85 60% 22%;
+    --border: 30 15% 85%;
+    --input: 30 15% 90%;
+    --ring: 25 100% 25%;
 
     --radius: 0.5rem;
 
-    /* Gradients - balanced green and brown */
-    --gradient-primary: linear-gradient(135deg, hsl(85 60% 22%) 0%, hsl(85 50% 28%) 100%);
-    --gradient-secondary: linear-gradient(135deg, hsl(78 45% 35%) 0%, hsl(78 40% 28%) 100%);
-    --gradient-accent: linear-gradient(135deg, hsl(72 70% 48%) 0%, hsl(72 60% 42%) 100%);
-    --gradient-warm: linear-gradient(135deg, hsl(25 45% 38%) 0%, hsl(25 40% 30%) 100%);
-    --gradient-light: linear-gradient(180deg, hsl(80 15% 98%) 0%, hsl(78 12% 95%) 100%);
+    /* Gradients for hero sections */
+    --gradient-primary: linear-gradient(135deg, hsl(25 100% 25%) 0%, hsl(25 80% 35%) 100%);
+    --gradient-secondary: linear-gradient(135deg, hsl(120 60% 35%) 0%, hsl(120 50% 28%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(85 100% 50%) 0%, hsl(85 80% 45%) 100%);
+    --gradient-warm: linear-gradient(135deg, hsl(20 40% 45%) 0%, hsl(20 50% 35%) 100%);
+    --gradient-light: linear-gradient(180deg, hsl(30 20% 98%) 0%, hsl(30 15% 95%) 100%);
     
     /* Shadows */
-    --shadow-natural: 0 4px 20px -4px hsl(85 60% 22% / 0.15);
-    --shadow-card: 0 2px 12px -2px hsl(85 50% 12% / 0.08);
-    --shadow-accent: 0 4px 16px -4px hsl(72 70% 48% / 0.25);
+    --shadow-natural: 0 4px 20px -4px hsl(25 100% 25% / 0.15);
+    --shadow-card: 0 2px 12px -2px hsl(25 80% 12% / 0.08);
+    --shadow-accent: 0 4px 16px -4px hsl(85 100% 50% / 0.25);
     
     /* Smooth professional transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .dark {
-    --background: 85 25% 8%;
-    --foreground: 80 10% 95%;
+    --background: 25 30% 8%;
+    --foreground: 30 15% 95%;
 
-    --card: 85 20% 12%;
-    --card-foreground: 80 10% 95%;
+    --card: 25 25% 12%;
+    --card-foreground: 30 15% 95%;
 
-    --popover: 85 20% 12%;
-    --popover-foreground: 80 10% 95%;
+    --popover: 25 25% 12%;
+    --popover-foreground: 30 15% 95%;
 
-    --primary: 72 70% 55%;
-    --primary-foreground: 85 60% 10%;
+    --primary: 85 80% 55%;
+    --primary-foreground: 25 80% 10%;
 
-    --secondary: 78 20% 20%;
-    --secondary-foreground: 78 20% 95%;
+    --secondary: 120 20% 20%;
+    --secondary-foreground: 120 20% 95%;
 
-    --muted: 75 15% 18%;
-    --muted-foreground: 75 12% 60%;
+    --muted: 25 20% 18%;
+    --muted-foreground: 25 15% 60%;
 
-    --accent: 72 80% 55%;
-    --accent-foreground: 85 60% 8%;
+    --accent: 85 100% 55%;
+    --accent-foreground: 25 80% 8%;
 
-    --warm: 25 40% 50%;
-    --warm-foreground: 25 10% 95%;
+    --warm: 20 35% 50%;
+    --warm-foreground: 20 15% 95%;
 
     --destructive: 0 62% 45%;
-    --destructive-foreground: 80 10% 95%;
+    --destructive-foreground: 30 15% 95%;
 
-    --border: 75 15% 22%;
-    --input: 75 15% 20%;
-    --ring: 72 70% 55%;
+    --border: 25 20% 22%;
+    --input: 25 20% 20%;
+    --ring: 85 80% 55%;
   }
 }
 

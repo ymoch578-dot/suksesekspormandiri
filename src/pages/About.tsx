@@ -72,9 +72,9 @@ const About = () => {
                   Our Business Philosophy
                 </h2>
                 <div className="font-work text-lg text-foreground/80 space-y-4 leading-relaxed">
-                <p>
-                    We believe that successful business relationships are built on four pillars: <strong>integrity</strong>, 
-                    <strong> quality</strong>, <strong>sustainability</strong>, and <strong>long-term partnership</strong>. Our goal is not just to sell 
+                  <p>
+                    We believe that successful business relationships are built on three pillars: <strong>integrity</strong>, 
+                    <strong> quality</strong>, and <strong>long-term partnership</strong>. Our goal is not just to sell 
                     products, but to become your reliable supplier partner who understands your needs and consistently delivers value.
                   </p>
                   <p>
@@ -293,7 +293,7 @@ const About = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-primary text-primary-foreground">
+      <section className="py-20 bg-gradient-secondary text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
           <ScrollAnimationWrapper animation="fade-up">
             <h2 className="font-playfair font-bold text-4xl md:text-5xl mb-6">
