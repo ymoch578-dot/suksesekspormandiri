@@ -1,18 +1,20 @@
 import { useState } from "react";
 import { NavLink } from "@/components/NavLink";
 import { Menu, X } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import LanguageSelector from "@/components/LanguageSelector";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { t } = useLanguage();
 
   const navLinks = [
-    { to: "/", label: "Home" },
-    { to: "/about", label: "About Us" },
-    { to: "/products", label: "Products" },
-    { to: "/why-choose-us", label: "Why Choose Us" },
-    { to: "/gallery", label: "Gallery" },
-    { to: "/contact", label: "Contact" },
+    { to: "/", label: t('nav.home') },
+    { to: "/about", label: t('nav.about') },
+    { to: "/products", label: t('nav.products') },
+    { to: "/why-choose-us", label: t('nav.whyChooseUs') },
+    { to: "/gallery", label: t('nav.gallery') },
+    { to: "/contact", label: t('nav.contact') },
   ];
 
   return (
@@ -44,13 +46,7 @@ const Navbar = () => {
                 {link.label}
               </NavLink>
             ))}
-            <Button 
-              variant="default" 
-              className="bg-accent hover:bg-accent/90 text-accent-foreground font-work font-semibold"
-              asChild
-            >
-              <a href="/contact#get-in-touch">Inquiry Now</a>
-            </Button>
+            <LanguageSelector />
           </div>
 
           {/* Mobile Menu Button */}
@@ -79,14 +75,9 @@ const Navbar = () => {
                 {link.label}
               </NavLink>
             ))}
-            <Button 
-              variant="default" 
-              className="w-full bg-accent hover:bg-accent/90 text-accent-foreground font-work font-semibold"
-              asChild
-              onClick={() => setIsOpen(false)}
-            >
-              <a href="/contact#get-in-touch">Inquiry Now</a>
-            </Button>
+            <div className="pt-2">
+              <LanguageSelector />
+            </div>
           </div>
         )}
       </div>
