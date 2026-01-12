@@ -5,42 +5,45 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Award, Clock, DollarSign, PackageCheck } from "lucide-react";
 import { Link } from "react-router-dom";
 import { ScrollAnimationWrapper } from "@/hooks/useScrollAnimation";
+import { useLanguage } from "@/contexts/LanguageContext";
 import productSemiHusked from "@/assets/product-semi-husked-coconut-3.png";
 import productDesiccated from "@/assets/product-desiccated-coconut.jpg";
 import productCharcoal from "@/assets/product-charcoal-3.png";
 import heroCover from "@/assets/hero-cover-website.png";
 
 const Index = () => {
+  const { t } = useLanguage();
+
   const highlights = [{
     icon: <Award className="w-10 h-10 text-accent" />,
-    title: "Premium Quality",
-    description: "Stringent quality control for export-grade products"
+    title: t('home.highlights.premiumQuality'),
+    description: t('home.highlights.premiumQualityDesc')
   }, {
     icon: <Clock className="w-10 h-10 text-accent" />,
-    title: "Stable Supply",
-    description: "Reliable sourcing network ensuring consistent delivery"
+    title: t('home.highlights.stableSupply'),
+    description: t('home.highlights.stableSupplyDesc')
   }, {
     icon: <DollarSign className="w-10 h-10 text-accent" />,
-    title: "Competitive Pricing",
-    description: "Fair pricing with transparent business practices"
+    title: t('home.highlights.competitivePricing'),
+    description: t('home.highlights.competitivePricingDesc')
   }, {
     icon: <PackageCheck className="w-10 h-10 text-accent" />,
-    title: "Export-Ready Supply Chain",
-    description: "Premium product quality with export-ready compliance"
+    title: t('home.highlights.exportReady'),
+    description: t('home.highlights.exportReadyDesc')
   }];
 
   const featuredProducts = [{
-    name: "Semi Husked Coconut",
+    name: t('products.semiHusked'),
     image: productSemiHusked,
-    description: "Premium quality semi husked coconuts for various industrial applications"
+    description: t('products.semiHuskedDesc')
   }, {
-    name: "Desiccated Coconut",
+    name: t('products.desiccated'),
     image: productDesiccated,
-    description: "Fresh coconut meat, finely processed for food industry"
+    description: t('products.desiccatedDesc')
   }, {
-    name: "Coconut Shell Charcoal",
+    name: t('products.charcoal'),
     image: productCharcoal,
-    description: "High-quality charcoal for industrial and commercial use"
+    description: t('products.charcoalDesc')
   }];
 
   return <div className="min-h-screen bg-background">
@@ -53,19 +56,19 @@ const Index = () => {
         <div className="container mx-auto px-4 text-center">
           <ScrollAnimationWrapper animation="fade-up">
             <h1 className="font-playfair font-bold text-5xl md:text-7xl text-primary-foreground mb-6">
-              Trusted Global Supplier of<br />
-              Coconut Derivatives
+              {t('home.heroTitle')}<br />
+              {t('home.heroTitleHighlight')}
             </h1>
           </ScrollAnimationWrapper>
           <ScrollAnimationWrapper animation="fade-up" delay={200}>
             <p className="font-work text-xl md:text-2xl text-primary-foreground/90 mb-8 max-w-3xl mx-auto">
-              PT. Sukses Ekspor Mandiri - Your reliable partner for premium quality coconut products from Indonesia
+              {t('home.heroSubtitle')}
             </p>
           </ScrollAnimationWrapper>
           <ScrollAnimationWrapper animation="fade-up" delay={400}>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" variant="secondary" className="font-work font-semibold text-lg px-8 py-6" asChild>
-                <Link to="/products">View Our Products</Link>
+                <Link to="/products">{t('home.viewProducts')}</Link>
               </Button>
             </div>
           </ScrollAnimationWrapper>
@@ -101,16 +104,13 @@ const Index = () => {
           <ScrollAnimationWrapper animation="fade-up">
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="font-playfair font-bold text-4xl md:text-5xl text-primary mb-6">
-                About PT. Sukses Ekspor Mandiri
+                {t('home.aboutTitle')}
               </h2>
               <p className="font-work text-lg text-foreground/80 mb-8 leading-relaxed">
-                We are a leading Indonesian exporter specializing in premium coconut derivatives. 
-                Operating from Malang, East Java, we serve global B2B buyers with commitment to quality, 
-                reliability, and professional service. Our extensive network of trusted suppliers and farmers 
-                ensures consistent supply of export-grade products.
+                {t('home.aboutDesc')}
               </p>
               <Button variant="default" size="lg" className="bg-primary hover:bg-primary/90 font-work font-semibold" asChild>
-                <Link to="/about">Learn More About Us</Link>
+                <Link to="/about">{t('home.learnMore')}</Link>
               </Button>
             </div>
           </ScrollAnimationWrapper>
@@ -123,10 +123,10 @@ const Index = () => {
           <ScrollAnimationWrapper animation="fade-up">
             <div className="text-center mb-12">
               <h2 className="font-playfair font-bold text-4xl md:text-5xl text-primary mb-4">
-                Our Featured Products
+                {t('home.featuredTitle')}
               </h2>
               <p className="font-work text-lg text-muted-foreground">
-                Premium quality coconut derivatives for global markets
+                {t('home.featuredSubtitle')}
               </p>
             </div>
           </ScrollAnimationWrapper>
@@ -154,7 +154,7 @@ const Index = () => {
           <ScrollAnimationWrapper animation="fade-up">
             <div className="text-center">
               <Button size="lg" variant="default" className="bg-primary hover:bg-primary/90 font-work font-semibold" asChild>
-                <Link to="/products">View All Products</Link>
+                <Link to="/products">{t('home.viewAllProducts')}</Link>
               </Button>
             </div>
           </ScrollAnimationWrapper>
@@ -166,18 +166,17 @@ const Index = () => {
         <div className="container mx-auto px-4 text-center">
           <ScrollAnimationWrapper animation="fade-up">
             <h2 className="font-playfair font-bold text-4xl md:text-5xl mb-6">
-              Ready to Partner With Us?
+              {t('home.ctaTitle')}
             </h2>
             <p className="font-work text-xl mb-8 max-w-2xl mx-auto opacity-90">
-              Contact us today to discuss your coconut derivatives requirements. 
-              We're here to provide quality products and reliable service.
+              {t('home.ctaDesc')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" variant="secondary" className="font-work font-semibold text-lg px-8" onClick={() => window.open('https://wa.me/6285124480871', '_blank')}>
-                Contact via WhatsApp
+                {t('home.contactWhatsApp')}
               </Button>
               <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground font-work font-semibold text-lg px-8" asChild>
-                <Link to="/contact#get-in-touch">Send Inquiry</Link>
+                <Link to="/contact#get-in-touch">{t('home.sendInquiry')}</Link>
               </Button>
             </div>
           </ScrollAnimationWrapper>

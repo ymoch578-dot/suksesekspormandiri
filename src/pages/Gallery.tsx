@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ScrollAnimationWrapper } from "@/hooks/useScrollAnimation";
+import { useLanguage } from "@/contexts/LanguageContext";
 import productSemiHusked from "@/assets/product-semi-husked-coconut-3.png";
 import productDesiccated from "@/assets/product-desiccated-coconut.jpg";
 import productCharcoal from "@/assets/product-charcoal-3.png";
@@ -11,36 +12,38 @@ import productCopraPellet from "@/assets/product-copra-pellet.jpg";
 import productOil from "@/assets/product-oil.jpg";
 
 const Gallery = () => {
+  const { t } = useLanguage();
+
   const galleryImages = [
     {
       image: productSemiHusked,
-      title: "Semi Husked Coconut",
-      category: "Products",
+      title: t('products.semiHusked'),
+      category: t('gallery.category'),
     },
     {
       image: productDesiccated,
-      title: "Desiccated Coconut",
-      category: "Products",
+      title: t('products.desiccated'),
+      category: t('gallery.category'),
     },
     {
       image: productCharcoal,
-      title: "Coconut Shell Charcoal",
-      category: "Products",
+      title: t('products.charcoal'),
+      category: t('gallery.category'),
     },
     {
       image: productCopraPellet,
-      title: "Copra Meal Pellet",
-      category: "Products",
+      title: t('gallery.copraPellet'),
+      category: t('gallery.category'),
     },
     {
       image: productCopraPowder,
-      title: "Copra Meal Powder",
-      category: "Products",
+      title: t('gallery.copraPowder'),
+      category: t('gallery.category'),
     },
     {
       image: productOil,
-      title: "Crude Coconut Oil",
-      category: "Products",
+      title: t('gallery.crudeOil'),
+      category: t('gallery.category'),
     },
   ];
 
@@ -54,10 +57,10 @@ const Gallery = () => {
           <ScrollAnimationWrapper animation="fade-up">
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="font-playfair font-bold text-5xl md:text-6xl text-primary mb-6">
-                Gallery
+                {t('gallery.heroTitle')}
               </h1>
               <p className="font-work text-xl text-muted-foreground">
-                See our products, production processes, and quality standards
+                {t('gallery.heroSubtitle')}
               </p>
             </div>
           </ScrollAnimationWrapper>
@@ -101,13 +104,13 @@ const Gallery = () => {
           <ScrollAnimationWrapper animation="fade-up">
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="font-playfair font-bold text-4xl text-primary mb-6">
-                Export Ready Supply Chain
+                {t('gallery.exportReadyTitle')}
               </h2>
               <p className="font-work text-lg text-foreground/80 mb-8 leading-relaxed">
-                We have developed an integrated supply chain system designed to support international buyers with clarity, efficiency, and professionalism. From quality control and export documentation preparation to logistics coordination and buyer communication, every process is structured to ensure smooth and secure transactions.
+                {t('gallery.exportReadyP1')}
               </p>
               <p className="font-work text-lg text-foreground/80 leading-relaxed">
-                Whether you are an established importer or new to sourcing products from Indonesia, our team is ready to assist you at every stage to ensure that each order meets the agreed specifications and quality standards.
+                {t('gallery.exportReadyP2')}
               </p>
             </div>
           </ScrollAnimationWrapper>
@@ -119,11 +122,10 @@ const Gallery = () => {
         <div className="container mx-auto px-4 text-center">
           <ScrollAnimationWrapper animation="fade-up">
             <h2 className="font-playfair font-bold text-4xl md:text-5xl mb-6">
-              Interested in Detailed Product Information?
+              {t('gallery.ctaTitle')}
             </h2>
             <p className="font-work text-xl mb-8 max-w-2xl mx-auto opacity-90">
-              Contact us for detailed product information, specifications, or to request samples. 
-              We're here to answer all your questions.
+              {t('gallery.ctaDesc')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
@@ -132,14 +134,14 @@ const Gallery = () => {
                 className="font-work font-semibold text-lg px-8"
                 onClick={() => window.open('https://wa.me/6285124480871', '_blank')}
               >
-                WhatsApp Us
+                {t('gallery.whatsAppUs')}
               </Button>
               <Button 
                 size="lg"
                 className="bg-accent hover:bg-accent/90 text-accent-foreground font-work font-semibold text-lg px-8"
                 asChild
               >
-                <Link to="/contact#get-in-touch">Send Inquiry</Link>
+                <Link to="/contact#get-in-touch">{t('home.sendInquiry')}</Link>
               </Button>
             </div>
           </ScrollAnimationWrapper>

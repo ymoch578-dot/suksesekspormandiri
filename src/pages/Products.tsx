@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { ScrollAnimationWrapper } from "@/hooks/useScrollAnimation";
+import { useLanguage } from "@/contexts/LanguageContext";
 import productSemiHusked from "@/assets/product-semi-husked-coconut-3.png";
 import productDesiccated from "@/assets/product-desiccated-coconut.jpg";
 import productCharcoal from "@/assets/product-charcoal-3.png";
@@ -12,43 +13,50 @@ import productCopraPellet from "@/assets/product-copra-pellet.jpg";
 import productOil from "@/assets/product-oil.jpg";
 
 const Products = () => {
+  const { t } = useLanguage();
+
   const products = [
     {
-      name: "Semi Husked Coconut",
+      name: t('products.semiHusked'),
       image: productSemiHusked,
-      description: "Premium quality semi husked coconuts sourced from trusted farms across Indonesia. Ideal for coconut water, copra production, and various industrial applications.",
-      applications: "Food processing, beverage industry, copra production, coconut oil manufacturing",
-      features: ["Export-grade quality", "Properly selected and inspected", "Consistent size and weight", "Available year-round"],
+      description: t('products.semiHuskedFullDesc'),
+      applications: t('products.semiHuskedApps'),
+      features: t('products.semiHuskedFeatures'),
     },
     {
-      name: "Desiccated Coconut",
+      name: t('products.desiccated'),
       image: productDesiccated,
-      description: "Fresh coconut meat finely processed under strict hygiene standards. Perfect for food manufacturing and bakery industries.",
-      applications: "Bakery products, confectionery, food manufacturing, dessert ingredients",
-      features: ["Food-grade quality", "Proper moisture content", "Natural white color", "Customizable particle size"],
+      description: t('products.desiccatedFullDesc'),
+      applications: t('products.desiccatedApps'),
+      features: t('products.desiccatedFeatures'),
     },
     {
-      name: "Coconut Shell Charcoal",
+      name: t('products.charcoal'),
       image: productCharcoal,
-      description: "High-quality coconut shell charcoal produced from selected coconut shells. Excellent burning properties and consistent quality for industrial and commercial use.",
-      applications: "BBQ charcoal, activated carbon production, industrial fuel, shisha charcoal",
-      features: ["High carbon content", "Low ash percentage", "Long burning time", "Consistent quality"],
+      description: t('products.charcoalFullDesc'),
+      applications: t('products.charcoalApps'),
+      features: t('products.charcoalFeatures'),
     },
     {
-      name: "Copra Meal (Pellet and Powder)",
+      name: t('products.copraMeal'),
       images: [productCopraPowder, productCopraPellet],
-      description: "Nutritious copra meal produced as a by-product of coconut oil extraction. Rich in protein and fiber, ideal for animal feed industries. Available in powder and pellet form.",
-      applications: "Livestock feed, poultry feed, aquaculture, animal nutrition",
-      features: ["High protein content", "Natural and chemical-free", "Consistent quality", "Properly dried and processed"],
+      description: t('products.copraMealDesc'),
+      applications: t('products.copraMealApps'),
+      features: t('products.copraMealFeatures'),
     },
     {
-      name: "Crude Coconut Oil",
+      name: t('products.crudeOil'),
       image: productOil,
-      description: "Crude coconut oil is unrefined coconut oil extracted from dried mature coconut meat (copra). It maintains its natural properties and is widely used for industrial applications.",
-      applications: "Soap manufacturing, cosmetics industry, biodiesel production, industrial lubricants",
-      features: ["Natural extraction process", "Consistent quality", "Proper storage and packaging", "Traceable sourcing"],
+      description: t('products.crudeOilDesc'),
+      applications: t('products.crudeOilApps'),
+      features: t('products.crudeOilFeatures'),
     },
   ];
+
+  const getFeatures = (features: string | string[]): string[] => {
+    if (Array.isArray(features)) return features;
+    return [];
+  };
 
   return (
     <div className="min-h-screen bg-background">
@@ -60,10 +68,10 @@ const Products = () => {
           <ScrollAnimationWrapper animation="fade-up">
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="font-playfair font-bold text-5xl md:text-6xl text-primary mb-6">
-                Our Products
+                {t('products.heroTitle')}
               </h1>
               <p className="font-work text-xl text-muted-foreground">
-                Premium coconut derivatives for global B2B markets
+                {t('products.heroSubtitle')}
               </p>
             </div>
           </ScrollAnimationWrapper>
@@ -79,7 +87,7 @@ const Products = () => {
                 <Card className="overflow-hidden shadow-card hover:shadow-natural transition-shadow duration-300">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
                     <div className="aspect-square md:aspect-auto overflow-hidden">
-                      {'images' in product ? (
+                      {'images' in product && product.images ? (
                         <div className="grid grid-cols-2 h-full">
                           {product.images.map((img, idx) => (
                             <img 
@@ -108,7 +116,7 @@ const Products = () => {
                       
                       <div className="mb-4">
                         <h3 className="font-work font-semibold text-lg text-primary mb-2">
-                          Applications:
+                          {t('products.applications')}
                         </h3>
                         <p className="font-work text-muted-foreground">
                           {product.applications}
@@ -117,10 +125,10 @@ const Products = () => {
 
                       <div>
                         <h3 className="font-work font-semibold text-lg text-primary mb-2">
-                          Key Features:
+                          {t('products.keyFeatures')}
                         </h3>
                         <ul className="font-work text-muted-foreground space-y-1">
-                          {product.features.map((feature, idx) => (
+                          {getFeatures(product.features).map((feature, idx) => (
                             <li key={idx} className="flex items-start gap-2">
                               <span className="text-accent mt-1">•</span>
                               <span>{feature}</span>
@@ -143,16 +151,14 @@ const Products = () => {
           <ScrollAnimationWrapper animation="fade-up">
             <div className="max-w-4xl mx-auto text-center">
               <p className="font-work text-lg text-foreground/80 mb-6">
-                <strong>Note:</strong> All products are available for export in bulk quantities. 
-                Pricing and detailed specifications are provided upon inquiry. 
-                We can accommodate custom packaging and specific requirements based on your needs.
+                <strong>Note:</strong> {t('products.inquiryNote')}
               </p>
               <Button 
                 size="lg"
                 className="bg-accent hover:bg-accent/90 text-accent-foreground font-work font-semibold"
                 asChild
               >
-                <Link to="/contact#get-in-touch">Request Product Information</Link>
+                <Link to="/contact#get-in-touch">{t('products.requestInfo')}</Link>
               </Button>
             </div>
           </ScrollAnimationWrapper>
@@ -164,10 +170,10 @@ const Products = () => {
         <div className="container mx-auto px-4 text-center">
           <ScrollAnimationWrapper animation="fade-up">
             <h2 className="font-playfair font-bold text-4xl md:text-5xl mb-6">
-              Need a Custom Product Specification?
+              {t('products.ctaTitle')}
             </h2>
             <p className="font-work text-xl mb-8 max-w-2xl mx-auto opacity-90">
-              We can accommodate specific requirements for volume, packaging, and quality specifications. Contact our team to discuss your needs.
+              {t('products.ctaDesc')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
@@ -176,14 +182,14 @@ const Products = () => {
                 className="font-work font-semibold text-lg px-8"
                 onClick={() => window.open('https://wa.me/6285124480871', '_blank')}
               >
-                WhatsApp Now
+                {t('products.whatsAppNow')}
               </Button>
               <Button 
                 size="lg"
                 className="bg-accent hover:bg-accent/90 text-accent-foreground font-work font-semibold text-lg px-8"
                 asChild
               >
-                <Link to="/contact#get-in-touch">Send Inquiry</Link>
+                <Link to="/contact#get-in-touch">{t('home.sendInquiry')}</Link>
               </Button>
             </div>
           </ScrollAnimationWrapper>

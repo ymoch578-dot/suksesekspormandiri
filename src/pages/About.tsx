@@ -5,24 +5,29 @@ import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle2, Target, TrendingUp, Users, Eye, Rocket, Heart, Shield, Award, Handshake } from "lucide-react";
 import { Link } from "react-router-dom";
 import { ScrollAnimationWrapper } from "@/hooks/useScrollAnimation";
+import { useLanguage } from "@/contexts/LanguageContext";
+
 const About = () => {
+  const { t } = useLanguage();
+
   const commitments = [{
     icon: <CheckCircle2 className="w-8 h-8 text-accent" />,
-    title: "Strict Quality Control",
-    description: "Every product undergoes rigorous inspection to meet international export standards"
+    title: t('about.strictQC'),
+    description: t('about.strictQCDesc')
   }, {
     icon: <Users className="w-8 h-8 text-accent" />,
-    title: "Professional Standards",
-    description: "Experienced team dedicated to providing excellent service and support"
+    title: t('about.professional'),
+    description: t('about.professionalDesc')
   }, {
     icon: <TrendingUp className="w-8 h-8 text-accent" />,
-    title: "On-Time Shipment",
-    description: "Reliable logistics and supply chain management for timely delivery"
+    title: t('about.onTime'),
+    description: t('about.onTimeDesc')
   }, {
     icon: <Target className="w-8 h-8 text-accent" />,
-    title: "Sustainable Sourcing",
-    description: "Working with trusted farmers and suppliers who follow sustainable practices"
+    title: t('about.sustainable'),
+    description: t('about.sustainableDesc')
   }];
+
   return <div className="min-h-screen bg-background">
       <Navbar />
       
@@ -32,10 +37,10 @@ const About = () => {
           <ScrollAnimationWrapper animation="fade-up">
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="font-playfair font-bold text-5xl md:text-6xl text-primary mb-6">
-                About PT. Sukses Ekspor Mandiri
+                {t('about.heroTitle')}
               </h1>
               <p className="font-work text-xl text-muted-foreground">
-                Your Trusted Partner in Coconut Derivatives Export
+                {t('about.heroSubtitle')}
               </p>
             </div>
           </ScrollAnimationWrapper>
@@ -49,19 +54,11 @@ const About = () => {
             <ScrollAnimationWrapper animation="fade-up">
               <div className="mb-12">
                 <h2 className="font-playfair font-bold text-4xl text-primary mb-6">
-                  Who We Are
+                  {t('about.whoWeAre')}
                 </h2>
                 <div className="font-work text-lg text-foreground/80 space-y-4 leading-relaxed">
-                  <p>
-                    PT. Sukses Ekspor Mandiri is a professional export company based in Malang, East Java, Indonesia, 
-                    specializing in premium coconut derivatives. We serve B2B buyers worldwide including importers, 
-                    distributors, and industrial manufacturers who require consistent supply of high-quality raw materials.
-                  </p>
-                  <p>
-                    Our strategic location in Indonesia—one of the world's largest producers of coconut products—gives 
-                    us direct access to the best sources. We work closely with a network of trusted farmers, processors, and 
-                    suppliers to ensure that every shipment meets international quality standards.
-                  </p>
+                  <p>{t('about.whoWeAreP1')}</p>
+                  <p>{t('about.whoWeAreP2')}</p>
                 </div>
               </div>
             </ScrollAnimationWrapper>
@@ -69,19 +66,11 @@ const About = () => {
             <ScrollAnimationWrapper animation="fade-up" delay={100}>
               <div className="mb-12">
                 <h2 className="font-playfair font-bold text-4xl text-primary mb-6">
-                  Our Business Philosophy
+                  {t('about.philosophy')}
                 </h2>
                 <div className="font-work text-lg text-foreground/80 space-y-4 leading-relaxed">
-                  <p>
-                    We believe that successful business relationships are built on four pillars: <strong>integrity</strong>, 
-                    <strong> quality</strong>, <strong>sustainability</strong>, and <strong>long-term partnership</strong>. Our goal is not just to sell
-                    products, but to become your reliable supplier partner who understands your needs and consistently delivers value.
-                  </p>
-                  <p>
-                    Every buyer is unique, and we take time to understand your specific requirements—whether it's product 
-                    specifications, packaging preferences, or delivery schedules. We're committed to providing transparent 
-                    communication and professional service at every step of the process.
-                  </p>
+                  <p>{t('about.philosophyP1')}</p>
+                  <p>{t('about.philosophyP2')}</p>
                 </div>
               </div>
             </ScrollAnimationWrapper>
@@ -102,11 +91,11 @@ const About = () => {
                       <Eye className="w-7 h-7 text-accent" />
                     </div>
                     <h2 className="font-playfair font-bold text-3xl text-primary">
-                      Our Vision
+                      {t('about.vision')}
                     </h2>
                   </div>
                   <p className="font-work text-lg text-foreground/80 leading-relaxed text-center">
-                    To become a trusted and globally competitive Indonesian international trading company in providing coconut derivatives, while delivering added value to business partners worldwide.
+                    {t('about.visionText')}
                   </p>
                 </div>
               </ScrollAnimationWrapper>
@@ -119,30 +108,16 @@ const About = () => {
                       <Rocket className="w-7 h-7 text-accent" />
                     </div>
                     <h2 className="font-playfair font-bold text-3xl text-primary">
-                      Our Mission
+                      {t('about.mission')}
                     </h2>
                   </div>
                   <ul className="font-work text-foreground/80 space-y-4">
-                    <li className="flex items-start gap-3">
-                      <CheckCircle2 className="w-5 h-5 text-accent mt-1 flex-shrink-0" />
-                      <span>Build long-term relationships with international buyers through professional service and consistent product quality.</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <CheckCircle2 className="w-5 h-5 text-accent mt-1 flex-shrink-0" />
-                      <span>Strengthen partnerships with local producers to create a stable and transparent supply chain.</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <CheckCircle2 className="w-5 h-5 text-accent mt-1 flex-shrink-0" />
-                      <span>Provide products that meet international quality standards with on-time delivery.</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <CheckCircle2 className="w-5 h-5 text-accent mt-1 flex-shrink-0" />
-                      <span>Serve as a bridge between Indonesian producers and global markets, with a commitment to maintaining integrity in every transaction.</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <CheckCircle2 className="w-5 h-5 text-accent mt-1 flex-shrink-0" />
-                      <span>Continuously expand our product portfolio in response to global market demands.</span>
-                    </li>
+                    {[0, 1, 2, 3, 4].map((index) => (
+                      <li key={index} className="flex items-start gap-3">
+                        <CheckCircle2 className="w-5 h-5 text-accent mt-1 flex-shrink-0" />
+                        <span>{t(`about.missionItems.${index}`)}</span>
+                      </li>
+                    ))}
                   </ul>
                 </div>
               </ScrollAnimationWrapper>
@@ -153,10 +128,10 @@ const About = () => {
               <ScrollAnimationWrapper animation="fade-up">
                 <div className="text-center mb-12">
                   <h2 className="font-playfair font-bold text-4xl text-primary mb-4">
-                    Our Core Values
+                    {t('about.coreValues')}
                   </h2>
                   <p className="font-work text-lg text-muted-foreground">
-                    The principles that form the foundation of all our business activities
+                    {t('about.coreValuesSubtitle')}
                   </p>
                 </div>
               </ScrollAnimationWrapper>
@@ -169,10 +144,10 @@ const About = () => {
                         <Shield className="w-8 h-8 text-accent" />
                       </div>
                       <h3 className="font-playfair font-semibold text-xl text-primary mb-3">
-                        Integrity
+                        {t('about.integrity')}
                       </h3>
                       <p className="font-work text-sm text-muted-foreground leading-relaxed">
-                        Maintaining honesty and transparency in every business interaction.
+                        {t('about.integrityDesc')}
                       </p>
                     </CardContent>
                   </Card>
@@ -185,10 +160,10 @@ const About = () => {
                         <Award className="w-8 h-8 text-accent" />
                       </div>
                       <h3 className="font-playfair font-semibold text-xl text-primary mb-3">
-                        Quality
+                        {t('about.quality')}
                       </h3>
                       <p className="font-work text-sm text-muted-foreground leading-relaxed">
-                        Prioritizing specification compliance, product quality, and smooth delivery.
+                        {t('about.qualityDesc')}
                       </p>
                     </CardContent>
                   </Card>
@@ -201,10 +176,10 @@ const About = () => {
                         <Heart className="w-8 h-8 text-accent" />
                       </div>
                       <h3 className="font-playfair font-semibold text-xl text-primary mb-3">
-                        Commitment
+                        {t('about.commitment')}
                       </h3>
                       <p className="font-work text-sm text-muted-foreground leading-relaxed">
-                        Respecting time, agreements, and buyer needs.
+                        {t('about.commitmentDesc')}
                       </p>
                     </CardContent>
                   </Card>
@@ -217,10 +192,10 @@ const About = () => {
                         <Handshake className="w-8 h-8 text-accent" />
                       </div>
                       <h3 className="font-playfair font-semibold text-xl text-primary mb-3">
-                        Partnership
+                        {t('about.partnership')}
                       </h3>
                       <p className="font-work text-sm text-muted-foreground leading-relaxed">
-                        Building mutually supportive relationships with local producers and global partners.
+                        {t('about.partnershipDesc')}
                       </p>
                     </CardContent>
                   </Card>
@@ -237,10 +212,10 @@ const About = () => {
           <ScrollAnimationWrapper animation="fade-up">
             <div className="text-center mb-12">
               <h2 className="font-playfair font-bold text-4xl md:text-5xl text-primary mb-4">
-                Our Commitments to You
+                {t('about.commitmentsTitle')}
               </h2>
               <p className="font-work text-lg text-muted-foreground">
-                What you can expect when partnering with us
+                {t('about.commitmentsSubtitle')}
               </p>
             </div>
           </ScrollAnimationWrapper>
@@ -273,19 +248,11 @@ const About = () => {
           <ScrollAnimationWrapper animation="fade-up">
             <div className="max-w-4xl mx-auto">
               <h2 className="font-playfair font-bold text-4xl text-primary mb-6 text-center">
-                Location & Operations
+                {t('about.locationTitle')}
               </h2>
               <div className="font-work text-lg text-foreground/80 space-y-4 leading-relaxed text-center">
-                <p>
-                  Our headquarters and operations are based in <strong>Malang, East Java, Indonesia</strong>. 
-                  This strategic location provides us with excellent access to major coconut production 
-                  regions, as well as efficient logistics connections to international shipping ports.
-                </p>
-                <p>
-                  We maintain strong relationships with local suppliers and have established quality control processes 
-                  at every stage—from sourcing raw materials to final packaging and shipment. Our experienced team 
-                  ensures smooth operations and reliable service for all our international partners.
-                </p>
+                <p>{t('about.locationP1')}</p>
+                <p>{t('about.locationP2')}</p>
               </div>
             </div>
           </ScrollAnimationWrapper>
@@ -297,18 +264,17 @@ const About = () => {
         <div className="container mx-auto px-4 text-center">
           <ScrollAnimationWrapper animation="fade-up">
             <h2 className="font-playfair font-bold text-4xl md:text-5xl mb-6">
-              Let's Build a Partnership
+              {t('about.ctaTitle')}
             </h2>
             <p className="font-work text-xl mb-8 max-w-2xl mx-auto opacity-90">
-              Whether you're looking for a new supplier or want to diversify your sourcing, 
-              we're ready to discuss how we can meet your needs.
+              {t('about.ctaDesc')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" variant="secondary" className="font-work font-semibold text-lg px-8" onClick={() => window.open('https://wa.me/6285124480871', '_blank')}>
-                WhatsApp Us
+                {t('about.whatsAppUs')}
               </Button>
               <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground font-work font-semibold text-lg px-8" asChild>
-                <Link to="/contact#get-in-touch">Send Inquiry</Link>
+                <Link to="/contact#get-in-touch">{t('home.sendInquiry')}</Link>
               </Button>
             </div>
           </ScrollAnimationWrapper>
