@@ -1,6 +1,10 @@
 import { Mail, MapPin, Phone, Linkedin, Facebook, Instagram } from "lucide-react";
 import { NavLink } from "@/components/NavLink";
+import { useLanguage } from "@/contexts/LanguageContext";
+
 const Footer = () => {
+  const { t } = useLanguage();
+
   return <footer className="bg-forest-green text-primary-foreground">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
@@ -9,19 +13,19 @@ const Footer = () => {
             <h3 className="font-playfair font-bold text-2xl mb-4">
               PT. Sukses Ekspor Mandiri
             </h3>
-            <p className="font-work text-primary-foreground/80 mb-4">Trusted Supplier Partner in Coconut Derivatives</p>
+            <p className="font-work text-primary-foreground/80 mb-4">{t('footer.tagline')}</p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-work font-semibold text-lg mb-4">Quick Links</h4>
+            <h4 className="font-work font-semibold text-lg mb-4">{t('footer.quickLinks')}</h4>
             <ul className="space-y-2 font-work">
               <li>
                 <NavLink to="/about" className="text-primary-foreground/80 hover:text-accent transition-colors" onClick={() => window.scrollTo({
                 top: 0,
                 behavior: 'smooth'
               })}>
-                  About Us
+                  {t('nav.about')}
                 </NavLink>
               </li>
               <li>
@@ -29,7 +33,7 @@ const Footer = () => {
                 top: 0,
                 behavior: 'smooth'
               })}>
-                  Products
+                  {t('nav.products')}
                 </NavLink>
               </li>
               <li>
@@ -37,7 +41,7 @@ const Footer = () => {
                 top: 0,
                 behavior: 'smooth'
               })}>
-                  Why Choose Us
+                  {t('nav.whyChooseUs')}
                 </NavLink>
               </li>
               <li>
@@ -45,7 +49,7 @@ const Footer = () => {
                 top: 0,
                 behavior: 'smooth'
               })}>
-                  Contact
+                  {t('nav.contact')}
                 </NavLink>
               </li>
             </ul>
@@ -53,11 +57,11 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h4 className="font-work font-semibold text-lg mb-4">Contact Us</h4>
+            <h4 className="font-work font-semibold text-lg mb-4">{t('footer.contactUs')}</h4>
             <ul className="space-y-3 font-work text-primary-foreground/80">
               <li className="flex items-start gap-2">
                 <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0" />
-                <span>Malang, Jawa Timur, Indonesia</span>
+                <span>{t('contact.addressValue')}</span>
               </li>
               <li className="flex items-start gap-2">
                 <Mail className="w-5 h-5 flex-shrink-0 mt-0.5" />
@@ -81,7 +85,7 @@ const Footer = () => {
 
           {/* Social Media */}
           <div>
-            <h4 className="font-work font-semibold text-lg mb-4">Follow Us</h4>
+            <h4 className="font-work font-semibold text-lg mb-4">{t('footer.followUs')}</h4>
             <div className="flex gap-4">
               <a href="https://www.linkedin.com/company/pt-sukses-ekspor-mandiri" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-primary-foreground/10 hover:bg-accent flex items-center justify-center transition-colors" aria-label="LinkedIn">
                 <Linkedin className="w-5 h-5" />
@@ -98,7 +102,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="border-t border-primary-foreground/20 pt-6 text-center font-work text-primary-foreground/60">
-          <p>&copy; {new Date().getFullYear()} PT. Sukses Ekspor Mandiri. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} PT. Sukses Ekspor Mandiri. {t('footer.copyright')}</p>
         </div>
       </div>
     </footer>;

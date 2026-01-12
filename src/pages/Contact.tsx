@@ -9,9 +9,11 @@ import { Mail, MapPin, Phone, Linkedin, Facebook, Instagram } from "lucide-react
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 import { ScrollAnimationWrapper } from "@/hooks/useScrollAnimation";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Contact = () => {
   const { toast } = useToast();
+  const { t } = useLanguage();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -55,10 +57,10 @@ const Contact = () => {
           <ScrollAnimationWrapper animation="fade-up">
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="font-playfair font-bold text-5xl md:text-6xl text-primary mb-6">
-                Contact Us
+                {t('contact.heroTitle')}
               </h1>
               <p className="font-work text-xl text-muted-foreground">
-                Let's discuss how we can serve your coconut derivatives needs
+                {t('contact.heroSubtitle')}
               </p>
             </div>
           </ScrollAnimationWrapper>
@@ -73,21 +75,19 @@ const Contact = () => {
             <ScrollAnimationWrapper animation="fade-up">
               <div>
                 <h2 id="get-in-touch" className="font-playfair font-bold text-4xl text-primary mb-6">
-                  Get in Touch
+                  {t('contact.getInTouch')}
                 </h2>
                 <p className="font-work text-lg text-foreground/80 mb-8 leading-relaxed">
-                  We welcome inquiries from importers, distributors, and industrial buyers worldwide. 
-                  Whether you have questions about our products, need a quotation, or want to discuss 
-                  your specific requirements, our team is ready to assist you.
+                  {t('contact.getInTouchDesc')}
                 </p>
 
                 <div className="space-y-6 mb-8">
                   <div className="flex items-start gap-4">
                     <MapPin className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
                     <div>
-                      <h3 className="font-work font-semibold text-lg text-primary mb-1">Address</h3>
+                      <h3 className="font-work font-semibold text-lg text-primary mb-1">{t('contact.address')}</h3>
                       <p className="font-work text-foreground/80">
-                        Malang, Jawa Timur<br />Indonesia
+                        {t('contact.addressValue')}
                       </p>
                     </div>
                   </div>
@@ -95,7 +95,7 @@ const Contact = () => {
                   <div className="flex items-start gap-4">
                     <Mail className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
                     <div>
-                      <h3 className="font-work font-semibold text-lg text-primary mb-1">Email</h3>
+                      <h3 className="font-work font-semibold text-lg text-primary mb-1">{t('contact.email')}</h3>
                       <div className="flex flex-col gap-1">
                         <a 
                           href="mailto:suksesekspormandiri@gmail.com"
@@ -116,7 +116,7 @@ const Contact = () => {
                   <div className="flex items-start gap-4">
                     <Phone className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
                     <div>
-                      <h3 className="font-work font-semibold text-lg text-primary mb-1">WhatsApp</h3>
+                      <h3 className="font-work font-semibold text-lg text-primary mb-1">{t('contact.whatsApp')}</h3>
                       <a 
                         href="https://wa.me/6285124480871"
                         target="_blank"
@@ -130,7 +130,7 @@ const Contact = () => {
                 </div>
 
                 <div className="border-t border-border pt-6">
-                  <h3 className="font-work font-semibold text-lg text-primary mb-4">Follow Us</h3>
+                  <h3 className="font-work font-semibold text-lg text-primary mb-4">{t('contact.followUs')}</h3>
                   <div className="flex gap-4">
                     <a 
                       href="https://www.linkedin.com/company/pt-sukses-ekspor-mandiri"
@@ -169,12 +169,12 @@ const Contact = () => {
               <Card className="shadow-natural">
                 <CardContent className="p-8">
                   <h3 className="font-playfair font-bold text-3xl text-primary mb-6">
-                    Send an Inquiry
+                    {t('contact.sendInquiry')}
                   </h3>
                   <form onSubmit={handleSubmit} className="space-y-6">
                     <div>
                       <Label htmlFor="name" className="font-work font-semibold">
-                        Your Name *
+                        {t('contact.yourName')} *
                       </Label>
                       <Input
                         id="name"
@@ -189,7 +189,7 @@ const Contact = () => {
 
                     <div>
                       <Label htmlFor="email" className="font-work font-semibold">
-                        Email Address *
+                        {t('contact.emailAddress')} *
                       </Label>
                       <Input
                         id="email"
@@ -205,7 +205,7 @@ const Contact = () => {
 
                     <div>
                       <Label htmlFor="company" className="font-work font-semibold">
-                        Company Name *
+                        {t('contact.companyName')} *
                       </Label>
                       <Input
                         id="company"
@@ -220,7 +220,7 @@ const Contact = () => {
 
                     <div>
                       <Label htmlFor="country" className="font-work font-semibold">
-                        Country *
+                        {t('contact.country')} *
                       </Label>
                       <Input
                         id="country"
@@ -235,7 +235,7 @@ const Contact = () => {
 
                     <div>
                       <Label htmlFor="message" className="font-work font-semibold">
-                        Your Message *
+                        {t('contact.yourMessage')} *
                       </Label>
                       <Textarea
                         id="message"
@@ -244,7 +244,7 @@ const Contact = () => {
                         value={formData.message}
                         onChange={handleChange}
                         className="mt-2 font-work min-h-[150px]"
-                        placeholder="Please provide details about your inquiry, including product of interest, quantities, and any specific requirements..."
+                        placeholder={t('contact.messagePlaceholder')}
                       />
                     </div>
 
@@ -253,7 +253,7 @@ const Contact = () => {
                       size="lg"
                       className="w-full bg-accent hover:bg-accent/90 text-accent-foreground font-work font-semibold"
                     >
-                      Send Inquiry Now
+                      {t('contact.sendInquiryNow')}
                     </Button>
                   </form>
                 </CardContent>
@@ -268,11 +268,10 @@ const Contact = () => {
         <div className="container mx-auto px-4 text-center">
           <ScrollAnimationWrapper animation="fade-up">
             <h2 className="font-playfair font-bold text-4xl md:text-5xl mb-6">
-              Prefer to Chat Directly?
+              {t('contact.ctaTitle')}
             </h2>
             <p className="font-work text-xl mb-8 max-w-2xl mx-auto opacity-90">
-              For faster response, feel free to contact us directly via WhatsApp. 
-              Our team is ready to answer your questions.
+              {t('contact.ctaDesc')}
             </p>
             <Button 
               size="lg"
@@ -280,7 +279,7 @@ const Contact = () => {
               className="font-work font-semibold text-lg px-8"
               onClick={() => window.open('https://wa.me/6285124480871', '_blank')}
             >
-              Chat on WhatsApp
+              {t('contact.chatWhatsApp')}
             </Button>
           </ScrollAnimationWrapper>
         </div>
