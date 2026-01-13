@@ -13,7 +13,7 @@ import productCopraPellet from "@/assets/product-copra-pellet.jpg";
 import productOil from "@/assets/product-oil.jpg";
 
 const Products = () => {
-  const { t } = useLanguage();
+  const { t, tArray } = useLanguage();
 
   const products = [
     {
@@ -21,42 +21,37 @@ const Products = () => {
       image: productSemiHusked,
       description: t('products.semiHuskedFullDesc'),
       applications: t('products.semiHuskedApps'),
-      features: t('products.semiHuskedFeatures'),
+      features: tArray('products.semiHuskedFeatures'),
     },
     {
       name: t('products.desiccated'),
       image: productDesiccated,
       description: t('products.desiccatedFullDesc'),
       applications: t('products.desiccatedApps'),
-      features: t('products.desiccatedFeatures'),
+      features: tArray('products.desiccatedFeatures'),
     },
     {
       name: t('products.charcoal'),
       image: productCharcoal,
       description: t('products.charcoalFullDesc'),
       applications: t('products.charcoalApps'),
-      features: t('products.charcoalFeatures'),
+      features: tArray('products.charcoalFeatures'),
     },
     {
       name: t('products.copraMeal'),
       images: [productCopraPowder, productCopraPellet],
       description: t('products.copraMealDesc'),
       applications: t('products.copraMealApps'),
-      features: t('products.copraMealFeatures'),
+      features: tArray('products.copraMealFeatures'),
     },
     {
       name: t('products.crudeOil'),
       image: productOil,
       description: t('products.crudeOilDesc'),
       applications: t('products.crudeOilApps'),
-      features: t('products.crudeOilFeatures'),
+      features: tArray('products.crudeOilFeatures'),
     },
   ];
-
-  const getFeatures = (features: string | string[]): string[] => {
-    if (Array.isArray(features)) return features;
-    return [];
-  };
 
   return (
     <div className="min-h-screen bg-background">
@@ -128,7 +123,7 @@ const Products = () => {
                           {t('products.keyFeatures')}
                         </h3>
                         <ul className="font-work text-muted-foreground space-y-1">
-                          {getFeatures(product.features).map((feature, idx) => (
+                          {product.features.map((feature, idx) => (
                             <li key={idx} className="flex items-start gap-2">
                               <span className="text-accent mt-1">•</span>
                               <span>{feature}</span>

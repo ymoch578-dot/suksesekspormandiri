@@ -6,6 +6,7 @@ interface LanguageContextType {
   language: Language;
   setLanguage: (lang: Language) => void;
   t: (key: string) => string;
+  tArray: (key: string) => string[];
   isTransitioning: boolean;
 }
 
@@ -55,7 +56,7 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
     document.documentElement.dir = language === 'ar' ? 'rtl' : 'ltr';
   }, [language]);
 
-  const t = (key: string): string => {
+  const getTranslationValue = (key: string): any => {
     const keys = key.split('.');
     let value: any = translations[language];
     
@@ -69,18 +70,28 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
           if (value && typeof value === 'object' && fallbackKey in value) {
             value = value[fallbackKey];
           } else {
-            return key; // Return key if translation not found
+            return null;
           }
         }
         break;
       }
     }
     
+    return value;
+  };
+
+  const t = (key: string): string => {
+    const value = getTranslationValue(key);
     return typeof value === 'string' ? value : key;
   };
 
+  const tArray = (key: string): string[] => {
+    const value = getTranslationValue(key);
+    return Array.isArray(value) ? value : [];
+  };
+
   return (
-    <LanguageContext.Provider value={{ language, setLanguage, t, isTransitioning }}>
+    <LanguageContext.Provider value={{ language, setLanguage, t, tArray, isTransitioning }}>
       {children}
     </LanguageContext.Provider>
   );
