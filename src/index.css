@@ -129,3 +129,37 @@ All colors MUST be HSL.
     @apply bg-background text-foreground;
   }
 }
+
+/* Language transition animations */
+.language-transitioning * {
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out !important;
+}
+
+.language-transitioning main,
+.language-transitioning section,
+.language-transitioning header,
+.language-transitioning footer {
+  opacity: 0.7;
+  transform: scale(0.995);
+}
+
+/* Smooth text transitions for language changes */
+h1, h2, h3, h4, h5, h6, p, span, a, button, label {
+  transition: opacity 0.3s ease-out;
+}
+
+/* RTL support */
+[dir="rtl"] {
+  text-align: right;
+}
+
+[dir="rtl"] .flex-row {
+  flex-direction: row-reverse;
+}
+
+/* Ensure smooth transitions don't affect critical UI */
+.language-transitioning .fixed,
+.language-transitioning nav {
+  opacity: 1 !important;
+  transform: none !important;
+}
