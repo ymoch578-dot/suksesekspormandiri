@@ -7,27 +7,27 @@ import { Link } from "react-router-dom";
 import { ScrollAnimationWrapper } from "@/hooks/useScrollAnimation";
 import { useLanguage } from "@/contexts/LanguageContext";
 import productSemiHusked from "@/assets/product-semi-husked-coconut-3.png";
-import productDesiccated from "@/assets/product-desiccated-coconut.jpg";
+import productDesiccated from "@/assets/product-desiccated-coconut-new.png";
 import productCharcoal from "@/assets/product-charcoal-3.png";
-import heroCover from "@/assets/hero-cover-website.png";
+import heroCover from "@/assets/hero-cover-website-2.jpg";
 
 const Index = () => {
   const { t } = useLanguage();
 
   const highlights = [{
-    icon: <Award className="w-10 h-10 text-accent" />,
+    icon: <Award className="w-10 h-10 text-warm" />,
     title: t('home.highlights.premiumQuality'),
     description: t('home.highlights.premiumQualityDesc')
   }, {
-    icon: <Clock className="w-10 h-10 text-accent" />,
+    icon: <Clock className="w-10 h-10 text-warm" />,
     title: t('home.highlights.stableSupply'),
     description: t('home.highlights.stableSupplyDesc')
   }, {
-    icon: <DollarSign className="w-10 h-10 text-accent" />,
+    icon: <DollarSign className="w-10 h-10 text-warm" />,
     title: t('home.highlights.competitivePricing'),
     description: t('home.highlights.competitivePricingDesc')
   }, {
-    icon: <PackageCheck className="w-10 h-10 text-accent" />,
+    icon: <PackageCheck className="w-10 h-10 text-warm" />,
     title: t('home.highlights.exportReady'),
     description: t('home.highlights.exportReadyDesc')
   }];

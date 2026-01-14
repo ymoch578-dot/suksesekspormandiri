@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { ScrollAnimationWrapper } from "@/hooks/useScrollAnimation";
 import { useLanguage } from "@/contexts/LanguageContext";
 import productSemiHusked from "@/assets/product-semi-husked-coconut-3.png";
-import productDesiccated from "@/assets/product-desiccated-coconut.jpg";
+import productDesiccated from "@/assets/product-desiccated-coconut-new.png";
 import productCharcoal from "@/assets/product-charcoal-3.png";
 import productCopraPowder from "@/assets/product-copra-powder-2.jpg";
 import productCopraPellet from "@/assets/product-copra-pellet.jpg";

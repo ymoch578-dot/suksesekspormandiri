@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { ScrollAnimationWrapper } from "@/hooks/useScrollAnimation";
 import { useLanguage } from "@/contexts/LanguageContext";
 import productSemiHusked from "@/assets/product-semi-husked-coconut-3.png";
-import productDesiccated from "@/assets/product-desiccated-coconut.jpg";
+import productDesiccated from "@/assets/product-desiccated-coconut-new.png";
 import productCharcoal from "@/assets/product-charcoal-3.png";
 import productCopraPowder from "@/assets/product-copra-powder.jpg";
 import productCopraPellet from "@/assets/product-copra-pellet.jpg";
@@ -125,7 +125,7 @@ const Products = () => {
                         <ul className="font-work text-muted-foreground space-y-1">
                           {product.features.map((feature, idx) => (
                             <li key={idx} className="flex items-start gap-2">
-                              <span className="text-accent mt-1">•</span>
+                              <span className="text-warm mt-1">•</span>
                               <span>{feature}</span>
                             </li>
                           ))}
