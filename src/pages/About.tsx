@@ -11,19 +11,19 @@ const About = () => {
   const { t } = useLanguage();
 
   const commitments = [{
-    icon: <CheckCircle2 className="w-8 h-8 text-warm" />,
+    icon: <CheckCircle2 className="w-8 h-8 text-forest-green" />,
     title: t('about.strictQC'),
     description: t('about.strictQCDesc')
   }, {
-    icon: <Users className="w-8 h-8 text-warm" />,
+    icon: <Users className="w-8 h-8 text-forest-green" />,
     title: t('about.professional'),
     description: t('about.professionalDesc')
   }, {
-    icon: <TrendingUp className="w-8 h-8 text-warm" />,
+    icon: <TrendingUp className="w-8 h-8 text-forest-green" />,
     title: t('about.onTime'),
     description: t('about.onTimeDesc')
   }, {
-    icon: <Target className="w-8 h-8 text-warm" />,
+    icon: <Target className="w-8 h-8 text-forest-green" />,
     title: t('about.sustainable'),
     description: t('about.sustainableDesc')
   }];
@@ -87,8 +87,8 @@ const About = () => {
               <ScrollAnimationWrapper animation="fade-up">
                 <div className="bg-card rounded-2xl p-8 shadow-card border border-border/50 h-full">
                   <div className="flex flex-col items-center text-center mb-6">
-                    <div className="w-14 h-14 rounded-full bg-warm/10 flex items-center justify-center mb-4">
-                      <Eye className="w-7 h-7 text-warm" />
+                    <div className="w-14 h-14 rounded-full bg-forest-green/10 flex items-center justify-center mb-4">
+                      <Eye className="w-7 h-7 text-forest-green" />
                     </div>
                     <h2 className="font-playfair font-bold text-3xl text-primary">
                       {t('about.vision')}
@@ -104,8 +104,8 @@ const About = () => {
               <ScrollAnimationWrapper animation="fade-up" delay={100}>
                 <div className="bg-card rounded-2xl p-8 shadow-card border border-border/50 h-full">
                   <div className="flex items-center gap-4 mb-6">
-                    <div className="w-14 h-14 rounded-full bg-warm/10 flex items-center justify-center">
-                      <Rocket className="w-7 h-7 text-warm" />
+                    <div className="w-14 h-14 rounded-full bg-forest-green/10 flex items-center justify-center">
+                      <Rocket className="w-7 h-7 text-forest-green" />
                     </div>
                     <h2 className="font-playfair font-bold text-3xl text-primary">
                       {t('about.mission')}
@@ -114,7 +114,7 @@ const About = () => {
                   <ul className="font-work text-foreground/80 space-y-4">
                     {[0, 1, 2, 3, 4].map((index) => (
                       <li key={index} className="flex items-start gap-3">
-                        <CheckCircle2 className="w-5 h-5 text-warm mt-1 flex-shrink-0" />
+                        <CheckCircle2 className="w-5 h-5 text-forest-green mt-1 flex-shrink-0" />
                         <span>{t(`about.missionItems.${index}`)}</span>
                       </li>
                     ))}
@@ -138,10 +138,10 @@ const About = () => {
               
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <ScrollAnimationWrapper animation="fade-up" delay={0}>
-                  <Card className="text-center shadow-card hover:shadow-natural transition-shadow duration-300 border-t-4 border-t-warm h-full">
+                  <Card className="text-center shadow-card hover:shadow-natural transition-shadow duration-300 border-t-4 border-t-forest-green h-full">
                     <CardContent className="p-6">
-                      <div className="w-16 h-16 rounded-full bg-warm/10 flex items-center justify-center mx-auto mb-4">
-                        <Shield className="w-8 h-8 text-warm" />
+                      <div className="w-16 h-16 rounded-full bg-forest-green/10 flex items-center justify-center mx-auto mb-4">
+                        <Shield className="w-8 h-8 text-forest-green" />
                       </div>
                       <h3 className="font-playfair font-semibold text-xl text-primary mb-3">
                         {t('about.integrity')}
@@ -154,10 +154,10 @@ const About = () => {
                 </ScrollAnimationWrapper>
 
                 <ScrollAnimationWrapper animation="fade-up" delay={100}>
-                  <Card className="text-center shadow-card hover:shadow-natural transition-shadow duration-300 border-t-4 border-t-warm h-full">
+                  <Card className="text-center shadow-card hover:shadow-natural transition-shadow duration-300 border-t-4 border-t-forest-green h-full">
                     <CardContent className="p-6">
-                      <div className="w-16 h-16 rounded-full bg-warm/10 flex items-center justify-center mx-auto mb-4">
-                        <Award className="w-8 h-8 text-warm" />
+                      <div className="w-16 h-16 rounded-full bg-forest-green/10 flex items-center justify-center mx-auto mb-4">
+                        <Award className="w-8 h-8 text-forest-green" />
                       </div>
                       <h3 className="font-playfair font-semibold text-xl text-primary mb-3">
                         {t('about.quality')}
@@ -170,10 +170,10 @@ const About = () => {
                 </ScrollAnimationWrapper>
 
                 <ScrollAnimationWrapper animation="fade-up" delay={200}>
-                  <Card className="text-center shadow-card hover:shadow-natural transition-shadow duration-300 border-t-4 border-t-warm h-full">
+                  <Card className="text-center shadow-card hover:shadow-natural transition-shadow duration-300 border-t-4 border-t-forest-green h-full">
                     <CardContent className="p-6">
-                      <div className="w-16 h-16 rounded-full bg-warm/10 flex items-center justify-center mx-auto mb-4">
-                        <Heart className="w-8 h-8 text-warm" />
+                      <div className="w-16 h-16 rounded-full bg-forest-green/10 flex items-center justify-center mx-auto mb-4">
+                        <Heart className="w-8 h-8 text-forest-green" />
                       </div>
                       <h3 className="font-playfair font-semibold text-xl text-primary mb-3">
                         {t('about.commitment')}
@@ -186,10 +186,10 @@ const About = () => {
                 </ScrollAnimationWrapper>
 
                 <ScrollAnimationWrapper animation="fade-up" delay={300}>
-                  <Card className="text-center shadow-card hover:shadow-natural transition-shadow duration-300 border-t-4 border-t-warm h-full">
+                  <Card className="text-center shadow-card hover:shadow-natural transition-shadow duration-300 border-t-4 border-t-forest-green h-full">
                     <CardContent className="p-6">
-                      <div className="w-16 h-16 rounded-full bg-warm/10 flex items-center justify-center mx-auto mb-4">
-                        <Handshake className="w-8 h-8 text-warm" />
+                      <div className="w-16 h-16 rounded-full bg-forest-green/10 flex items-center justify-center mx-auto mb-4">
+                        <Handshake className="w-8 h-8 text-forest-green" />
                       </div>
                       <h3 className="font-playfair font-semibold text-xl text-primary mb-3">
                         {t('about.partnership')}

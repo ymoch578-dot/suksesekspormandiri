@@ -15,19 +15,19 @@ const Index = () => {
   const { t } = useLanguage();
 
   const highlights = [{
-    icon: <Award className="w-10 h-10 text-warm" />,
+    icon: <Award className="w-10 h-10 text-forest-green" />,
     title: t('home.highlights.premiumQuality'),
     description: t('home.highlights.premiumQualityDesc')
   }, {
-    icon: <Clock className="w-10 h-10 text-warm" />,
+    icon: <Clock className="w-10 h-10 text-forest-green" />,
     title: t('home.highlights.stableSupply'),
     description: t('home.highlights.stableSupplyDesc')
   }, {
-    icon: <DollarSign className="w-10 h-10 text-warm" />,
+    icon: <DollarSign className="w-10 h-10 text-forest-green" />,
     title: t('home.highlights.competitivePricing'),
     description: t('home.highlights.competitivePricingDesc')
   }, {
-    icon: <PackageCheck className="w-10 h-10 text-warm" />,
+    icon: <PackageCheck className="w-10 h-10 text-forest-green" />,
     title: t('home.highlights.exportReady'),
     description: t('home.highlights.exportReadyDesc')
   }];

@@ -125,7 +125,7 @@ const Products = () => {
                         <ul className="font-work text-muted-foreground space-y-1">
                           {product.features.map((feature, idx) => (
                             <li key={idx} className="flex items-start gap-2">
-                              <span className="text-warm mt-1">•</span>
+                              <span className="text-forest-green mt-1">•</span>
                               <span>{feature}</span>
                             </li>
                           ))}
