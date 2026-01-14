@@ -83,7 +83,7 @@ const Contact = () => {
 
                 <div className="space-y-6 mb-8">
                   <div className="flex items-start gap-4">
-                    <MapPin className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
+                    <MapPin className="w-6 h-6 text-warm flex-shrink-0 mt-1" />
                     <div>
                       <h3 className="font-work font-semibold text-lg text-primary mb-1">{t('contact.address')}</h3>
                       <p className="font-work text-foreground/80">
@@ -93,7 +93,7 @@ const Contact = () => {
                   </div>
 
                   <div className="flex items-start gap-4">
-                    <Mail className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
+                    <Mail className="w-6 h-6 text-warm flex-shrink-0 mt-1" />
                     <div>
                       <h3 className="font-work font-semibold text-lg text-primary mb-1">{t('contact.email')}</h3>
                       <div className="flex flex-col gap-1">
@@ -114,7 +114,7 @@ const Contact = () => {
                   </div>
 
                   <div className="flex items-start gap-4">
-                    <Phone className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
+                    <Phone className="w-6 h-6 text-warm flex-shrink-0 mt-1" />
                     <div>
                       <h3 className="font-work font-semibold text-lg text-primary mb-1">{t('contact.whatsApp')}</h3>
                       <a 

@@ -12,32 +12,32 @@ const WhyChooseUs = () => {
 
   const advantages = [
     {
-      icon: <Award className="w-12 h-12 text-accent" />,
+      icon: <Award className="w-12 h-12 text-warm" />,
       title: t('whyChooseUs.premiumProducts'),
       description: t('whyChooseUs.premiumProductsDesc'),
     },
     {
-      icon: <TrendingUp className="w-12 h-12 text-accent" />,
+      icon: <TrendingUp className="w-12 h-12 text-warm" />,
       title: t('whyChooseUs.stableSupply'),
       description: t('whyChooseUs.stableSupplyDesc'),
     },
     {
-      icon: <DollarSign className="w-12 h-12 text-accent" />,
+      icon: <DollarSign className="w-12 h-12 text-warm" />,
       title: t('whyChooseUs.competitivePricing'),
       description: t('whyChooseUs.competitivePricingDesc'),
     },
     {
-      icon: <PackageCheck className="w-12 h-12 text-accent" />,
+      icon: <PackageCheck className="w-12 h-12 text-warm" />,
       title: t('whyChooseUs.exportReady'),
       description: t('whyChooseUs.exportReadyDesc'),
     },
     {
-      icon: <ShieldCheck className="w-12 h-12 text-accent" />,
+      icon: <ShieldCheck className="w-12 h-12 text-warm" />,
       title: t('whyChooseUs.professionalService'),
       description: t('whyChooseUs.professionalServiceDesc'),
     },
     {
-      icon: <Leaf className="w-12 h-12 text-accent" />,
+      icon: <Leaf className="w-12 h-12 text-warm" />,
       title: t('whyChooseUs.trustedSourcing'),
       description: t('whyChooseUs.trustedSourcingDesc'),
     },
