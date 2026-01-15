@@ -153,7 +153,7 @@ const Products = () => {
                 className="bg-accent hover:bg-accent/90 text-accent-foreground font-work font-semibold"
                 asChild
               >
-                <Link to="/contact#get-in-touch">{t('products.requestInfo')}</Link>
+                <Link to="/contact" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{t('products.requestInfo')}</Link>
               </Button>
             </div>
           </ScrollAnimationWrapper>
@@ -184,7 +184,7 @@ const Products = () => {
                 className="bg-accent hover:bg-accent/90 text-accent-foreground font-work font-semibold text-lg px-8"
                 asChild
               >
-                <Link to="/contact#get-in-touch">{t('home.sendInquiry')}</Link>
+                <Link to="/contact" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{t('home.sendInquiry')}</Link>
               </Button>
             </div>
           </ScrollAnimationWrapper>
