@@ -110,7 +110,7 @@ const Index = () => {
                 {t('home.aboutDesc')}
               </p>
               <Button variant="default" size="lg" className="bg-primary hover:bg-primary/90 font-work font-semibold" asChild>
-                <Link to="/about">{t('home.learnMore')}</Link>
+                <Link to="/about" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{t('home.learnMore')}</Link>
               </Button>
             </div>
           </ScrollAnimationWrapper>
