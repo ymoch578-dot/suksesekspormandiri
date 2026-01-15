@@ -36,7 +36,7 @@ const About = () => {
         <div className="container mx-auto px-4">
           <ScrollAnimationWrapper animation="fade-up">
             <div className="max-w-4xl mx-auto text-center">
-              <h1 className="font-playfair font-bold text-5xl md:text-6xl text-primary mb-6">
+              <h1 className="font-playfair font-bold text-5xl md:text-6xl text-forest-green mb-6">
                 {t('about.heroTitle')}
               </h1>
               <p className="font-work text-xl text-muted-foreground">
@@ -53,7 +53,7 @@ const About = () => {
           <div className="max-w-5xl mx-auto">
             <ScrollAnimationWrapper animation="fade-up">
               <div className="mb-12">
-                <h2 className="font-playfair font-bold text-4xl text-primary mb-6">
+                <h2 className="font-playfair font-bold text-4xl text-forest-green mb-6">
                   {t('about.whoWeAre')}
                 </h2>
                 <div className="font-work text-lg text-foreground/80 space-y-4 leading-relaxed">
@@ -65,7 +65,7 @@ const About = () => {
 
             <ScrollAnimationWrapper animation="fade-up" delay={100}>
               <div className="mb-12">
-                <h2 className="font-playfair font-bold text-4xl text-primary mb-6">
+                <h2 className="font-playfair font-bold text-4xl text-forest-green mb-6">
                   {t('about.philosophy')}
                 </h2>
                 <div className="font-work text-lg text-foreground/80 space-y-4 leading-relaxed">
@@ -127,7 +127,7 @@ const About = () => {
             <div className="mt-16">
               <ScrollAnimationWrapper animation="fade-up">
                 <div className="text-center mb-12">
-                  <h2 className="font-playfair font-bold text-4xl text-primary mb-4">
+                  <h2 className="font-playfair font-bold text-4xl text-forest-green mb-4">
                     {t('about.coreValues')}
                   </h2>
                   <p className="font-work text-lg text-muted-foreground">
@@ -211,7 +211,7 @@ const About = () => {
         <div className="container mx-auto px-4">
           <ScrollAnimationWrapper animation="fade-up">
             <div className="text-center mb-12">
-              <h2 className="font-playfair font-bold text-4xl md:text-5xl text-primary mb-4">
+              <h2 className="font-playfair font-bold text-4xl md:text-5xl text-forest-green mb-4">
                 {t('about.commitmentsTitle')}
               </h2>
               <p className="font-work text-lg text-muted-foreground">
@@ -247,7 +247,7 @@ const About = () => {
         <div className="container mx-auto px-4">
           <ScrollAnimationWrapper animation="fade-up">
             <div className="max-w-4xl mx-auto">
-              <h2 className="font-playfair font-bold text-4xl text-primary mb-6 text-center">
+              <h2 className="font-playfair font-bold text-4xl text-forest-green mb-6 text-center">
                 {t('about.locationTitle')}
               </h2>
               <div className="font-work text-lg text-foreground/80 space-y-4 leading-relaxed text-center">

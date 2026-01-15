@@ -62,7 +62,7 @@ const Products = () => {
         <div className="container mx-auto px-4">
           <ScrollAnimationWrapper animation="fade-up">
             <div className="max-w-4xl mx-auto text-center">
-              <h1 className="font-playfair font-bold text-5xl md:text-6xl text-primary mb-6">
+              <h1 className="font-playfair font-bold text-5xl md:text-6xl text-forest-green mb-6">
                 {t('products.heroTitle')}
               </h1>
               <p className="font-work text-xl text-muted-foreground">

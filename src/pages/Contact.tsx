@@ -56,7 +56,7 @@ const Contact = () => {
         <div className="container mx-auto px-4">
           <ScrollAnimationWrapper animation="fade-up">
             <div className="max-w-4xl mx-auto text-center">
-              <h1 className="font-playfair font-bold text-5xl md:text-6xl text-primary mb-6">
+              <h1 className="font-playfair font-bold text-5xl md:text-6xl text-forest-green mb-6">
                 {t('contact.heroTitle')}
               </h1>
               <p className="font-work text-xl text-muted-foreground">
@@ -74,7 +74,7 @@ const Contact = () => {
             {/* Contact Information */}
             <ScrollAnimationWrapper animation="fade-up">
               <div>
-                <h2 id="get-in-touch" className="font-playfair font-bold text-4xl text-primary mb-6">
+                <h2 id="get-in-touch" className="font-playfair font-bold text-4xl text-forest-green mb-6">
                   {t('contact.getInTouch')}
                 </h2>
                 <p className="font-work text-lg text-foreground/80 mb-8 leading-relaxed">
@@ -168,7 +168,7 @@ const Contact = () => {
             <ScrollAnimationWrapper animation="fade-up" delay={150}>
               <Card className="shadow-natural">
                 <CardContent className="p-8">
-                  <h3 className="font-playfair font-bold text-3xl text-primary mb-6">
+                  <h3 className="font-playfair font-bold text-3xl text-forest-green mb-6">
                     {t('contact.sendInquiry')}
                   </h3>
                   <form onSubmit={handleSubmit} className="space-y-6">
