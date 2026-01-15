@@ -56,7 +56,7 @@ const Gallery = () => {
         <div className="container mx-auto px-4">
           <ScrollAnimationWrapper animation="fade-up">
             <div className="max-w-4xl mx-auto text-center">
-              <h1 className="font-playfair font-bold text-5xl md:text-6xl text-primary mb-6">
+              <h1 className="font-playfair font-bold text-5xl md:text-6xl text-forest-green mb-6">
                 {t('gallery.heroTitle')}
               </h1>
               <p className="font-work text-xl text-muted-foreground">
@@ -103,7 +103,7 @@ const Gallery = () => {
         <div className="container mx-auto px-4">
           <ScrollAnimationWrapper animation="fade-up">
             <div className="max-w-4xl mx-auto text-center">
-              <h2 className="font-playfair font-bold text-4xl text-primary mb-6">
+              <h2 className="font-playfair font-bold text-4xl text-forest-green mb-6">
                 {t('gallery.exportReadyTitle')}
               </h2>
               <p className="font-work text-lg text-foreground/80 mb-8 leading-relaxed">
@@ -118,7 +118,7 @@ const Gallery = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-terracotta text-primary-foreground">
+      <section className="py-20 bg-forest-green text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
           <ScrollAnimationWrapper animation="fade-up">
             <h2 className="font-playfair font-bold text-4xl md:text-5xl mb-6">

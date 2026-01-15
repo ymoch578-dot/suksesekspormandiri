@@ -85,7 +85,7 @@ const WhyChooseUs = () => {
         <div className="container mx-auto px-4">
           <ScrollAnimationWrapper animation="fade-up">
             <div className="max-w-4xl mx-auto text-center">
-              <h1 className="font-playfair font-bold text-5xl md:text-6xl text-primary mb-6">
+              <h1 className="font-playfair font-bold text-5xl md:text-6xl text-forest-green mb-6">
                 {t('whyChooseUs.heroTitle')}
               </h1>
               <p className="font-work text-xl text-muted-foreground">
@@ -124,7 +124,7 @@ const WhyChooseUs = () => {
         <div className="container mx-auto px-4">
           <ScrollAnimationWrapper animation="fade-up">
             <div className="text-center mb-12">
-              <h2 className="font-playfair font-bold text-4xl md:text-5xl text-primary mb-4">
+              <h2 className="font-playfair font-bold text-4xl md:text-5xl text-forest-green mb-4">
                 {t('whyChooseUs.processTitle')}
               </h2>
               <p className="font-work text-lg text-muted-foreground max-w-2xl mx-auto">
