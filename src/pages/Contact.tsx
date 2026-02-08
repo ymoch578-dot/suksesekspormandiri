@@ -251,7 +251,7 @@ const Contact = () => {
                     <Button 
                       type="submit"
                       size="lg"
-                      className="w-full bg-accent hover:bg-accent/90 text-accent-foreground font-work font-semibold"
+                      className="w-full bg-warm hover:bg-warm/90 text-warm-foreground font-work font-semibold"
                     >
                       {t('contact.sendInquiryNow')}
                     </Button>

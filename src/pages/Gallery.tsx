@@ -138,7 +138,7 @@ const Gallery = () => {
               </Button>
               <Button 
                 size="lg"
-                className="bg-accent hover:bg-accent/90 text-accent-foreground font-work font-semibold text-lg px-8"
+                className="bg-warm hover:bg-warm/90 text-warm-foreground font-work font-semibold text-lg px-8"
                 asChild
               >
                 <Link to="/contact" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{t('home.sendInquiry')}</Link>
