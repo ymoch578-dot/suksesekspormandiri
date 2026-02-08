@@ -12,30 +12,30 @@ All colors MUST be HSL.
     /* Extracted from brand image: Dark Brown, Forest Green, Terracotta, Lime Green */
     
     /* Core Brand Colors */
-    --dark-brown: 25 100% 25%;       /* Dark brown - trust & stability */
+    --dark-brown: 0 0% 8%;           /* Near black - trust & stability */
     --forest-green: 120 60% 35%;     /* Forest green - growth & reliability */
     --terracotta: 20 40% 45%;        /* Warm terracotta - elegance & warmth */
     --lime-accent: 85 100% 50%;      /* Vibrant lime - energy & CTAs */
     
     /* Light variants */
-    --dark-brown-light: 25 30% 92%;
+    --dark-brown-light: 0 0% 92%;
     --forest-green-light: 120 30% 92%;
     --terracotta-light: 20 25% 92%;
     --lime-accent-light: 85 50% 92%;
     
     /* Backgrounds - professional & clean */
     --background: 30 15% 97%;
-    --foreground: 25 80% 12%;
+    --foreground: 0 0% 8%;
 
     --card: 30 20% 98%;
-    --card-foreground: 25 80% 12%;
+    --card-foreground: 0 0% 8%;
 
     --popover: 30 20% 98%;
-    --popover-foreground: 25 80% 12%;
+    --popover-foreground: 0 0% 8%;
 
     /* Primary - Dark Brown (trust, professionalism) */
-    --primary: 25 100% 25%;
-    --primary-foreground: 30 15% 98%;
+    --primary: 0 0% 8%;
+    --primary-foreground: 0 0% 98%;
 
     /* Secondary - Forest Green (growth, reliability) */
     --secondary: 120 30% 92%;
@@ -43,11 +43,11 @@ All colors MUST be HSL.
 
     /* Muted - subtle warm tones */
     --muted: 30 15% 92%;
-    --muted-foreground: 25 30% 45%;
+    --muted-foreground: 0 0% 40%;
 
     /* Accent - Lime Green (energy, CTAs) */
     --accent: 85 100% 50%;
-    --accent-foreground: 25 100% 12%;
+    --accent-foreground: 0 0% 8%;
 
     /* Terracotta for warm accents */
     --warm: 20 40% 45%;
@@ -62,20 +62,20 @@ All colors MUST be HSL.
 
     --border: 30 15% 85%;
     --input: 30 15% 90%;
-    --ring: 25 100% 25%;
+    --ring: 0 0% 8%;
 
     --radius: 0.5rem;
 
     /* Gradients for hero sections */
-    --gradient-primary: linear-gradient(135deg, hsl(25 100% 25%) 0%, hsl(25 80% 35%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(0 0% 8%) 0%, hsl(0 0% 18%) 100%);
     --gradient-secondary: linear-gradient(135deg, hsl(120 60% 35%) 0%, hsl(120 50% 28%) 100%);
     --gradient-accent: linear-gradient(135deg, hsl(85 100% 50%) 0%, hsl(85 80% 45%) 100%);
     --gradient-warm: linear-gradient(135deg, hsl(20 40% 45%) 0%, hsl(20 50% 35%) 100%);
     --gradient-light: linear-gradient(180deg, hsl(30 20% 98%) 0%, hsl(30 15% 95%) 100%);
     
     /* Shadows */
-    --shadow-natural: 0 4px 20px -4px hsl(25 100% 25% / 0.15);
-    --shadow-card: 0 2px 12px -2px hsl(25 80% 12% / 0.08);
+    --shadow-natural: 0 4px 20px -4px hsl(0 0% 8% / 0.15);
+    --shadow-card: 0 2px 12px -2px hsl(0 0% 8% / 0.08);
     --shadow-accent: 0 4px 16px -4px hsl(85 100% 50% / 0.25);
     
     /* Smooth professional transitions */
