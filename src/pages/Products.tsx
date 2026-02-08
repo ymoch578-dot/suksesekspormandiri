@@ -150,7 +150,7 @@ const Products = () => {
               </p>
               <Button 
                 size="lg"
-                className="bg-accent hover:bg-accent/90 text-accent-foreground font-work font-semibold"
+                className="bg-warm hover:bg-warm/90 text-warm-foreground font-work font-semibold"
                 asChild
               >
                 <Link to="/contact" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{t('products.requestInfo')}</Link>
@@ -181,7 +181,7 @@ const Products = () => {
               </Button>
               <Button 
                 size="lg"
-                className="bg-accent hover:bg-accent/90 text-accent-foreground font-work font-semibold text-lg px-8"
+                className="bg-warm hover:bg-warm/90 text-warm-foreground font-work font-semibold text-lg px-8"
                 asChild
               >
                 <Link to="/contact" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{t('home.sendInquiry')}</Link>

@@ -109,7 +109,7 @@ const Index = () => {
               <p className="font-work text-lg text-foreground/80 mb-8 leading-relaxed">
                 {t('home.aboutDesc')}
               </p>
-              <Button variant="default" size="lg" className="bg-primary hover:bg-primary/90 font-work font-semibold" asChild>
+              <Button variant="default" size="lg" className="font-work font-semibold" asChild>
                 <Link to="/about" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{t('home.learnMore')}</Link>
               </Button>
             </div>
@@ -153,7 +153,7 @@ const Index = () => {
 
           <ScrollAnimationWrapper animation="fade-up">
             <div className="text-center">
-              <Button size="lg" variant="default" className="bg-primary hover:bg-primary/90 font-work font-semibold" asChild>
+              <Button size="lg" variant="default" className="font-work font-semibold" asChild>
                 <Link to="/products">{t('home.viewAllProducts')}</Link>
               </Button>
             </div>
@@ -175,7 +175,7 @@ const Index = () => {
               <Button size="lg" variant="secondary" className="font-work font-semibold text-lg px-8" onClick={() => window.open('https://wa.me/6285124480871', '_blank')}>
                 {t('home.contactWhatsApp')}
               </Button>
-              <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground font-work font-semibold text-lg px-8" asChild>
+              <Button size="lg" className="bg-warm hover:bg-warm/90 text-warm-foreground font-work font-semibold text-lg px-8" asChild>
                 <Link to="/contact" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{t('home.sendInquiry')}</Link>
               </Button>
             </div>
