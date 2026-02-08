@@ -104,10 +104,10 @@ const Contact = () => {
                           suksesekspormandiri@gmail.com
                         </a>
                         <a 
-                          href="mailto:sales@suksesekspormandiri.com"
+                          href="mailto:sales@coco.suksesekspormandiri.com"
                           className="font-work text-foreground/80 hover:text-accent transition-colors"
                         >
-                          sales@suksesekspormandiri.com
+                          sales@coco.suksesekspormandiri.com
                         </a>
                       </div>
                     </div>

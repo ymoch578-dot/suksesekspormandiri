@@ -69,8 +69,8 @@ const Footer = () => {
                   <a href="mailto:suksesekspormandiri@gmail.com" className="hover:text-accent transition-colors">
                     suksesekspormandiri@gmail.com
                   </a>
-                  <a href="mailto:sales@suksesekspormandiri.com" className="hover:text-accent transition-colors">
-                    sales@suksesekspormandiri.com
+                  <a href="mailto:sales@coco.suksesekspormandiri.com" className="hover:text-accent transition-colors">
+                    sales@coco.suksesekspormandiri.com
                   </a>
                 </div>
               </li>
