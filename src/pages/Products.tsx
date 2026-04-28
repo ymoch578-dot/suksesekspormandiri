@@ -8,9 +8,6 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import productSemiHusked from "@/assets/product-semi-husked-coconut-3.png";
 import productDesiccated from "@/assets/product-desiccated-coconut-new.png";
 import productCharcoal from "@/assets/product-charcoal-3.png";
-import productCopraPowder from "@/assets/product-copra-powder.jpg";
-import productCopraPellet from "@/assets/product-copra-pellet.jpg";
-import productOil from "@/assets/product-oil.jpg";
 
 const Products = () => {
   const { t, tArray } = useLanguage();
@@ -36,20 +33,6 @@ const Products = () => {
       description: t('products.charcoalFullDesc'),
       applications: t('products.charcoalApps'),
       features: tArray('products.charcoalFeatures'),
-    },
-    {
-      name: t('products.copraMeal'),
-      images: [productCopraPowder, productCopraPellet],
-      description: t('products.copraMealDesc'),
-      applications: t('products.copraMealApps'),
-      features: tArray('products.copraMealFeatures'),
-    },
-    {
-      name: t('products.crudeOil'),
-      image: productOil,
-      description: t('products.crudeOilDesc'),
-      applications: t('products.crudeOilApps'),
-      features: tArray('products.crudeOilFeatures'),
     },
   ];
 
@@ -82,24 +65,11 @@ const Products = () => {
                 <Card className="overflow-hidden shadow-card hover:shadow-natural transition-shadow duration-300">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
                     <div className="aspect-square md:aspect-auto overflow-hidden">
-                      {'images' in product && product.images ? (
-                        <div className="grid grid-cols-2 h-full">
-                          {product.images.map((img, idx) => (
-                            <img 
-                              key={idx}
-                              src={img} 
-                              alt={`${product.name} ${idx + 1}`}
-                              className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                            />
-                          ))}
-                        </div>
-                      ) : (
-                        <img 
-                          src={product.image} 
-                          alt={product.name}
-                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                        />
-                      )}
+                      <img 
+                        src={product.image} 
+                        alt={product.name}
+                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                      />
                     </div>
                     <CardContent className="p-8 flex flex-col justify-center">
                       <h2 className="font-playfair font-bold text-3xl text-primary mb-4">
