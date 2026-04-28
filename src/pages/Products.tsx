@@ -8,9 +8,6 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import productSemiHusked from "@/assets/product-semi-husked-coconut-3.png";
 import productDesiccated from "@/assets/product-desiccated-coconut-new.png";
 import productCharcoal from "@/assets/product-charcoal-3.png";
-import productCopraPowder from "@/assets/product-copra-powder.jpg";
-import productCopraPellet from "@/assets/product-copra-pellet.jpg";
-import productOil from "@/assets/product-oil.jpg";
 
 const Products = () => {
   const { t, tArray } = useLanguage();
@@ -36,20 +33,6 @@ const Products = () => {
       description: t('products.charcoalFullDesc'),
       applications: t('products.charcoalApps'),
       features: tArray('products.charcoalFeatures'),
-    },
-    {
-      name: t('products.copraMeal'),
-      images: [productCopraPowder, productCopraPellet],
-      description: t('products.copraMealDesc'),
-      applications: t('products.copraMealApps'),
-      features: tArray('products.copraMealFeatures'),
-    },
-    {
-      name: t('products.crudeOil'),
-      image: productOil,
-      description: t('products.crudeOilDesc'),
-      applications: t('products.crudeOilApps'),
-      features: tArray('products.crudeOilFeatures'),
     },
   ];
 
