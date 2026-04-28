@@ -65,24 +65,11 @@ const Products = () => {
                 <Card className="overflow-hidden shadow-card hover:shadow-natural transition-shadow duration-300">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
                     <div className="aspect-square md:aspect-auto overflow-hidden">
-                      {'images' in product && product.images ? (
-                        <div className="grid grid-cols-2 h-full">
-                          {product.images.map((img, idx) => (
-                            <img 
-                              key={idx}
-                              src={img} 
-                              alt={`${product.name} ${idx + 1}`}
-                              className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                            />
-                          ))}
-                        </div>
-                      ) : (
-                        <img 
-                          src={product.image} 
-                          alt={product.name}
-                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                        />
-                      )}
+                      <img 
+                        src={product.image} 
+                        alt={product.name}
+                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                      />
                     </div>
                     <CardContent className="p-8 flex flex-col justify-center">
                       <h2 className="font-playfair font-bold text-3xl text-primary mb-4">
