@@ -8,7 +8,8 @@ import { ScrollAnimationWrapper } from "@/hooks/useScrollAnimation";
 import { useLanguage } from "@/contexts/LanguageContext";
 import productSemiHusked from "@/assets/product-semi-husked-coconut-3.png";
 import productDesiccated from "@/assets/product-desiccated-coconut-new.png";
-import productCharcoal from "@/assets/product-charcoal-3.png";
+import productEdibleCopra from "@/assets/product-copra.jpg";
+import productBriquette from "@/assets/product-briquette.jpg";
 import heroCover from "@/assets/hero-cover-website-2.jpg";
 
 const Index = () => {
@@ -41,9 +42,13 @@ const Index = () => {
     image: productDesiccated,
     description: t('products.desiccatedDesc')
   }, {
-    name: t('products.charcoal'),
-    image: productCharcoal,
-    description: t('products.charcoalDesc')
+    name: t('products.edibleCopra'),
+    image: productEdibleCopra,
+    description: t('products.edibleCopraDesc')
+  }, {
+    name: t('products.briquette'),
+    image: productBriquette,
+    description: t('products.briquetteDesc')
   }];
 
   return <div className="min-h-screen bg-background">
@@ -131,7 +136,7 @@ const Index = () => {
             </div>
           </ScrollAnimationWrapper>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
             {featuredProducts.map((product, index) => (
               <ScrollAnimationWrapper key={index} animation="fade-up" delay={index * 150}>
                 <Card className="overflow-hidden shadow-card hover:shadow-natural transition-all duration-300 hover:-translate-y-1 h-full">

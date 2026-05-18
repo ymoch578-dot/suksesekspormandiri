@@ -7,7 +7,8 @@ import { ScrollAnimationWrapper } from "@/hooks/useScrollAnimation";
 import { useLanguage } from "@/contexts/LanguageContext";
 import productSemiHusked from "@/assets/product-semi-husked-coconut-3.png";
 import productDesiccated from "@/assets/product-desiccated-coconut-new.png";
-import productCharcoal from "@/assets/product-charcoal-3.png";
+import productEdibleCopra from "@/assets/product-copra.jpg";
+import productBriquette from "@/assets/product-briquette.jpg";
 
 const Products = () => {
   const { t, tArray } = useLanguage();
@@ -28,11 +29,18 @@ const Products = () => {
       features: tArray('products.desiccatedFeatures'),
     },
     {
-      name: t('products.charcoal'),
-      image: productCharcoal,
-      description: t('products.charcoalFullDesc'),
-      applications: t('products.charcoalApps'),
-      features: tArray('products.charcoalFeatures'),
+      name: t('products.edibleCopra'),
+      image: productEdibleCopra,
+      description: t('products.edibleCopraFullDesc'),
+      applications: t('products.edibleCopraApps'),
+      features: tArray('products.edibleCopraFeatures'),
+    },
+    {
+      name: t('products.briquette'),
+      image: productBriquette,
+      description: t('products.briquetteFullDesc'),
+      applications: t('products.briquetteApps'),
+      features: tArray('products.briquetteFeatures'),
     },
   ];
 
