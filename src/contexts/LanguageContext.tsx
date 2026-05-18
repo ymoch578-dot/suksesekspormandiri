@@ -117,6 +117,7 @@ const translations: Record<Language, any> = {
       whyChooseUs: 'Why Choose Us',
       gallery: 'Gallery',
       contact: 'Contact',
+      brand: 'Coconut Exporter Indonesia',
     },
     home: {
       heroTitle: 'Trusted Global Exporter of',
@@ -310,6 +311,7 @@ const translations: Record<Language, any> = {
       whyChooseUs: 'Mengapa Memilih Kami',
       gallery: 'Galeri',
       contact: 'Kontak',
+      brand: 'Eksportir Kelapa Indonesia',
     },
     home: {
       heroTitle: 'Eksportir Global Terpercaya untuk',
@@ -503,6 +505,7 @@ const translations: Record<Language, any> = {
       whyChooseUs: 'Mengapa Pilih Kami',
       gallery: 'Galeri',
       contact: 'Hubungi',
+      brand: 'Pengeksport Kelapa Indonesia',
     },
     home: {
       heroTitle: 'Pengeksport Global Dipercayai untuk',
@@ -696,6 +699,7 @@ const translations: Record<Language, any> = {
       whyChooseUs: '为什么选择我们',
       gallery: '画廊',
       contact: '联系我们',
+      brand: '印尼椰子出口商',
     },
     home: {
       heroTitle: '值得信赖的全球出口商',
@@ -889,6 +893,7 @@ const translations: Record<Language, any> = {
       whyChooseUs: 'لماذا تختارنا',
       gallery: 'المعرض',
       contact: 'اتصل بنا',
+      brand: 'مُصدِّر جوز الهند الإندونيسي',
     },
     home: {
       heroTitle: 'مُصدِّر عالمي موثوق لـ',
@@ -1082,6 +1087,7 @@ const translations: Record<Language, any> = {
       whyChooseUs: 'Por Que Nos Escolher',
       gallery: 'Galeria',
       contact: 'Contato',
+      brand: 'Exportador de Coco da Indonésia',
     },
     home: {
       heroTitle: 'Exportador Global Confiável de',

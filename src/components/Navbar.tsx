@@ -29,7 +29,7 @@ const Navbar = () => {
               className="h-12 w-12 object-contain rounded-full"
             />
             <div className="font-playfair font-bold text-2xl text-primary">
-              Coconut Exporter Indonesia
+              {t('nav.brand')}
             </div>
           </NavLink>
 
