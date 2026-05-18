@@ -6,7 +6,8 @@ import { ScrollAnimationWrapper } from "@/hooks/useScrollAnimation";
 import { useLanguage } from "@/contexts/LanguageContext";
 import productSemiHusked from "@/assets/product-semi-husked-coconut-3.png";
 import productDesiccated from "@/assets/product-desiccated-coconut-new.png";
-import productCharcoal from "@/assets/product-charcoal-3.png";
+import productEdibleCopra from "@/assets/product-copra.jpg";
+import productBriquette from "@/assets/product-briquette.jpg";
 import productCopraPowder from "@/assets/product-copra-powder-2.jpg";
 import productCopraPellet from "@/assets/product-copra-pellet.jpg";
 import productOil from "@/assets/product-oil.jpg";
@@ -26,8 +27,13 @@ const Gallery = () => {
       category: t('gallery.category'),
     },
     {
-      image: productCharcoal,
-      title: t('products.charcoal'),
+      image: productEdibleCopra,
+      title: t('products.edibleCopra'),
+      category: t('gallery.category'),
+    },
+    {
+      image: productBriquette,
+      title: t('products.briquette'),
       category: t('gallery.category'),
     },
     {
