@@ -70,7 +70,7 @@ const Index = () => {
                 <div className="flex items-center gap-3 mb-6">
                   <span className="h-px w-12 bg-lime-accent" />
                   <span className="text-lime-accent font-work font-bold tracking-widest uppercase text-xs">
-                    {t('home.heroTitleHighlight')}
+                    {t('home.highlights.premiumQuality')}
                   </span>
                 </div>
               </ScrollAnimationWrapper>
