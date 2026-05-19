@@ -54,29 +54,77 @@ const Index = () => {
   return <div className="min-h-screen bg-background">
       <Navbar />
       
-      {/* Hero Section */}
-      <section className="relative h-[90vh] flex items-center justify-center bg-cover bg-center" style={{
-      backgroundImage: `linear-gradient(rgba(26, 51, 15, 0.75), rgba(26, 51, 15, 0.65)), url(${heroCover})`
-    }}>
-        <div className="container mx-auto px-4 text-center">
-          <ScrollAnimationWrapper animation="fade-up">
-            <h1 className="font-playfair font-bold text-5xl md:text-7xl text-primary-foreground mb-6">
-              {t('home.heroTitle')}<br />
-              {t('home.heroTitleHighlight')}
-            </h1>
-          </ScrollAnimationWrapper>
-          <ScrollAnimationWrapper animation="fade-up" delay={200}>
-            <p className="font-work text-xl md:text-2xl text-primary-foreground/90 mb-8 max-w-3xl mx-auto">
-              {t('home.heroSubtitle')}
-            </p>
-          </ScrollAnimationWrapper>
-          <ScrollAnimationWrapper animation="fade-up" delay={400}>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" variant="secondary" className="font-work font-semibold text-lg px-8 py-6" asChild>
-                <Link to="/products">{t('home.viewProducts')}</Link>
-              </Button>
+      {/* Hero Section — Editorial Heritage */}
+      <section className="w-full flex items-center justify-center bg-stone-100 p-4 lg:p-12">
+        <div className="relative w-full max-w-7xl h-[85vh] min-h-[600px] overflow-hidden rounded-[2.5rem] shadow-2xl flex items-center">
+          {/* Background image + gradient overlay */}
+          <div className="absolute inset-0 z-0">
+            <img src={heroCover} alt="Indonesian coconut plantation" className="w-full h-full object-cover" />
+            <div className="absolute inset-0 bg-gradient-to-r from-[hsl(120,60%,15%)]/90 via-[hsl(120,60%,20%)]/60 to-transparent" />
+          </div>
+
+          {/* Content */}
+          <div className="relative z-10 w-full px-8 md:px-16 lg:px-24 grid lg:grid-cols-2 gap-12 items-center">
+            <div className="max-w-2xl">
+              <ScrollAnimationWrapper animation="fade-up">
+                <div className="flex items-center gap-3 mb-6">
+                  <span className="h-px w-12 bg-lime-accent" />
+                  <span className="text-lime-accent font-work font-bold tracking-widest uppercase text-xs">
+                    {t('home.heroTitleHighlight')}
+                  </span>
+                </div>
+              </ScrollAnimationWrapper>
+
+              <ScrollAnimationWrapper animation="fade-up" delay={100}>
+                <h1 className="font-playfair text-primary-foreground text-5xl md:text-7xl leading-[1.1] mb-8">
+                  {t('home.heroTitle')}{' '}
+                  <span className="italic text-lime-accent">{t('home.heroTitleHighlight')}</span>
+                </h1>
+              </ScrollAnimationWrapper>
+
+              <ScrollAnimationWrapper animation="fade-up" delay={200}>
+                <p className="font-work text-primary-foreground/80 text-lg md:text-xl max-w-lg mb-10 leading-relaxed">
+                  {t('home.heroSubtitle')}
+                </p>
+              </ScrollAnimationWrapper>
+
+              <ScrollAnimationWrapper animation="fade-up" delay={300}>
+                <div className="flex flex-wrap gap-4">
+                  <Button asChild size="lg" className="bg-warm hover:bg-warm/90 text-warm-foreground font-work font-semibold rounded-full px-8 py-6 shadow-lg shadow-black/20 transition-transform hover:scale-105">
+                    <Link to="/contact" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{t('home.sendInquiry')}</Link>
+                  </Button>
+                  <Button asChild size="lg" variant="outline" className="rounded-full border-white/30 bg-transparent text-primary-foreground hover:bg-white/10 hover:text-primary-foreground font-work font-semibold px-8 py-6 backdrop-blur-sm">
+                    <Link to="/products" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{t('home.viewProducts')}</Link>
+                  </Button>
+                </div>
+              </ScrollAnimationWrapper>
             </div>
-          </ScrollAnimationWrapper>
+
+            {/* Product collage */}
+            <div className="hidden lg:block relative h-full min-h-[400px]">
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full">
+                <ScrollAnimationWrapper animation="fade-left" delay={300}>
+                  <div className="absolute top-0 right-0 w-64 h-64 rounded-2xl overflow-hidden border-4 border-white/10 rotate-3 shadow-2xl">
+                    <img src={productEdibleCopra} alt="Edible copra" className="w-full h-full object-cover" />
+                  </div>
+                </ScrollAnimationWrapper>
+                <ScrollAnimationWrapper animation="fade-up" delay={500}>
+                  <div className="absolute bottom-0 left-0 w-48 h-48 rounded-2xl overflow-hidden border-4 border-white/10 -rotate-6 shadow-2xl z-20">
+                    <img src={productBriquette} alt="Coconut briquette" className="w-full h-full object-cover" />
+                  </div>
+                </ScrollAnimationWrapper>
+                {/* Lime dot pattern */}
+                <div className="absolute -top-12 -left-4 grid grid-cols-4 gap-2 opacity-40">
+                  {Array.from({ length: 8 }).map((_, i) => (
+                    <div key={i} className="w-2 h-2 rounded-full bg-lime-accent" />
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Bottom accent bar */}
+          <div className="absolute bottom-0 left-0 w-full h-2 bg-gradient-to-r from-forest-green via-lime-accent to-terracotta" />
         </div>
       </section>
 
