@@ -8,9 +8,6 @@ import productSemiHusked from "@/assets/product-semi-husked-coconut-3.png";
 import productDesiccated from "@/assets/product-desiccated-coconut-new.png";
 import productEdibleCopra from "@/assets/product-copra.jpg";
 import productBriquette from "@/assets/product-briquette.jpg";
-import productCopraPowder from "@/assets/product-copra-powder-2.jpg";
-import productCopraPellet from "@/assets/product-copra-pellet.jpg";
-import productOil from "@/assets/product-oil.jpg";
 
 const Gallery = () => {
   const { t } = useLanguage();
@@ -34,21 +31,6 @@ const Gallery = () => {
     {
       image: productBriquette,
       title: t('products.briquette'),
-      category: t('gallery.category'),
-    },
-    {
-      image: productCopraPellet,
-      title: t('gallery.copraPellet'),
-      category: t('gallery.category'),
-    },
-    {
-      image: productCopraPowder,
-      title: t('gallery.copraPowder'),
-      category: t('gallery.category'),
-    },
-    {
-      image: productOil,
-      title: t('gallery.crudeOil'),
       category: t('gallery.category'),
     },
   ];
