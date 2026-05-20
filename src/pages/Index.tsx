@@ -208,7 +208,7 @@ const Index = () => {
             </div>
           </ScrollAnimationWrapper>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 mb-12">
             {featuredProducts.map((product, index) => (
               <ScrollAnimationWrapper key={index} animation="fade-up" delay={index * 150}>
                 <Card className="overflow-hidden shadow-card hover:shadow-natural transition-all duration-300 hover:-translate-y-1 h-full">
