@@ -10,6 +10,7 @@ import productSemiHusked from "@/assets/product-semi-husked-coconut-3.png";
 import productDesiccated from "@/assets/product-desiccated-coconut-new.png";
 import productEdibleCopra from "@/assets/product-copra.jpg";
 import productBriquette from "@/assets/product-briquette.jpg";
+import productCharcoal from "@/assets/product-charcoal-3.png";
 import heroCover from "@/assets/hero-cover-website-2.jpg";
 
 const Index = () => {
@@ -49,6 +50,10 @@ const Index = () => {
     name: t('products.briquette'),
     image: productBriquette,
     description: t('products.briquetteDesc')
+  }, {
+    name: t('products.charcoal'),
+    image: productCharcoal,
+    description: t('products.charcoalDesc')
   }];
 
   return <div className="min-h-screen bg-background">
@@ -101,25 +106,44 @@ const Index = () => {
             </div>
 
             {/* Product collage */}
-            <div className="hidden lg:block relative h-full min-h-[400px]">
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full">
-                <ScrollAnimationWrapper animation="fade-left" delay={300}>
-                  <div className="absolute top-0 right-0 w-64 h-64 rounded-2xl overflow-hidden border-4 border-white/10 rotate-3 shadow-2xl">
-                    <img src={productEdibleCopra} alt="Edible copra" className="w-full h-full object-cover" />
-                  </div>
-                </ScrollAnimationWrapper>
-                <ScrollAnimationWrapper animation="fade-up" delay={500}>
-                  <div className="absolute bottom-0 left-0 w-48 h-48 rounded-2xl overflow-hidden border-4 border-white/10 -rotate-6 shadow-2xl z-20">
-                    <img src={productBriquette} alt="Coconut briquette" className="w-full h-full object-cover" />
-                  </div>
-                </ScrollAnimationWrapper>
-                {/* Lime dot pattern */}
-                <div className="absolute -top-12 -left-4 grid grid-cols-4 gap-2 opacity-40">
-                  {Array.from({ length: 8 }).map((_, i) => (
-                    <div key={i} className="w-2 h-2 rounded-full bg-lime-accent" />
-                  ))}
-                </div>
+            {/* Product collage — all 5 products */}
+            <div className="hidden lg:block relative h-full min-h-[460px]">
+              {/* Lime dot pattern decor */}
+              <div className="absolute top-4 right-2 grid grid-cols-4 gap-2 opacity-40 z-0">
+                {Array.from({ length: 12 }).map((_, i) => (
+                  <div key={i} className="w-2 h-2 rounded-full bg-lime-accent" />
+                ))}
               </div>
+
+              <ScrollAnimationWrapper animation="fade-left" delay={200}>
+                <div className="absolute top-0 right-8 w-48 h-48 rounded-2xl overflow-hidden border-4 border-white/15 rotate-3 shadow-2xl z-10">
+                  <img src={productEdibleCopra} alt="Edible copra" className="w-full h-full object-cover" />
+                </div>
+              </ScrollAnimationWrapper>
+
+              <ScrollAnimationWrapper animation="fade-up" delay={300}>
+                <div className="absolute top-16 left-4 w-40 h-40 rounded-2xl overflow-hidden border-4 border-white/15 -rotate-6 shadow-2xl z-20">
+                  <img src={productSemiHusked} alt="Semi husked coconut" className="w-full h-full object-cover" />
+                </div>
+              </ScrollAnimationWrapper>
+
+              <ScrollAnimationWrapper animation="fade-right" delay={400}>
+                <div className="absolute top-52 right-0 w-44 h-44 rounded-2xl overflow-hidden border-4 border-white/15 rotate-6 shadow-2xl z-10">
+                  <img src={productDesiccated} alt="Desiccated coconut" className="w-full h-full object-cover" />
+                </div>
+              </ScrollAnimationWrapper>
+
+              <ScrollAnimationWrapper animation="fade-up" delay={500}>
+                <div className="absolute bottom-0 left-12 w-44 h-44 rounded-2xl overflow-hidden border-4 border-white/15 -rotate-3 shadow-2xl z-30">
+                  <img src={productBriquette} alt="Coconut briquette" className="w-full h-full object-cover" />
+                </div>
+              </ScrollAnimationWrapper>
+
+              <ScrollAnimationWrapper animation="fade-up" delay={600}>
+                <div className="absolute bottom-8 right-12 w-36 h-36 rounded-2xl overflow-hidden border-4 border-white/15 rotate-2 shadow-2xl z-20">
+                  <img src={productCharcoal} alt="Coconut shell charcoal" className="w-full h-full object-cover" />
+                </div>
+              </ScrollAnimationWrapper>
             </div>
           </div>
 
@@ -184,7 +208,7 @@ const Index = () => {
             </div>
           </ScrollAnimationWrapper>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 mb-12">
             {featuredProducts.map((product, index) => (
               <ScrollAnimationWrapper key={index} animation="fade-up" delay={index * 150}>
                 <Card className="overflow-hidden shadow-card hover:shadow-natural transition-all duration-300 hover:-translate-y-1 h-full">

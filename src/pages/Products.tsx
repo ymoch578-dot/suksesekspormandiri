@@ -10,6 +10,7 @@ import productSemiHusked from "@/assets/product-semi-husked-coconut-3.png";
 import productDesiccated from "@/assets/product-desiccated-coconut-new.png";
 import productEdibleCopra from "@/assets/product-copra.jpg";
 import productBriquette from "@/assets/product-briquette.jpg";
+import productCharcoal from "@/assets/product-charcoal-3.png";
 
 const Products = () => {
   const { t, tArray } = useLanguage();
@@ -42,6 +43,13 @@ const Products = () => {
       description: t('products.briquetteFullDesc'),
       applications: t('products.briquetteApps'),
       features: tArray('products.briquetteFeatures'),
+    },
+    {
+      name: t('products.charcoal'),
+      image: productCharcoal,
+      description: t('products.charcoalFullDesc'),
+      applications: t('products.charcoalApps'),
+      features: tArray('products.charcoalFeatures'),
     },
   ];
 
