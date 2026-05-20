@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import PageHero from "@/components/PageHero";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ScrollAnimationWrapper } from "@/hooks/useScrollAnimation";
@@ -39,21 +40,12 @@ const Gallery = () => {
     <div className="min-h-screen bg-background">
       <Navbar />
       
-      {/* Hero Section */}
-      <section className="py-20 bg-gradient-light">
-        <div className="container mx-auto px-4">
-          <ScrollAnimationWrapper animation="fade-up">
-            <div className="max-w-4xl mx-auto text-center">
-              <h1 className="font-playfair font-bold text-5xl md:text-6xl text-forest-green mb-6">
-                {t('gallery.heroTitle')}
-              </h1>
-              <p className="font-work text-xl text-muted-foreground">
-                {t('gallery.heroSubtitle')}
-              </p>
-            </div>
-          </ScrollAnimationWrapper>
-        </div>
-      </section>
+      <PageHero
+        eyebrow={t('nav.gallery')}
+        title={t('gallery.heroTitle')}
+        subtitle={t('gallery.heroSubtitle')}
+        image={productBriquette}
+      />
 
       {/* Gallery Grid */}
       <section className="py-20 bg-background">

@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import PageHero from "@/components/PageHero";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Award, TrendingUp, DollarSign, PackageCheck, ShieldCheck, Leaf } from "lucide-react";
@@ -80,21 +81,11 @@ const WhyChooseUs = () => {
     <div className="min-h-screen bg-background">
       <Navbar />
       
-      {/* Hero Section */}
-      <section className="py-20 bg-gradient-light">
-        <div className="container mx-auto px-4">
-          <ScrollAnimationWrapper animation="fade-up">
-            <div className="max-w-4xl mx-auto text-center">
-              <h1 className="font-playfair font-bold text-5xl md:text-6xl text-forest-green mb-6">
-                {t('whyChooseUs.heroTitle')}
-              </h1>
-              <p className="font-work text-xl text-muted-foreground">
-                {t('whyChooseUs.heroSubtitle')}
-              </p>
-            </div>
-          </ScrollAnimationWrapper>
-        </div>
-      </section>
+      <PageHero
+        eyebrow={t('nav.whyChooseUs')}
+        title={t('whyChooseUs.heroTitle')}
+        subtitle={t('whyChooseUs.heroSubtitle')}
+      />
 
       {/* Advantages Grid */}
       <section className="py-20 bg-background">
