@@ -6,6 +6,7 @@ interface PageHeroProps {
   highlight?: string;
   subtitle: string;
   image?: string;
+  images?: string[];
 }
 
 /**
@@ -13,16 +14,30 @@ interface PageHeroProps {
  * Stone-toned outer band, large rounded forest-green container,
  * lime-accent eyebrow + italic highlight, bottom gradient accent bar.
  */
-const PageHero = ({ eyebrow, title, highlight, subtitle, image }: PageHeroProps) => {
+const PageHero = ({ eyebrow, title, highlight, subtitle, image, images }: PageHeroProps) => {
   return (
     <section className="w-full flex items-center justify-center bg-stone-100 p-4 lg:p-12">
       <div className="relative w-full max-w-7xl min-h-[360px] md:min-h-[440px] overflow-hidden rounded-[2.5rem] shadow-2xl flex items-center bg-forest-green">
-        {image && (
+        {images && images.length > 0 ? (
+          <div className="absolute inset-0 z-0">
+            <div className={`grid h-full w-full grid-cols-2 md:grid-cols-${Math.min(images.length, 5)}`}>
+              {images.map((src, i) => (
+                <img
+                  key={i}
+                  src={src}
+                  alt=""
+                  className="w-full h-full object-cover opacity-40"
+                />
+              ))}
+            </div>
+            <div className="absolute inset-0 bg-gradient-to-r from-[hsl(120,60%,15%)]/95 via-[hsl(120,60%,18%)]/85 to-[hsl(120,60%,20%)]/70" />
+          </div>
+        ) : image ? (
           <div className="absolute inset-0 z-0">
             <img src={image} alt="" className="w-full h-full object-cover opacity-30" />
             <div className="absolute inset-0 bg-gradient-to-r from-[hsl(120,60%,15%)]/95 via-[hsl(120,60%,18%)]/80 to-[hsl(120,60%,20%)]/50" />
           </div>
-        )}
+        ) : null}
 
         {/* Lime dot pattern decor */}
         <div className="absolute top-8 right-8 grid grid-cols-6 gap-2 opacity-40 z-10">
