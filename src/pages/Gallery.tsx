@@ -50,7 +50,6 @@ const Gallery = () => {
         eyebrow={t('nav.gallery')}
         title={t('gallery.heroTitle')}
         subtitle={t('gallery.heroSubtitle')}
-        image={productBriquette}
       />
 
       {/* Gallery Grid */}
