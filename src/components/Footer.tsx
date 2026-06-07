@@ -66,8 +66,8 @@ const Footer = () => {
               <li className="flex items-start gap-2">
                 <Mail className="w-5 h-5 flex-shrink-0 mt-0.5" />
                 <div className="flex flex-col">
-                  <a href="mailto:suksesekspormandiri@gmail.com" className="hover:text-accent transition-colors">
-                    suksesekspormandiri@gmail.com
+                  <a href="mailto:salessuksesekspormandiri@gmail.com" className="hover:text-accent transition-colors">
+                    salessuksesekspormandiri@gmail.com
                   </a>
                   <a href="mailto:sales@coco.suksesekspormandiri.com" className="hover:text-accent transition-colors">
                     sales@coco.suksesekspormandiri.com

@@ -31,7 +31,7 @@ const Contact = () => {
     const body = encodeURIComponent(
       `Name: ${formData.name}\nEmail: ${formData.email}\nCompany: ${formData.company}\nCountry: ${formData.country}\n\nMessage:\n${formData.message}`
     );
-    const mailtoLink = `mailto:suksesekspormandiri@gmail.com?subject=${subject}&body=${body}`;
+    const mailtoLink = `mailto:salessuksesekspormandiri@gmail.com?subject=${subject}&body=${body}`;
     
     window.location.href = mailtoLink;
     
@@ -89,10 +89,10 @@ const Contact = () => {
                       <h3 className="font-work font-semibold text-lg text-primary mb-1">{t('contact.email')}</h3>
                       <div className="flex flex-col gap-1">
                         <a 
-                          href="mailto:suksesekspormandiri@gmail.com"
+                          href="mailto:salessuksesekspormandiri@gmail.com"
                           className="font-work text-foreground/80 hover:text-accent transition-colors"
                         >
-                          suksesekspormandiri@gmail.com
+                          salessuksesekspormandiri@gmail.com
                         </a>
                         <a 
                           href="mailto:sales@coco.suksesekspormandiri.com"
