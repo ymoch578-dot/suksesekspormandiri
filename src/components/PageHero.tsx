@@ -20,7 +20,10 @@ const PageHero = ({ eyebrow, title, highlight, subtitle, image, images }: PageHe
       <div className="relative w-full max-w-7xl min-h-[360px] md:min-h-[440px] overflow-hidden rounded-[2.5rem] shadow-2xl flex items-center bg-forest-green">
         {images && images.length > 0 ? (
           <div className="absolute inset-0 z-0">
-            <div className={`grid h-full w-full grid-cols-2 md:grid-cols-${Math.min(images.length, 5)}`}>
+            <div
+              className="grid h-full w-full grid-cols-2 md:grid-cols-5"
+              style={{ gridTemplateColumns: `repeat(${images.length}, minmax(0, 1fr))` }}
+            >
               {images.map((src, i) => (
                 <img
                   key={i}

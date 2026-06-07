@@ -61,7 +61,7 @@ const Products = () => {
         eyebrow={t('nav.products')}
         title={t('products.heroTitle')}
         subtitle={t('products.heroSubtitle')}
-        image={productEdibleCopra}
+        images={[productSemiHusked, productDesiccated, productEdibleCopra, productBriquette, productCharcoal]}
       />
 
       {/* Products Grid */}
